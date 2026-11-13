@@ -1,0 +1,483 @@
+{
+  "kind": "metabolic",
+  "query": "glycolysis | module M00001",
+  "resolved": {},
+  "nodes": [
+    {
+      "id": "c:C00267",
+      "label": "alpha-D-Glucose",
+      "kind": "compound",
+      "xrefs": {
+        "kegg": "C00267"
+      },
+      "focus": false
+    },
+    {
+      "id": "c:C00668",
+      "label": "alpha-D-Glucose 6-phosphate",
+      "kind": "compound",
+      "xrefs": {
+        "kegg": "C00668"
+      },
+      "focus": false
+    },
+    {
+      "id": "c:C00085",
+      "label": "D-Fructose 6-phosphate",
+      "kind": "compound",
+      "xrefs": {
+        "kegg": "C00085"
+      },
+      "focus": false
+    },
+    {
+      "id": "c:C00354",
+      "label": "D-Fructose 1,6-bisphosphate",
+      "kind": "compound",
+      "xrefs": {
+        "kegg": "C00354"
+      },
+      "focus": false
+    },
+    {
+      "id": "c:C00111",
+      "label": "Glycerone phosphate",
+      "kind": "compound",
+      "xrefs": {
+        "kegg": "C00111"
+      },
+      "focus": false
+    },
+    {
+      "id": "c:C00118",
+      "label": "D-Glyceraldehyde 3-phosphate",
+      "kind": "compound",
+      "xrefs": {
+        "kegg": "C00118"
+      },
+      "focus": false
+    },
+    {
+      "id": "c:C00236",
+      "label": "3-Phospho-D-glyceroyl phosphate",
+      "kind": "compound",
+      "xrefs": {
+        "kegg": "C00236"
+      },
+      "focus": false
+    },
+    {
+      "id": "c:C00197",
+      "label": "3-Phospho-D-glycerate",
+      "kind": "compound",
+      "xrefs": {
+        "kegg": "C00197"
+      },
+      "focus": false
+    },
+    {
+      "id": "c:C00631",
+      "label": "2-Phospho-D-glycerate",
+      "kind": "compound",
+      "xrefs": {
+        "kegg": "C00631"
+      },
+      "focus": false
+    },
+    {
+      "id": "c:C00074",
+      "label": "Phosphoenolpyruvate",
+      "kind": "compound",
+      "xrefs": {
+        "kegg": "C00074"
+      },
+      "focus": false
+    },
+    {
+      "id": "c:C00022",
+      "label": "Pyruvate",
+      "kind": "compound",
+      "xrefs": {
+        "kegg": "C00022"
+      },
+      "focus": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "c:C00267",
+      "target": "c:C00668",
+      "relation": "conversion",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "ADPGK/GCK/HK1 (+3)"
+      ],
+      "indirect": false,
+      "detail": "KEGG reaction(s) R01786, R02189, R09085; enzymes from KGML gene entries",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "M00001",
+          "url": "https://www.kegg.jp/module/M00001",
+          "title": "Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "c:C00668",
+      "target": "c:C00085",
+      "relation": "conversion",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "GPI",
+        "reversible"
+      ],
+      "indirect": false,
+      "detail": "KEGG reaction(s) R13199; enzymes from KGML gene entries",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "M00001",
+          "url": "https://www.kegg.jp/module/M00001",
+          "title": "Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "c:C00085",
+      "target": "c:C00354",
+      "relation": "conversion",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "PFKL/PFKM/PFKP"
+      ],
+      "indirect": false,
+      "detail": "KEGG reaction(s) R00756, R05805; enzymes from KGML gene entries",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "M00001",
+          "url": "https://www.kegg.jp/module/M00001",
+          "title": "Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "c:C00354",
+      "target": "c:C00111",
+      "relation": "conversion",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "ALDOA/ALDOB/ALDOC",
+        "reversible"
+      ],
+      "indirect": false,
+      "detail": "KEGG reaction(s) R01068; enzymes from KGML gene entries",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "M00001",
+          "url": "https://www.kegg.jp/module/M00001",
+          "title": "Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "c:C00354",
+      "target": "c:C00118",
+      "relation": "conversion",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "ALDOA/ALDOB/ALDOC",
+        "reversible"
+      ],
+      "indirect": false,
+      "detail": "KEGG reaction(s) R01068; enzymes from KGML gene entries",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "M00001",
+          "url": "https://www.kegg.jp/module/M00001",
+          "title": "Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "c:C00111",
+      "target": "c:C00118",
+      "relation": "conversion",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "TPI1",
+        "reversible"
+      ],
+      "indirect": false,
+      "detail": "KEGG reaction(s) R01015; enzymes from KGML gene entries",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "M00001",
+          "url": "https://www.kegg.jp/module/M00001",
+          "title": "Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "c:C00118",
+      "target": "c:C00236",
+      "relation": "conversion",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "GAPDH/GAPDHS",
+        "reversible"
+      ],
+      "indirect": false,
+      "detail": "KEGG reaction(s) R01061, R01063; enzymes from KGML gene entries",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "M00001",
+          "url": "https://www.kegg.jp/module/M00001",
+          "title": "Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "c:C00236",
+      "target": "c:C00197",
+      "relation": "conversion",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "PGK1/PGK2",
+        "reversible"
+      ],
+      "indirect": false,
+      "detail": "KEGG reaction(s) R01512; enzymes from KGML gene entries",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "M00001",
+          "url": "https://www.kegg.jp/module/M00001",
+          "title": "Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "c:C00118",
+      "target": "c:C00197",
+      "relation": "conversion",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "enzyme not mapped in this organism"
+      ],
+      "indirect": false,
+      "detail": "KEGG reaction(s) R07159; enzymes from KGML gene entries",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "M00001",
+          "url": "https://www.kegg.jp/module/M00001",
+          "title": "Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "c:C00197",
+      "target": "c:C00631",
+      "relation": "conversion",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "BPGM/PGAM1/PGAM2 (+1)",
+        "reversible"
+      ],
+      "indirect": false,
+      "detail": "KEGG reaction(s) R01518; enzymes from KGML gene entries",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "M00001",
+          "url": "https://www.kegg.jp/module/M00001",
+          "title": "Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "c:C00631",
+      "target": "c:C00074",
+      "relation": "conversion",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "ENO1/ENO2/ENO3 (+1)",
+        "reversible"
+      ],
+      "indirect": false,
+      "detail": "KEGG reaction(s) R00658; enzymes from KGML gene entries",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "M00001",
+          "url": "https://www.kegg.jp/module/M00001",
+          "title": "Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "c:C00074",
+      "target": "c:C00022",
+      "relation": "conversion",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "PKLR/PKM"
+      ],
+      "indirect": false,
+      "detail": "KEGG reaction(s) R00200; enzymes from KGML gene entries",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "M00001",
+          "url": "https://www.kegg.jp/module/M00001",
+          "title": "Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate"
+        }
+      ],
+      "scores": {}
+    }
+  ],
+  "statements": [
+    {
+      "text": "KEGG module M00001 (Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate) runs alpha-D-Glucose -> Pyruvate in 11 reaction steps (definition: (K00844,K12407,K00845,K25026,K00886,K08074,K00918) (K01810,K06859,K13810,K15916) (K00850,K16370,K21071,K24182,K00918) (K01623,K01624,K11645,K16305,K16306) K01803 (((K00134,K00150) K00927),K11389) (K01834,K15633,K15634,K15635) (K01689,K27394) (K00873,K12406)).",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "M00001",
+          "url": "https://www.kegg.jp/module/M00001",
+          "title": "Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate"
+        }
+      ],
+      "section": "Mechanism"
+    }
+  ],
+  "pathways": [
+    {
+      "source": "KEGG",
+      "id": "hsa00010",
+      "name": "Glycolysis / Gluconeogenesis",
+      "url": "https://www.kegg.jp/pathway/hsa00010",
+      "evidence": "curated database evidence",
+      "class": "Metabolism; Carbohydrate metabolism"
+    },
+    {
+      "source": "KEGG",
+      "id": "M00001",
+      "name": "Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate",
+      "url": "https://www.kegg.jp/module/M00001",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-70171",
+      "name": "Glycolysis",
+      "url": "https://reactome.org/content/detail/R-HSA-70171",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-9634600",
+      "name": "Regulation of glycolysis by fructose 2,6-bisphosphate metabolism",
+      "url": "https://reactome.org/content/detail/R-HSA-9634600",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-70326",
+      "name": "Glucose metabolism",
+      "url": "https://reactome.org/content/detail/R-HSA-70326",
+      "evidence": "curated database evidence"
+    }
+  ],
+  "literature": [],
+  "warnings": [],
+  "source_status": {
+    "KEGG": "ok",
+    "Reactome": "ok"
+  },
+  "notes": [
+    "No hsa enzyme is linked to reaction(s) R07159 on this map."
+  ],
+  "requests": [
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/list/pathway/hsa",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:33Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/get/hsa00010",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:37Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/get/hsa00010/kgml",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:38Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/get/M00001",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:47Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/list/C00022+C00074+C00085+C00111+C00118+C00197+C00236+C00267+C00354+C00631",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:52Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/list/C00668",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:53Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/search/query?cluster=true&query=glycolysis&species=Homo%20sapiens&types=Pathway",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:54Z"
+    }
+  ],
+  "diagram_note": "Metabolite flow from KEGG reaction records: node = compound, edge label = enzyme gene(s) KEGG assigns to that reaction in this organism.",
+  "citations": [
+    {
+      "source": "KEGG",
+      "id": "M00001",
+      "url": "https://www.kegg.jp/module/M00001",
+      "title": "Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate"
+    }
+  ]
+}

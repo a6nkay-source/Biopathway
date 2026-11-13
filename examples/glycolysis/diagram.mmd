@@ -1,0 +1,43 @@
+flowchart LR
+    n0(["alpha-D-Glucose"])
+    n1(["alpha-D-Glucose 6-phosphate"])
+    n2(["D-Fructose 6-phosphate"])
+    n3(["D-Fructose 1,6-bisphosphate"])
+    n4(["Glycerone phosphate"])
+    n5(["D-Glyceraldehyde 3-phosphate"])
+    n6(["3-Phospho-D-glyceroyl phosphate"])
+    n7(["3-Phospho-D-glycerate"])
+    n8(["2-Phospho-D-glycerate"])
+    n9(["Phosphoenolpyruvate"])
+    n10(["Pyruvate"])
+    n0 -->|"conversion ADPGK/GCK/HK1 (+3) · CUR"| n1
+    n1 -->|"conversion GPI reversible · CUR"| n2
+    n2 -->|"conversion PFKL/PFKM/PFKP · CUR"| n3
+    n3 -->|"conversion ALDOA/ALDOB/ALDOC reversible · CUR"| n4
+    n3 -->|"conversion ALDOA/ALDOB/ALDOC reversible · CUR"| n5
+    n4 -->|"conversion TPI1 reversible · CUR"| n5
+    n5 -->|"conversion GAPDH/GAPDHS reversible · CUR"| n6
+    n6 -->|"conversion PGK1/PGK2 reversible · CUR"| n7
+    n5 -->|"conversion enzyme not mapped in this organism · CUR"| n7
+    n7 -->|"conversion BPGM/PGAM1/PGAM2 (+1) reversible · CUR"| n8
+    n8 -->|"conversion ENO1/ENO2/ENO3 (+1) reversible · CUR"| n9
+    n9 -->|"conversion PKLR/PKM · CUR"| n10
+    linkStyle 0 stroke:#2166ac,stroke-width:2px
+    linkStyle 1 stroke:#2166ac,stroke-width:2px
+    linkStyle 2 stroke:#2166ac,stroke-width:2px
+    linkStyle 3 stroke:#2166ac,stroke-width:2px
+    linkStyle 4 stroke:#2166ac,stroke-width:2px
+    linkStyle 5 stroke:#2166ac,stroke-width:2px
+    linkStyle 6 stroke:#2166ac,stroke-width:2px
+    linkStyle 7 stroke:#2166ac,stroke-width:2px
+    linkStyle 8 stroke:#2166ac,stroke-width:2px
+    linkStyle 9 stroke:#2166ac,stroke-width:2px
+    linkStyle 10 stroke:#2166ac,stroke-width:2px
+    linkStyle 11 stroke:#2166ac,stroke-width:2px
+    classDef focus fill:#fff3bf,stroke:#b8860b,stroke-width:3px
+    classDef compound fill:#e6f4ea,stroke:#3c8d5a
+    classDef pathway fill:#e8eaf6,stroke:#3f51b5
+    classDef variant fill:#fde2e1,stroke:#c0392b,stroke-width:2px
+    classDef condition fill:#f3e5f5,stroke:#8e24aa
+    classDef region fill:#f1f3f4,stroke:#5f6368
+    class n0,n1,n2,n3,n4,n5,n6,n7,n8,n9,n10 compound

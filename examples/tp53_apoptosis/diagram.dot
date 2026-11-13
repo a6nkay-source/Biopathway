@@ -1,0 +1,23 @@
+digraph BioPathway {
+  rankdir=LR; splines=true; nodesep=0.35;
+  node [fontname="Helvetica", fontsize=11, style="filled"];
+  edge [fontname="Helvetica", fontsize=9];
+  labelloc="t"; label="process: apoptosis | genes: TP53";
+  n0 [label="Apoptosis", shape=hexagon, fillcolor="#e8eaf6"];
+  n1 [label="Caspase activation via extrinsic apoptotic signalling pathway", shape=hexagon, fillcolor="#e8eaf6"];
+  n2 [label="Intrinsic Pathway for Apoptosis", shape=hexagon, fillcolor="#e8eaf6"];
+  n3 [label="Apoptotic execution phase", shape=hexagon, fillcolor="#e8eaf6"];
+  n4 [label="Regulation of Apoptosis", shape=hexagon, fillcolor="#e8eaf6"];
+  n5 [label="TP53", shape=box, penwidth=3, color="#b8860b", fillcolor="#fff3bf"];
+  n6 [label="Activation of NOXA and translocation to mitochondria", shape=hexagon, fillcolor="#e8eaf6"];
+  n7 [label="Activation of PUMA and translocation to mitochondria", shape=hexagon, fillcolor="#e8eaf6"];
+  n0 -> n1 [label="contains · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n0 -> n2 [label="contains · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n0 -> n3 [label="contains · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n0 -> n4 [label="contains · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n5 -> n6 [label="participates in · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n2 -> n6 [label="contains · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6, style=dashed];
+  n5 -> n7 [label="participates in · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n2 -> n7 [label="contains · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6, style=dashed];
+  legend [shape=plaintext, style="", label=<<TABLE BORDER="0" CELLSPACING="2"><TR><TD COLSPAN="2"><B>Evidence</B></TD></TR><TR><TD BGCOLOR="#1b7837" WIDTH="18"></TD><TD ALIGN="LEFT">EXP = experimentally validated</TD></TR><TR><TD BGCOLOR="#2166ac" WIDTH="18"></TD><TD ALIGN="LEFT">CUR = curated database evidence</TD></TR><TR><TD BGCOLOR="#e08214" WIDTH="18"></TD><TD ALIGN="LEFT">PRED = computationally predicted</TD></TR><TR><TD BGCOLOR="#762a83" WIDTH="18"></TD><TD ALIGN="LEFT">LIT = literature-supported association</TD></TR><TR><TD BGCOLOR="#878787" WIDTH="18"></TD><TD ALIGN="LEFT">HYP = hypothetical/insufficiently established</TD></TR></TABLE>>];
+}

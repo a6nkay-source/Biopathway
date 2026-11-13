@@ -1,0 +1,38 @@
+digraph BioPathway {
+  rankdir=LR; splines=true; nodesep=0.35;
+  node [fontname="Helvetica", fontsize=11, style="filled"];
+  edge [fontname="Helvetica", fontsize=9];
+  labelloc="t"; label="gene: TP53";
+  n0 [label="TP53", shape=box, penwidth=3, color="#b8860b", fillcolor="#fff3bf"];
+  n1 [label="SIRT1", shape=box, fillcolor="#ffffff"];
+  n2 [label="MAPK1", shape=box, fillcolor="#ffffff"];
+  n3 [label="AURKA", shape=box, fillcolor="#ffffff"];
+  n4 [label="CSNK2A1", shape=box, fillcolor="#ffffff"];
+  n5 [label="STUB1", shape=box, fillcolor="#ffffff"];
+  n6 [label="DDX5", shape=box, fillcolor="#ffffff"];
+  n7 [label="MAPK14", shape=box, fillcolor="#ffffff"];
+  n8 [label="TBP", shape=box, fillcolor="#ffffff"];
+  n9 [label="CUL9", shape=box, fillcolor="#ffffff"];
+  n10 [label="RPA1", shape=box, fillcolor="#ffffff"];
+  n11 [label="MDM2", shape=box, fillcolor="#ffffff"];
+  n12 [label="YY1", shape=box, fillcolor="#ffffff"];
+  n13 [label="CREBBP", shape=box, fillcolor="#ffffff"];
+  n14 [label="MAPK3", shape=box, fillcolor="#ffffff"];
+  n15 [label="EP300", shape=box, fillcolor="#ffffff"];
+  n0 -> n1 [label="association · EXP", color="#1b7837", fontcolor="#1b7837", penwidth=1.6, dir=none];
+  n0 -> n2 [label="association · EXP", color="#1b7837", fontcolor="#1b7837", penwidth=1.6, dir=none];
+  n0 -> n3 [label="association · EXP", color="#1b7837", fontcolor="#1b7837", penwidth=1.6, dir=none];
+  n0 -> n4 [label="association · EXP", color="#1b7837", fontcolor="#1b7837", penwidth=1.6, dir=none];
+  n0 -> n5 [label="association · EXP", color="#1b7837", fontcolor="#1b7837", penwidth=1.6, dir=none];
+  n0 -> n6 [label="association · EXP", color="#1b7837", fontcolor="#1b7837", penwidth=1.6, dir=none];
+  n0 -> n7 [label="association · EXP", color="#1b7837", fontcolor="#1b7837", penwidth=1.6, dir=none];
+  n0 -> n8 [label="association · EXP", color="#1b7837", fontcolor="#1b7837", penwidth=1.6, dir=none];
+  n0 -> n9 [label="association · EXP", color="#1b7837", fontcolor="#1b7837", penwidth=1.6, dir=none];
+  n0 -> n10 [label="association · EXP", color="#1b7837", fontcolor="#1b7837", penwidth=1.6, dir=none];
+  n0 -> n11 [label="association · EXP", color="#1b7837", fontcolor="#1b7837", penwidth=1.6, dir=none];
+  n0 -> n12 [label="association · EXP", color="#1b7837", fontcolor="#1b7837", penwidth=1.6, dir=none];
+  n0 -> n13 [label="association · EXP", color="#1b7837", fontcolor="#1b7837", penwidth=1.6, dir=none];
+  n0 -> n14 [label="association · EXP", color="#1b7837", fontcolor="#1b7837", penwidth=1.6, dir=none];
+  n0 -> n15 [label="association · EXP", color="#1b7837", fontcolor="#1b7837", penwidth=1.6, dir=none];
+  legend [shape=plaintext, style="", label=<<TABLE BORDER="0" CELLSPACING="2"><TR><TD COLSPAN="2"><B>Evidence</B></TD></TR><TR><TD BGCOLOR="#1b7837" WIDTH="18"></TD><TD ALIGN="LEFT">EXP = experimentally validated</TD></TR><TR><TD BGCOLOR="#2166ac" WIDTH="18"></TD><TD ALIGN="LEFT">CUR = curated database evidence</TD></TR><TR><TD BGCOLOR="#e08214" WIDTH="18"></TD><TD ALIGN="LEFT">PRED = computationally predicted</TD></TR><TR><TD BGCOLOR="#762a83" WIDTH="18"></TD><TD ALIGN="LEFT">LIT = literature-supported association</TD></TR><TR><TD BGCOLOR="#878787" WIDTH="18"></TD><TD ALIGN="LEFT">HYP = hypothetical/insufficiently established</TD></TR></TABLE>>];
+}

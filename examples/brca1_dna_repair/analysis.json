@@ -1,0 +1,1420 @@
+{
+  "kind": "process",
+  "query": "DNA repair | genes: BRCA1",
+  "resolved": {
+    "BRCA1": {
+      "input": "BRCA1",
+      "symbol": "BRCA1",
+      "ncbi_gene_id": "672",
+      "name": "BRCA1 DNA repair associated",
+      "location": "17q21.31",
+      "aliases": [
+        "BRCAI",
+        "BRCC1",
+        "BROVCA1",
+        "FANCS",
+        "IRIS",
+        "PNCA4",
+        "PPP1R53",
+        "PSCP",
+        "RNF53"
+      ],
+      "uniprot": "P38398",
+      "uniprot_reviewed": true
+    }
+  },
+  "nodes": [
+    {
+      "id": "R-HSA-73894",
+      "label": "DNA Repair",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-73894"
+      },
+      "focus": false
+    },
+    {
+      "id": "R-HSA-73884",
+      "label": "Base Excision Repair",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-73884"
+      },
+      "focus": false
+    },
+    {
+      "id": "R-HSA-73893",
+      "label": "DNA Damage Bypass",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-73893"
+      },
+      "focus": false
+    },
+    {
+      "id": "R-HSA-73942",
+      "label": "DNA Damage Reversal",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-73942"
+      },
+      "focus": false
+    },
+    {
+      "id": "R-HSA-5693532",
+      "label": "DNA Double-Strand Break Repair",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-5693532"
+      },
+      "focus": false
+    },
+    {
+      "id": "R-HSA-5696398",
+      "label": "Nucleotide Excision Repair",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-5696398"
+      },
+      "focus": false
+    },
+    {
+      "id": "R-HSA-5358508",
+      "label": "Mismatch Repair",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-5358508"
+      },
+      "focus": false
+    },
+    {
+      "id": "R-HSA-6783310",
+      "label": "Fanconi Anemia Pathway",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-6783310"
+      },
+      "focus": false
+    },
+    {
+      "id": "BRCA1",
+      "label": "BRCA1",
+      "kind": "gene",
+      "xrefs": {},
+      "focus": true
+    },
+    {
+      "id": "R-HSA-5685938",
+      "label": "HDR through Single Strand Annealing (SSA)",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-5685938"
+      },
+      "focus": false
+    },
+    {
+      "id": "R-HSA-5685942",
+      "label": "HDR through Homologous Recombination (HRR)",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-5685942"
+      },
+      "focus": false
+    },
+    {
+      "id": "R-HSA-5693554",
+      "label": "Resolution of D-loop Structures through Synthesis-Dependent Strand Annealing (SDSA)",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-5693554"
+      },
+      "focus": false
+    },
+    {
+      "id": "R-HSA-5693565",
+      "label": "Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-5693565"
+      },
+      "focus": false
+    },
+    {
+      "id": "R-HSA-5693568",
+      "label": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-5693568"
+      },
+      "focus": false
+    },
+    {
+      "id": "R-HSA-5693571",
+      "label": "Nonhomologous End-Joining (NHEJ)",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-5693571"
+      },
+      "focus": false
+    },
+    {
+      "id": "R-HSA-5693579",
+      "label": "Homologous DNA Pairing and Strand Exchange",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-5693579"
+      },
+      "focus": false
+    },
+    {
+      "id": "R-HSA-5693607",
+      "label": "Processing of DNA double-strand break ends",
+      "kind": "pathway",
+      "xrefs": {
+        "reactome": "R-HSA-5693607"
+      },
+      "focus": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "R-HSA-73894",
+      "target": "R-HSA-73884",
+      "relation": "contains",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "Reactome expert-curated, peer-reviewed event",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-73894",
+          "url": "https://reactome.org/content/detail/R-HSA-73894",
+          "title": "DNA Repair"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "R-HSA-73894",
+      "target": "R-HSA-73893",
+      "relation": "contains",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "Reactome expert-curated, peer-reviewed event",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-73894",
+          "url": "https://reactome.org/content/detail/R-HSA-73894",
+          "title": "DNA Repair"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "R-HSA-73894",
+      "target": "R-HSA-73942",
+      "relation": "contains",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "Reactome expert-curated, peer-reviewed event",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-73894",
+          "url": "https://reactome.org/content/detail/R-HSA-73894",
+          "title": "DNA Repair"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "R-HSA-73894",
+      "target": "R-HSA-5693532",
+      "relation": "contains",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "Reactome expert-curated, peer-reviewed event",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-73894",
+          "url": "https://reactome.org/content/detail/R-HSA-73894",
+          "title": "DNA Repair"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "R-HSA-73894",
+      "target": "R-HSA-5696398",
+      "relation": "contains",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "Reactome expert-curated, peer-reviewed event",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-73894",
+          "url": "https://reactome.org/content/detail/R-HSA-73894",
+          "title": "DNA Repair"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "R-HSA-73894",
+      "target": "R-HSA-5358508",
+      "relation": "contains",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "Reactome expert-curated, peer-reviewed event",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-73894",
+          "url": "https://reactome.org/content/detail/R-HSA-73894",
+          "title": "DNA Repair"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "R-HSA-73894",
+      "target": "R-HSA-6783310",
+      "relation": "contains",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "Reactome expert-curated, peer-reviewed event",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-73894",
+          "url": "https://reactome.org/content/detail/R-HSA-73894",
+          "title": "DNA Repair"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "BRCA1",
+      "target": "R-HSA-5685938",
+      "relation": "participates in",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "Reactome expert-curated, peer-reviewed event",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5685938",
+          "url": "https://reactome.org/content/detail/R-HSA-5685938",
+          "title": "HDR through Single Strand Annealing (SSA)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "R-HSA-5693532",
+      "target": "R-HSA-5685938",
+      "relation": "contains",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": true,
+      "detail": "Reactome hierarchy; intermediate sub-pathways omitted",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5693532",
+          "url": "https://reactome.org/content/detail/R-HSA-5693532",
+          "title": ""
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "BRCA1",
+      "target": "R-HSA-5685942",
+      "relation": "participates in",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "Reactome expert-curated, peer-reviewed event",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5685942",
+          "url": "https://reactome.org/content/detail/R-HSA-5685942",
+          "title": "HDR through Homologous Recombination (HRR)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "R-HSA-5693532",
+      "target": "R-HSA-5685942",
+      "relation": "contains",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": true,
+      "detail": "Reactome hierarchy; intermediate sub-pathways omitted",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5693532",
+          "url": "https://reactome.org/content/detail/R-HSA-5693532",
+          "title": ""
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "BRCA1",
+      "target": "R-HSA-5693554",
+      "relation": "participates in",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "Reactome expert-curated, peer-reviewed event",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5693554",
+          "url": "https://reactome.org/content/detail/R-HSA-5693554",
+          "title": "Resolution of D-loop Structures through Synthesis-Dependent Strand Annealing (SDSA)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "R-HSA-5693532",
+      "target": "R-HSA-5693554",
+      "relation": "contains",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": true,
+      "detail": "Reactome hierarchy; intermediate sub-pathways omitted",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5693532",
+          "url": "https://reactome.org/content/detail/R-HSA-5693532",
+          "title": ""
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "BRCA1",
+      "target": "R-HSA-5693565",
+      "relation": "participates in",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "Reactome expert-curated, peer-reviewed event",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5693565",
+          "url": "https://reactome.org/content/detail/R-HSA-5693565",
+          "title": "Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "R-HSA-5693532",
+      "target": "R-HSA-5693565",
+      "relation": "contains",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": true,
+      "detail": "Reactome hierarchy; intermediate sub-pathways omitted",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5693532",
+          "url": "https://reactome.org/content/detail/R-HSA-5693532",
+          "title": ""
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "BRCA1",
+      "target": "R-HSA-5693568",
+      "relation": "participates in",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "Reactome expert-curated, peer-reviewed event",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5693568",
+          "url": "https://reactome.org/content/detail/R-HSA-5693568",
+          "title": "Resolution of D-loop Structures through Holliday Junction Intermediates"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "R-HSA-5693532",
+      "target": "R-HSA-5693568",
+      "relation": "contains",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": true,
+      "detail": "Reactome hierarchy; intermediate sub-pathways omitted",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5693532",
+          "url": "https://reactome.org/content/detail/R-HSA-5693532",
+          "title": ""
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "BRCA1",
+      "target": "R-HSA-5693571",
+      "relation": "participates in",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "Reactome expert-curated, peer-reviewed event",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5693571",
+          "url": "https://reactome.org/content/detail/R-HSA-5693571",
+          "title": "Nonhomologous End-Joining (NHEJ)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "R-HSA-73894",
+      "target": "R-HSA-5693571",
+      "relation": "contains",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": true,
+      "detail": "Reactome hierarchy; intermediate sub-pathways omitted",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-73894",
+          "url": "https://reactome.org/content/detail/R-HSA-73894",
+          "title": ""
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "BRCA1",
+      "target": "R-HSA-5693579",
+      "relation": "participates in",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "Reactome expert-curated, peer-reviewed event",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5693579",
+          "url": "https://reactome.org/content/detail/R-HSA-5693579",
+          "title": "Homologous DNA Pairing and Strand Exchange"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "R-HSA-5693532",
+      "target": "R-HSA-5693579",
+      "relation": "contains",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": true,
+      "detail": "Reactome hierarchy; intermediate sub-pathways omitted",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5693532",
+          "url": "https://reactome.org/content/detail/R-HSA-5693532",
+          "title": ""
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "BRCA1",
+      "target": "R-HSA-5693607",
+      "relation": "participates in",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "Reactome expert-curated, peer-reviewed event",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5693607",
+          "url": "https://reactome.org/content/detail/R-HSA-5693607",
+          "title": "Processing of DNA double-strand break ends"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "R-HSA-5693532",
+      "target": "R-HSA-5693607",
+      "relation": "contains",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": true,
+      "detail": "Reactome hierarchy; intermediate sub-pathways omitted",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5693532",
+          "url": "https://reactome.org/content/detail/R-HSA-5693532",
+          "title": ""
+        }
+      ],
+      "scores": {}
+    }
+  ],
+  "statements": [
+    {
+      "text": "DNA Repair (Reactome summary): DNA repair is a phenomenal multi-enzyme, multi-pathway system required to ensure the integrity of the cellular genome. Living organisms are constantly exposed to harmful metabolic by-products, environmental chemicals and radiation that damage their DNA, thus corrupting genetic information. In addition, normal cellular pH and temperature create conditions that are hostile to the integrity of DNA and its nucleotide components. DNA damage can also arise as a consequence of spontaneous errors during DNA replication. The DNA repair machinery continuously scans the genome and maintains genome ...",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-73894",
+          "url": "https://reactome.org/content/detail/R-HSA-73894",
+          "title": "DNA Repair"
+        }
+      ],
+      "section": "Process overview"
+    },
+    {
+      "text": "Reactome event R-HSA-9707051: UBXN1 binds BRCA1:BARD1 heterodimer",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-9707051",
+          "url": "https://reactome.org/content/detail/R-HSA-9707051",
+          "title": "UBXN1 binds BRCA1:BARD1 heterodimer"
+        }
+      ],
+      "section": "Mechanism (BRCA1)"
+    },
+    {
+      "text": "Reactome event R-HSA-5693551: Phosphorylation of BRCA1-A complex at multiple sites by ATM",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5693551",
+          "url": "https://reactome.org/content/detail/R-HSA-5693551",
+          "title": "Phosphorylation of BRCA1-A complex at multiple sites by ATM"
+        }
+      ],
+      "section": "Mechanism (BRCA1)"
+    },
+    {
+      "text": "Reactome event R-HSA-5683385: Formation of BRCA1-A complex at DNA DSBs",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5683385",
+          "url": "https://reactome.org/content/detail/R-HSA-5683385",
+          "title": "Formation of BRCA1-A complex at DNA DSBs"
+        }
+      ],
+      "section": "Mechanism (BRCA1)"
+    },
+    {
+      "text": "Reactome event R-HSA-9701003: BAP1 binds BRCA1:BARD1 heterodimer",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-9701003",
+          "url": "https://reactome.org/content/detail/R-HSA-9701003",
+          "title": "BAP1 binds BRCA1:BARD1 heterodimer"
+        }
+      ],
+      "section": "Mechanism (BRCA1)"
+    },
+    {
+      "text": "Reactome event R-HSA-9701000: BRCA1:BARD1 heterodimer autoubiquitinates",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-9701000",
+          "url": "https://reactome.org/content/detail/R-HSA-9701000",
+          "title": "BRCA1:BARD1 heterodimer autoubiquitinates"
+        }
+      ],
+      "section": "Mechanism (BRCA1)"
+    },
+    {
+      "text": "Reactome event R-HSA-5659781: BRCA1 forms a heterodimer with BARD1",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5659781",
+          "url": "https://reactome.org/content/detail/R-HSA-5659781",
+          "title": "BRCA1 forms a heterodimer with BARD1"
+        }
+      ],
+      "section": "Mechanism (BRCA1)"
+    },
+    {
+      "text": "Reactome event R-HSA-9700998: BAP1 disrupts the BRCA1:BARD1 heterodimer",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-9700998",
+          "url": "https://reactome.org/content/detail/R-HSA-9700998",
+          "title": "BAP1 disrupts the BRCA1:BARD1 heterodimer"
+        }
+      ],
+      "section": "Mechanism (BRCA1)"
+    },
+    {
+      "text": "Reactome event R-HSA-5683801: CHEK2 phosphorylates BRCA1",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5683801",
+          "url": "https://reactome.org/content/detail/R-HSA-5683801",
+          "title": "CHEK2 phosphorylates BRCA1"
+        }
+      ],
+      "section": "Mechanism (BRCA1)"
+    },
+    {
+      "text": "Reactome event R-HSA-9974238: CRL4A-DCAF8L1 polyubiquitinates BRCA1",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-9974238",
+          "url": "https://reactome.org/content/detail/R-HSA-9974238",
+          "title": "CRL4A-DCAF8L1 polyubiquitinates BRCA1"
+        }
+      ],
+      "section": "Mechanism (BRCA1)"
+    },
+    {
+      "text": "Reactome event R-HSA-9974400: 26S Proteasome degrades polyubiquitinated BRCA1, BARD1",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-9974400",
+          "url": "https://reactome.org/content/detail/R-HSA-9974400",
+          "title": "26S Proteasome degrades polyubiquitinated BRCA1, BARD1"
+        }
+      ],
+      "section": "Mechanism (BRCA1)"
+    },
+    {
+      "text": "Reactome event R-HSA-5684108: BRCA1 binds phosphorylated RBBP8",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "Reactome",
+          "id": "R-HSA-5684108",
+          "url": "https://reactome.org/content/detail/R-HSA-5684108",
+          "title": "BRCA1 binds phosphorylated RBBP8"
+        }
+      ],
+      "section": "Mechanism (BRCA1)"
+    }
+  ],
+  "pathways": [
+    {
+      "source": "Reactome",
+      "id": "R-HSA-73894",
+      "name": "DNA Repair",
+      "url": "https://reactome.org/content/detail/R-HSA-73894",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-5685938",
+      "name": "HDR through Single Strand Annealing (SSA)",
+      "url": "https://reactome.org/content/detail/R-HSA-5685938",
+      "evidence": "curated database evidence",
+      "note": "inside R-HSA-73894"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-5685942",
+      "name": "HDR through Homologous Recombination (HRR)",
+      "url": "https://reactome.org/content/detail/R-HSA-5685942",
+      "evidence": "curated database evidence",
+      "note": "inside R-HSA-73894"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-5693554",
+      "name": "Resolution of D-loop Structures through Synthesis-Dependent Strand Annealing (SDSA)",
+      "url": "https://reactome.org/content/detail/R-HSA-5693554",
+      "evidence": "curated database evidence",
+      "note": "inside R-HSA-73894"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-5693565",
+      "name": "Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks",
+      "url": "https://reactome.org/content/detail/R-HSA-5693565",
+      "evidence": "curated database evidence",
+      "note": "inside R-HSA-73894"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-5693568",
+      "name": "Resolution of D-loop Structures through Holliday Junction Intermediates",
+      "url": "https://reactome.org/content/detail/R-HSA-5693568",
+      "evidence": "curated database evidence",
+      "note": "inside R-HSA-73894"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-5693571",
+      "name": "Nonhomologous End-Joining (NHEJ)",
+      "url": "https://reactome.org/content/detail/R-HSA-5693571",
+      "evidence": "curated database evidence",
+      "note": "inside R-HSA-73894"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-5693579",
+      "name": "Homologous DNA Pairing and Strand Exchange",
+      "url": "https://reactome.org/content/detail/R-HSA-5693579",
+      "evidence": "curated database evidence",
+      "note": "inside R-HSA-73894"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-5693607",
+      "name": "Processing of DNA double-strand break ends",
+      "url": "https://reactome.org/content/detail/R-HSA-5693607",
+      "evidence": "curated database evidence",
+      "note": "inside R-HSA-73894"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-5693616",
+      "name": "Presynaptic phase of homologous DNA pairing and strand exchange",
+      "url": "https://reactome.org/content/detail/R-HSA-5693616",
+      "evidence": "curated database evidence",
+      "note": "inside R-HSA-73894"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-9974237",
+      "name": "Negative Regulation of DNA Double Strand Break Response",
+      "url": "https://reactome.org/content/detail/R-HSA-9974237",
+      "evidence": "curated database evidence",
+      "note": "inside R-HSA-73894"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-1221632",
+      "name": "Meiotic synapsis",
+      "url": "https://reactome.org/content/detail/R-HSA-1221632",
+      "evidence": "curated database evidence",
+      "note": "outside this process"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-3108214",
+      "name": "SUMOylation of DNA damage response and repair proteins",
+      "url": "https://reactome.org/content/detail/R-HSA-3108214",
+      "evidence": "curated database evidence",
+      "note": "outside this process"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-5689901",
+      "name": "Metalloprotease DUBs",
+      "url": "https://reactome.org/content/detail/R-HSA-5689901",
+      "evidence": "curated database evidence",
+      "note": "outside this process"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-6796648",
+      "name": "TP53 Regulates Transcription of DNA Repair Genes",
+      "url": "https://reactome.org/content/detail/R-HSA-6796648",
+      "evidence": "curated database evidence",
+      "note": "outside this process"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-6804756",
+      "name": "Regulation of TP53 Activity through Phosphorylation",
+      "url": "https://reactome.org/content/detail/R-HSA-6804756",
+      "evidence": "curated database evidence",
+      "note": "outside this process"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-69473",
+      "name": "G2/M DNA damage checkpoint",
+      "url": "https://reactome.org/content/detail/R-HSA-69473",
+      "evidence": "curated database evidence",
+      "note": "outside this process"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-8951664",
+      "name": "Neddylation",
+      "url": "https://reactome.org/content/detail/R-HSA-8951664",
+      "evidence": "curated database evidence",
+      "note": "outside this process"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-8953750",
+      "name": "Transcriptional Regulation by E2F6",
+      "url": "https://reactome.org/content/detail/R-HSA-8953750",
+      "evidence": "curated database evidence",
+      "note": "outside this process"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-912446",
+      "name": "Meiotic recombination",
+      "url": "https://reactome.org/content/detail/R-HSA-912446",
+      "evidence": "curated database evidence",
+      "note": "outside this process"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-9663199",
+      "name": "Defective DNA double strand break response due to BRCA1 loss of function",
+      "url": "https://reactome.org/content/detail/R-HSA-9663199",
+      "evidence": "curated database evidence",
+      "note": "outside this process"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-9699150",
+      "name": "Defective DNA double strand break response due to BARD1 loss of function",
+      "url": "https://reactome.org/content/detail/R-HSA-9699150",
+      "evidence": "curated database evidence",
+      "note": "outside this process"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-9701192",
+      "name": "Defective homologous recombination repair (HRR) due to BRCA1 loss of function",
+      "url": "https://reactome.org/content/detail/R-HSA-9701192",
+      "evidence": "curated database evidence",
+      "note": "outside this process"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-9704331",
+      "name": "Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA1 binding function",
+      "url": "https://reactome.org/content/detail/R-HSA-9704331",
+      "evidence": "curated database evidence",
+      "note": "outside this process"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-9704646",
+      "name": "Defective HDR through Homologous Recombination Repair (HRR) due to PALB2 loss of BRCA2/RAD51/RAD51C binding function",
+      "url": "https://reactome.org/content/detail/R-HSA-9704646",
+      "evidence": "curated database evidence",
+      "note": "outside this process"
+    },
+    {
+      "source": "Reactome",
+      "gene": "BRCA1",
+      "id": "R-HSA-9709570",
+      "name": "Impaired BRCA2 binding to RAD51",
+      "url": "https://reactome.org/content/detail/R-HSA-9709570",
+      "evidence": "curated database evidence",
+      "note": "outside this process"
+    },
+    {
+      "source": "KEGG",
+      "id": "hsa03030",
+      "name": "DNA replication",
+      "url": "https://www.kegg.jp/pathway/hsa03030",
+      "evidence": "curated database evidence",
+      "match": 0.507,
+      "contains": {
+        "BRCA1": false
+      }
+    },
+    {
+      "source": "KEGG",
+      "id": "hsa03430",
+      "name": "Mismatch repair",
+      "url": "https://www.kegg.jp/pathway/hsa03430",
+      "evidence": "curated database evidence",
+      "match": 0.506,
+      "contains": {
+        "BRCA1": false
+      }
+    },
+    {
+      "source": "KEGG",
+      "id": "hsa03410",
+      "name": "Base excision repair",
+      "url": "https://www.kegg.jp/pathway/hsa03410",
+      "evidence": "curated database evidence",
+      "match": 0.505,
+      "contains": {
+        "BRCA1": false
+      }
+    }
+  ],
+  "literature": [
+    {
+      "pmid": "23175119",
+      "title": "DNA repair dysregulation from cancer driver to therapeutic target.",
+      "journal": "Nat Rev Cancer",
+      "year": "2012",
+      "first_author": "Curtin NJ",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23175119/",
+      "basis": "reference of Reactome R-HSA-73894",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "10583946",
+      "title": "Quality control by DNA repair.",
+      "journal": "Science",
+      "year": "1999",
+      "first_author": "Lindahl T",
+      "pubtypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10583946/",
+      "basis": "reference of Reactome R-HSA-73894",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "32094664",
+      "title": "The antitumorigenic roles of BRCA1-BARD1 in DNA repair and replication.",
+      "journal": "Nat Rev Mol Cell Biol",
+      "year": "2020",
+      "first_author": "Tarsounas M",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32094664/",
+      "basis": "PubMed search: BRCA1[tiab] AND DNA repair[tiab]",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "15829967",
+      "title": "Targeting the DNA repair defect in BRCA mutant cells as a therapeutic strategy.",
+      "journal": "Nature",
+      "year": "2005",
+      "first_author": "Farmer H",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15829967/",
+      "basis": "PubMed search: BRCA1[tiab] AND DNA repair[tiab]",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "35008272",
+      "title": "BRCA1 and Metastasis: Outcome of Defective DNA Repair.",
+      "journal": "Cancers (Basel)",
+      "year": "2021",
+      "first_author": "Krishnan R",
+      "pubtypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35008272/",
+      "basis": "PubMed search: BRCA1[tiab] AND DNA repair[tiab]",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "22193408",
+      "title": "BRCA1 and BRCA2: different roles in a common pathway of genome protection.",
+      "journal": "Nat Rev Cancer",
+      "year": "2011",
+      "first_author": "Roy R",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22193408/",
+      "basis": "PubMed search: BRCA1[tiab] AND DNA repair[tiab]",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "33755171",
+      "title": "Untangling the crosstalk between BRCA1 and R-loops during DNA repair.",
+      "journal": "Nucleic Acids Res",
+      "year": "2021",
+      "first_author": "San Martin Alonso M",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33755171/",
+      "basis": "PubMed search: BRCA1[tiab] AND DNA repair[tiab]",
+      "evidence": "literature-supported association"
+    }
+  ],
+  "warnings": [],
+  "source_status": {
+    "NCBI Gene": "ok",
+    "UniProt": "ok",
+    "Reactome": "ok",
+    "PubMed": "ok",
+    "KEGG": "ok"
+  },
+  "notes": [
+    "Reactome candidates: R-HSA-73894 DNA Repair; R-HSA-9675135 Diseases of DNA repair; R-HSA-5693532 DNA Double-Strand Break Repair; R-HSA-9675136 Diseases of DNA Double-Strand Break Repair; R-HSA-5358508 Mismatch Repair.",
+    "BRCA1 has 18 Reactome pathways outside DNA Repair (listed in section 3). Roles there are not part of this process reconstruction.",
+    "BRCA1 participates in 10 sub-pathways of DNA Repair; 8 drawn."
+  ],
+  "requests": [
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmax=5&retmode=json&term=BRCA1%5Bsym%5D%20AND%209606%5Btaxid%5D%20AND%20alive%5Bprop%5D&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:35Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=672&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:36Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/search?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Ccc_function%2Cgo_p%2Cxref_reactome%2Cxref_kegg%2Cxref_string%2Cxref_geneid&format=json&query=gene_exact%3ABRCA1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=1",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:37Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/search/query?cluster=true&query=DNA%20repair&species=Homo%20sapiens&types=Pathway",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:37Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/query/enhanced/R-HSA-73894",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:38Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/pathway/R-HSA-73894/containedEvents",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:39Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P38398/pathways?species=9606",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:41Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/pathway/R-HSA-73884/containedEvents",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:41Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/pathway/R-HSA-73893/containedEvents",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:41Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/pathway/R-HSA-73942/containedEvents",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:42Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/pathway/R-HSA-5693532/containedEvents",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:42Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/pathway/R-HSA-5696398/containedEvents",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:42Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/pathway/R-HSA-5358508/containedEvents",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:43Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/pathway/R-HSA-6783310/containedEvents",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:43Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=23175119%2C10583946&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:43Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/list/pathway/hsa",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:33Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:672",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:44Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:672",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:44Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:672",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:44Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmax=5&retmode=json&sort=relevance&term=BRCA1%5Btiab%5D%20AND%20DNA%20repair%5Btiab%5D&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:44Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=32094664%2C15829967%2C35008272%2C22193408%2C33755171&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:44Z"
+    }
+  ],
+  "diagram_note": "Reactome hierarchy: process -> sub-pathways, and the curated sub-pathways each queried gene participates in. Dashed 'contains' skips intermediate levels.",
+  "citations": [
+    {
+      "source": "Reactome",
+      "id": "R-HSA-73894",
+      "url": "https://reactome.org/content/detail/R-HSA-73894",
+      "title": "DNA Repair"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-5685938",
+      "url": "https://reactome.org/content/detail/R-HSA-5685938",
+      "title": "HDR through Single Strand Annealing (SSA)"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-5693532",
+      "url": "https://reactome.org/content/detail/R-HSA-5693532",
+      "title": ""
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-5685942",
+      "url": "https://reactome.org/content/detail/R-HSA-5685942",
+      "title": "HDR through Homologous Recombination (HRR)"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-5693554",
+      "url": "https://reactome.org/content/detail/R-HSA-5693554",
+      "title": "Resolution of D-loop Structures through Synthesis-Dependent Strand Annealing (SDSA)"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-5693565",
+      "url": "https://reactome.org/content/detail/R-HSA-5693565",
+      "title": "Recruitment and ATM-mediated phosphorylation of repair and signaling proteins at DNA double strand breaks"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-5693568",
+      "url": "https://reactome.org/content/detail/R-HSA-5693568",
+      "title": "Resolution of D-loop Structures through Holliday Junction Intermediates"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-5693571",
+      "url": "https://reactome.org/content/detail/R-HSA-5693571",
+      "title": "Nonhomologous End-Joining (NHEJ)"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-5693579",
+      "url": "https://reactome.org/content/detail/R-HSA-5693579",
+      "title": "Homologous DNA Pairing and Strand Exchange"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-5693607",
+      "url": "https://reactome.org/content/detail/R-HSA-5693607",
+      "title": "Processing of DNA double-strand break ends"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-9707051",
+      "url": "https://reactome.org/content/detail/R-HSA-9707051",
+      "title": "UBXN1 binds BRCA1:BARD1 heterodimer"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-5693551",
+      "url": "https://reactome.org/content/detail/R-HSA-5693551",
+      "title": "Phosphorylation of BRCA1-A complex at multiple sites by ATM"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-5683385",
+      "url": "https://reactome.org/content/detail/R-HSA-5683385",
+      "title": "Formation of BRCA1-A complex at DNA DSBs"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-9701003",
+      "url": "https://reactome.org/content/detail/R-HSA-9701003",
+      "title": "BAP1 binds BRCA1:BARD1 heterodimer"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-9701000",
+      "url": "https://reactome.org/content/detail/R-HSA-9701000",
+      "title": "BRCA1:BARD1 heterodimer autoubiquitinates"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-5659781",
+      "url": "https://reactome.org/content/detail/R-HSA-5659781",
+      "title": "BRCA1 forms a heterodimer with BARD1"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-9700998",
+      "url": "https://reactome.org/content/detail/R-HSA-9700998",
+      "title": "BAP1 disrupts the BRCA1:BARD1 heterodimer"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-5683801",
+      "url": "https://reactome.org/content/detail/R-HSA-5683801",
+      "title": "CHEK2 phosphorylates BRCA1"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-9974238",
+      "url": "https://reactome.org/content/detail/R-HSA-9974238",
+      "title": "CRL4A-DCAF8L1 polyubiquitinates BRCA1"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-9974400",
+      "url": "https://reactome.org/content/detail/R-HSA-9974400",
+      "title": "26S Proteasome degrades polyubiquitinated BRCA1, BARD1"
+    },
+    {
+      "source": "Reactome",
+      "id": "R-HSA-5684108",
+      "url": "https://reactome.org/content/detail/R-HSA-5684108",
+      "title": "BRCA1 binds phosphorylated RBBP8"
+    }
+  ]
+}

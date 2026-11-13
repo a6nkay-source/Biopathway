@@ -1,0 +1,30 @@
+digraph BioPathway {
+  rankdir=LR; splines=true; nodesep=0.35;
+  node [fontname="Helvetica", fontsize=11, style="filled"];
+  edge [fontname="Helvetica", fontsize=9];
+  labelloc="t"; label="metabolic: glycolysis | module M00001";
+  n0 [label="alpha-D-Glucose", shape=ellipse, fillcolor="#e6f4ea"];
+  n1 [label="alpha-D-Glucose 6-phosphate", shape=ellipse, fillcolor="#e6f4ea"];
+  n2 [label="D-Fructose 6-phosphate", shape=ellipse, fillcolor="#e6f4ea"];
+  n3 [label="D-Fructose 1,6-bisphosphate", shape=ellipse, fillcolor="#e6f4ea"];
+  n4 [label="Glycerone phosphate", shape=ellipse, fillcolor="#e6f4ea"];
+  n5 [label="D-Glyceraldehyde 3-phosphate", shape=ellipse, fillcolor="#e6f4ea"];
+  n6 [label="3-Phospho-D-glyceroyl phosphate", shape=ellipse, fillcolor="#e6f4ea"];
+  n7 [label="3-Phospho-D-glycerate", shape=ellipse, fillcolor="#e6f4ea"];
+  n8 [label="2-Phospho-D-glycerate", shape=ellipse, fillcolor="#e6f4ea"];
+  n9 [label="Phosphoenolpyruvate", shape=ellipse, fillcolor="#e6f4ea"];
+  n10 [label="Pyruvate", shape=ellipse, fillcolor="#e6f4ea"];
+  n0 -> n1 [label="conversion ADPGK/GCK/HK1 (+3) · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n1 -> n2 [label="conversion GPI reversible · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n2 -> n3 [label="conversion PFKL/PFKM/PFKP · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n3 -> n4 [label="conversion ALDOA/ALDOB/ALDOC reversible · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n3 -> n5 [label="conversion ALDOA/ALDOB/ALDOC reversible · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n4 -> n5 [label="conversion TPI1 reversible · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n5 -> n6 [label="conversion GAPDH/GAPDHS reversible · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n6 -> n7 [label="conversion PGK1/PGK2 reversible · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n5 -> n7 [label="conversion enzyme not mapped in this organism · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n7 -> n8 [label="conversion BPGM/PGAM1/PGAM2 (+1) reversible · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n8 -> n9 [label="conversion ENO1/ENO2/ENO3 (+1) reversible · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n9 -> n10 [label="conversion PKLR/PKM · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  legend [shape=plaintext, style="", label=<<TABLE BORDER="0" CELLSPACING="2"><TR><TD COLSPAN="2"><B>Evidence</B></TD></TR><TR><TD BGCOLOR="#1b7837" WIDTH="18"></TD><TD ALIGN="LEFT">EXP = experimentally validated</TD></TR><TR><TD BGCOLOR="#2166ac" WIDTH="18"></TD><TD ALIGN="LEFT">CUR = curated database evidence</TD></TR><TR><TD BGCOLOR="#e08214" WIDTH="18"></TD><TD ALIGN="LEFT">PRED = computationally predicted</TD></TR><TR><TD BGCOLOR="#762a83" WIDTH="18"></TD><TD ALIGN="LEFT">LIT = literature-supported association</TD></TR><TR><TD BGCOLOR="#878787" WIDTH="18"></TD><TD ALIGN="LEFT">HYP = hypothetical/insufficiently established</TD></TR></TABLE>>];
+}

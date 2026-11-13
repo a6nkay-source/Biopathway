@@ -1,0 +1,1569 @@
+{
+  "kind": "mutation",
+  "query": "KRAS G12D",
+  "resolved": {
+    "KRAS": {
+      "input": "KRAS",
+      "symbol": "KRAS",
+      "ncbi_gene_id": "3845",
+      "name": "KRas proto-oncogene, GTPase",
+      "location": "12p12.1",
+      "aliases": [
+        "'C-K-RAS",
+        "C-K-RAS",
+        "CFC2",
+        "K-RAS2A",
+        "K-RAS2B",
+        "K-RAS4A",
+        "K-RAS4B",
+        "K-Ras",
+        "K-Ras 2",
+        "KI-RAS",
+        "KRAS1",
+        "KRAS2",
+        "NS",
+        "NS3",
+        "OES",
+        "RALD",
+        "RALD2",
+        "RASK2",
+        "c-Ki-ras",
+        "c-Ki-ras2"
+      ],
+      "uniprot": "P01116",
+      "uniprot_reviewed": true
+    },
+    "variant": {
+      "ref": "G",
+      "start": 12,
+      "end": 12,
+      "alt": "D",
+      "kind": "missense",
+      "one_letter": "G12D",
+      "three_letter": "Gly12Asp",
+      "hgvs_p": "p.Gly12Asp"
+    }
+  },
+  "nodes": [
+    {
+      "id": "KRAS",
+      "label": "KRAS",
+      "kind": "gene",
+      "xrefs": {},
+      "focus": true
+    },
+    {
+      "id": "var:KRAS:G12D",
+      "label": "KRAS p.G12D",
+      "kind": "variant",
+      "xrefs": {
+        "hgvs_p": "p.Gly12Asp"
+      },
+      "focus": true
+    },
+    {
+      "id": "dz:KRAS-related disorder",
+      "label": "KRAS-related disorder",
+      "kind": "condition",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "dz:Gastric cancer",
+      "label": "Gastric cancer",
+      "kind": "condition",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "dz:Acute myeloid leukemia",
+      "label": "Acute myeloid leukemia",
+      "kind": "condition",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "dz:Neoplasm",
+      "label": "Neoplasm",
+      "kind": "condition",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "dz:Ovarian mucinous adenocarcinoma",
+      "label": "Ovarian mucinous adenocarcinoma",
+      "kind": "condition",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "dz:Adenocarcinoma of the large intestine",
+      "label": "Adenocarcinoma of the large intestine",
+      "kind": "condition",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "dz:Diffuse pediatric-type high-grade glioma, H3-wildtype and IDH-wildtype",
+      "label": "Diffuse pediatric-type high-grade glioma, H3-wildtype and IDH-wildtype",
+      "kind": "condition",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "map:hsa04010",
+      "label": "MAPK signaling pathway",
+      "kind": "pathway",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "map:hsa04012",
+      "label": "ErbB signaling pathway",
+      "kind": "pathway",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "map:hsa04014",
+      "label": "Ras signaling pathway",
+      "kind": "pathway",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "map:hsa04015",
+      "label": "Rap1 signaling pathway",
+      "kind": "pathway",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "map:hsa04062",
+      "label": "Chemokine signaling pathway",
+      "kind": "pathway",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "map:hsa04068",
+      "label": "FoxO signaling pathway",
+      "kind": "pathway",
+      "xrefs": {},
+      "focus": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "var:KRAS:G12D",
+      "target": "KRAS",
+      "relation": "alters",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "variant is defined on this gene's product",
+      "citations": [
+        {
+          "source": "NCBI Gene",
+          "id": "3845",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/3845",
+          "title": "KRAS: KRas proto-oncogene, GTPase"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:KRAS:G12D",
+      "target": "dz:KRAS-related disorder",
+      "relation": "germline: Pathogenic/Likely pathogenic",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "ClinVar review status: criteria provided, multiple submitters, no conflicts",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012582",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12582/",
+          "title": "NM_004985.5(KRAS):c.35G>A (p.Gly12Asp)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:KRAS:G12D",
+      "target": "dz:Gastric cancer",
+      "relation": "germline: Pathogenic/Likely pathogenic",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "ClinVar review status: criteria provided, multiple submitters, no conflicts",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012582",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12582/",
+          "title": "NM_004985.5(KRAS):c.35G>A (p.Gly12Asp)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:KRAS:G12D",
+      "target": "dz:Acute myeloid leukemia",
+      "relation": "germline: Pathogenic/Likely pathogenic",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "ClinVar review status: criteria provided, multiple submitters, no conflicts",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012582",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12582/",
+          "title": "NM_004985.5(KRAS):c.35G>A (p.Gly12Asp)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:KRAS:G12D",
+      "target": "dz:Neoplasm",
+      "relation": "oncogenicity: Oncogenic",
+      "evidence": "literature-supported association",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "ClinVar review status: criteria provided, single submitter (not independently confirmed)",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012582",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12582/",
+          "title": "NM_004985.5(KRAS):c.35G>A (p.Gly12Asp)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:KRAS:G12D",
+      "target": "dz:Ovarian mucinous adenocarcinoma",
+      "relation": "clinical impact: Tier I - Strong",
+      "evidence": "literature-supported association",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "ClinVar review status: criteria provided, single submitter (not independently confirmed)",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012582",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12582/",
+          "title": "NM_004985.5(KRAS):c.35G>A (p.Gly12Asp)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:KRAS:G12D",
+      "target": "dz:Adenocarcinoma of the large intestine",
+      "relation": "clinical impact: Tier I - Strong",
+      "evidence": "literature-supported association",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "ClinVar review status: criteria provided, single submitter (not independently confirmed)",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012582",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12582/",
+          "title": "NM_004985.5(KRAS):c.35G>A (p.Gly12Asp)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:KRAS:G12D",
+      "target": "dz:Diffuse pediatric-type high-grade glioma, H3-wildtype and IDH-wildtype",
+      "relation": "clinical impact: Tier I - Strong",
+      "evidence": "literature-supported association",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "ClinVar review status: criteria provided, single submitter (not independently confirmed)",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012582",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12582/",
+          "title": "NM_004985.5(KRAS):c.35G>A (p.Gly12Asp)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "KRAS",
+      "target": "map:hsa04010",
+      "relation": "member of",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG gene-pathway link",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "KRAS",
+      "target": "map:hsa04012",
+      "relation": "member of",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG gene-pathway link",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04012",
+          "url": "https://www.kegg.jp/pathway/hsa04012",
+          "title": "ErbB signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "KRAS",
+      "target": "map:hsa04014",
+      "relation": "member of",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG gene-pathway link",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04014",
+          "url": "https://www.kegg.jp/pathway/hsa04014",
+          "title": "Ras signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "KRAS",
+      "target": "map:hsa04015",
+      "relation": "member of",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG gene-pathway link",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04015",
+          "url": "https://www.kegg.jp/pathway/hsa04015",
+          "title": "Rap1 signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "KRAS",
+      "target": "map:hsa04062",
+      "relation": "member of",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG gene-pathway link",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04062",
+          "url": "https://www.kegg.jp/pathway/hsa04062",
+          "title": "Chemokine signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "KRAS",
+      "target": "map:hsa04068",
+      "relation": "member of",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG gene-pathway link",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04068",
+          "url": "https://www.kegg.jp/pathway/hsa04068",
+          "title": "FoxO signaling pathway"
+        }
+      ],
+      "scores": {}
+    }
+  ],
+  "statements": [
+    {
+      "text": "Reference residue check: P01116 position 12 is G, matching the input.",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P01116",
+          "url": "https://www.uniprot.org/uniprotkb/P01116/entry",
+          "title": "KRAS: GTPase KRas"
+        }
+      ],
+      "section": "Identifiers"
+    },
+    {
+      "text": "UniProt natural variant VAR_036305 G12A (different substitution at this position): in colorectal cancer samples; somatic mutation; dbSNP:rs121913529",
+      "evidence": "experimentally validated",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P01116",
+          "url": "https://www.uniprot.org/uniprotkb/P01116/entry",
+          "title": "KRAS: GTPase KRas"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:16959974",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16959974/",
+          "title": ""
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:34820593",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34820593/",
+          "title": ""
+        }
+      ],
+      "section": "Other variants at this position"
+    },
+    {
+      "text": "UniProt natural variant VAR_006839 G12C (different substitution at this position): in lung carcinoma; somatic mutation; also found in metastatic colorectal cancer; dbSNP:rs121913530",
+      "evidence": "experimentally validated",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P01116",
+          "url": "https://www.uniprot.org/uniprotkb/P01116/entry",
+          "title": "KRAS: GTPase KRas"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:16533793",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16533793/",
+          "title": ""
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:34820593",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34820593/",
+          "title": ""
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:6320174",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6320174/",
+          "title": ""
+        }
+      ],
+      "section": "Other variants at this position"
+    },
+    {
+      "text": "UniProt natural variant VAR_016026 G12D (same substitution): in GASC, JMML, SFM and RALD2; somatic mutation; also found in pancreatic carcinoma and lung carcinoma; also found in metastatic colorectal cancer; dbSNP:rs121913529",
+      "evidence": "experimentally validated",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P01116",
+          "url": "https://www.uniprot.org/uniprotkb/P01116/entry",
+          "title": "KRAS: GTPase KRas"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:16533793",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16533793/",
+          "title": ""
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:16959974",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16959974/",
+          "title": ""
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:17332249",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17332249/",
+          "title": ""
+        }
+      ],
+      "section": "Reported variant effects"
+    },
+    {
+      "text": "UniProt natural variant VAR_016027 G12R (different substitution at this position): in lung cancer and bladder cancer; somatic mutation; dbSNP:rs121913530",
+      "evidence": "experimentally validated",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P01116",
+          "url": "https://www.uniprot.org/uniprotkb/P01116/entry",
+          "title": "KRAS: GTPase KRas"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:6695174",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/6695174/",
+          "title": ""
+        }
+      ],
+      "section": "Other variants at this position"
+    },
+    {
+      "text": "UniProt natural variant VAR_016028 G12S (different substitution at this position): in GASC and JMML; also found in lung carcinoma; somatic mutation; dbSNP:rs121913530",
+      "evidence": "experimentally validated",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P01116",
+          "url": "https://www.uniprot.org/uniprotkb/P01116/entry",
+          "title": "KRAS: GTPase KRas"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:16533793",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16533793/",
+          "title": ""
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:16959974",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16959974/",
+          "title": ""
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:17332249",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17332249/",
+          "title": ""
+        }
+      ],
+      "section": "Other variants at this position"
+    },
+    {
+      "text": "UniProt natural variant VAR_006840 G12V (different substitution at this position): in GASC; also found in lung carcinoma, pancreatic carcinoma and colon cancer; also found in metastatic colorectal cancer; somatic mutation; it is constitutively activated and stimulates transcription activation of tumor suppressor genes in non-transformed fibroblasts; promotes GTP binding; dbSNP:rs121913529",
+      "evidence": "experimentally validated",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P01116",
+          "url": "https://www.uniprot.org/uniprotkb/P01116/entry",
+          "title": "KRAS: GTPase KRas"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:14534542",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/14534542/",
+          "title": ""
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:16533793",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16533793/",
+          "title": ""
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:16959974",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16959974/",
+          "title": ""
+        }
+      ],
+      "section": "Other variants at this position"
+    },
+    {
+      "text": "ClinVar VCV000012582 (NM_004985.5(KRAS):c.35G>A (p.Gly12Asp)) germline classification: Pathogenic/Likely pathogenic for KRAS-related disorder; Gastric cancer; Acute myeloid leukemia; Malignant tumor of urinary bladder [ClinVar review status: criteria provided, multiple submitters, no conflicts; last evaluated 2026/01/23]. This is a clinical association, not a mechanism.",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012582",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12582/",
+          "title": "NM_004985.5(KRAS):c.35G>A (p.Gly12Asp)"
+        }
+      ],
+      "section": "Clinical assertions"
+    },
+    {
+      "text": "ClinVar VCV000012582 (NM_004985.5(KRAS):c.35G>A (p.Gly12Asp)) oncogenicity classification: Oncogenic for Neoplasm [ClinVar review status: criteria provided, single submitter (not independently confirmed); last evaluated 2025/03/04]. This is a clinical association, not a mechanism.",
+      "evidence": "literature-supported association",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012582",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12582/",
+          "title": "NM_004985.5(KRAS):c.35G>A (p.Gly12Asp)"
+        }
+      ],
+      "section": "Clinical assertions"
+    },
+    {
+      "text": "ClinVar VCV000012582 (NM_004985.5(KRAS):c.35G>A (p.Gly12Asp)) clinical impact classification: Tier I - Strong for Ovarian mucinous adenocarcinoma; Adenocarcinoma of the large intestine; Diffuse pediatric-type high-grade glioma, H3-wildtype and IDH-wildtype; Embryonal rhabdomyosarcoma [ClinVar review status: criteria provided, single submitter (not independently confirmed); last evaluated 2025/04/08]. This is a clinical association, not a mechanism.",
+      "evidence": "literature-supported association",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012582",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12582/",
+          "title": "NM_004985.5(KRAS):c.35G>A (p.Gly12Asp)"
+        }
+      ],
+      "section": "Clinical assertions"
+    }
+  ],
+  "pathways": [
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa01521",
+      "name": "EGFR tyrosine kinase inhibitor resistance",
+      "url": "https://www.kegg.jp/pathway/hsa01521",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa01522",
+      "name": "Endocrine resistance",
+      "url": "https://www.kegg.jp/pathway/hsa01522",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04010",
+      "name": "MAPK signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04010",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04012",
+      "name": "ErbB signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04012",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04014",
+      "name": "Ras signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04014",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04015",
+      "name": "Rap1 signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04015",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04062",
+      "name": "Chemokine signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04062",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04068",
+      "name": "FoxO signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04068",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04071",
+      "name": "Sphingolipid signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04071",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04072",
+      "name": "Phospholipase D signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04072",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04137",
+      "name": "Mitophagy - animal",
+      "url": "https://www.kegg.jp/pathway/hsa04137",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04140",
+      "name": "Autophagy - animal",
+      "url": "https://www.kegg.jp/pathway/hsa04140",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04150",
+      "name": "mTOR signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04150",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04151",
+      "name": "PI3K-Akt signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04151",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04210",
+      "name": "Apoptosis",
+      "url": "https://www.kegg.jp/pathway/hsa04210",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04211",
+      "name": "Longevity regulating pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04211",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04213",
+      "name": "Longevity regulating pathway - multiple species",
+      "url": "https://www.kegg.jp/pathway/hsa04213",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04218",
+      "name": "Cellular senescence",
+      "url": "https://www.kegg.jp/pathway/hsa04218",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04360",
+      "name": "Axon guidance",
+      "url": "https://www.kegg.jp/pathway/hsa04360",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04370",
+      "name": "VEGF signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04370",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04371",
+      "name": "Apelin signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04371",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04519",
+      "name": "Cadherin signaling",
+      "url": "https://www.kegg.jp/pathway/hsa04519",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04540",
+      "name": "Gap junction",
+      "url": "https://www.kegg.jp/pathway/hsa04540",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04550",
+      "name": "Signaling pathways regulating pluripotency of stem cells",
+      "url": "https://www.kegg.jp/pathway/hsa04550",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04625",
+      "name": "C-type lectin receptor signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04625",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04650",
+      "name": "Natural killer cell mediated cytotoxicity",
+      "url": "https://www.kegg.jp/pathway/hsa04650",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04660",
+      "name": "T cell receptor signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04660",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04662",
+      "name": "B cell receptor signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04662",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04664",
+      "name": "Fc epsilon RI signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04664",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04714",
+      "name": "Thermogenesis",
+      "url": "https://www.kegg.jp/pathway/hsa04714",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04720",
+      "name": "Long-term potentiation",
+      "url": "https://www.kegg.jp/pathway/hsa04720",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04722",
+      "name": "Neurotrophin signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04722",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04725",
+      "name": "Cholinergic synapse",
+      "url": "https://www.kegg.jp/pathway/hsa04725",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04726",
+      "name": "Serotonergic synapse",
+      "url": "https://www.kegg.jp/pathway/hsa04726",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04730",
+      "name": "Long-term depression",
+      "url": "https://www.kegg.jp/pathway/hsa04730",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04810",
+      "name": "Regulation of actin cytoskeleton",
+      "url": "https://www.kegg.jp/pathway/hsa04810",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04910",
+      "name": "Insulin signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04910",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04912",
+      "name": "GnRH signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04912",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04914",
+      "name": "Progesterone-mediated oocyte maturation",
+      "url": "https://www.kegg.jp/pathway/hsa04914",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04915",
+      "name": "Estrogen signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04915",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04916",
+      "name": "Melanogenesis",
+      "url": "https://www.kegg.jp/pathway/hsa04916",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04917",
+      "name": "Prolactin signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04917",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04919",
+      "name": "Thyroid hormone signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04919",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04921",
+      "name": "Oxytocin signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04921",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04926",
+      "name": "Relaxin signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04926",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04929",
+      "name": "GnRH secretion",
+      "url": "https://www.kegg.jp/pathway/hsa04929",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04933",
+      "name": "AGE-RAGE signaling pathway in diabetic complications",
+      "url": "https://www.kegg.jp/pathway/hsa04933",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04935",
+      "name": "Growth hormone synthesis, secretion and action",
+      "url": "https://www.kegg.jp/pathway/hsa04935",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa04960",
+      "name": "Aldosterone-regulated sodium reabsorption",
+      "url": "https://www.kegg.jp/pathway/hsa04960",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05010",
+      "name": "Alzheimer disease",
+      "url": "https://www.kegg.jp/pathway/hsa05010",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05022",
+      "name": "Pathways of neurodegeneration - multiple diseases",
+      "url": "https://www.kegg.jp/pathway/hsa05022",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05034",
+      "name": "Alcoholism",
+      "url": "https://www.kegg.jp/pathway/hsa05034",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05160",
+      "name": "Hepatitis C",
+      "url": "https://www.kegg.jp/pathway/hsa05160",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05161",
+      "name": "Hepatitis B",
+      "url": "https://www.kegg.jp/pathway/hsa05161",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05163",
+      "name": "Human cytomegalovirus infection",
+      "url": "https://www.kegg.jp/pathway/hsa05163",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05165",
+      "name": "Human papillomavirus infection",
+      "url": "https://www.kegg.jp/pathway/hsa05165",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05166",
+      "name": "Human T-cell leukemia virus 1 infection",
+      "url": "https://www.kegg.jp/pathway/hsa05166",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05167",
+      "name": "Kaposi sarcoma-associated herpesvirus infection",
+      "url": "https://www.kegg.jp/pathway/hsa05167",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05170",
+      "name": "Human immunodeficiency virus 1 infection",
+      "url": "https://www.kegg.jp/pathway/hsa05170",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05200",
+      "name": "Pathways in cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05200",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05203",
+      "name": "Viral carcinogenesis",
+      "url": "https://www.kegg.jp/pathway/hsa05203",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05205",
+      "name": "Proteoglycans in cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05205",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05206",
+      "name": "MicroRNAs in cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05206",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05207",
+      "name": "Chemical carcinogenesis - receptor activation",
+      "url": "https://www.kegg.jp/pathway/hsa05207",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05208",
+      "name": "Chemical carcinogenesis - reactive oxygen species",
+      "url": "https://www.kegg.jp/pathway/hsa05208",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05210",
+      "name": "Colorectal cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05210",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05211",
+      "name": "Renal cell carcinoma",
+      "url": "https://www.kegg.jp/pathway/hsa05211",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05212",
+      "name": "Pancreatic cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05212",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05213",
+      "name": "Endometrial cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05213",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05214",
+      "name": "Glioma",
+      "url": "https://www.kegg.jp/pathway/hsa05214",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05215",
+      "name": "Prostate cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05215",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05216",
+      "name": "Thyroid cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05216",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05218",
+      "name": "Melanoma",
+      "url": "https://www.kegg.jp/pathway/hsa05218",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05219",
+      "name": "Bladder cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05219",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05220",
+      "name": "Chronic myeloid leukemia",
+      "url": "https://www.kegg.jp/pathway/hsa05220",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05221",
+      "name": "Acute myeloid leukemia",
+      "url": "https://www.kegg.jp/pathway/hsa05221",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05223",
+      "name": "Non-small cell lung cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05223",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05224",
+      "name": "Breast cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05224",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05225",
+      "name": "Hepatocellular carcinoma",
+      "url": "https://www.kegg.jp/pathway/hsa05225",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05226",
+      "name": "Gastric cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05226",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05230",
+      "name": "Central carbon metabolism in cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05230",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05231",
+      "name": "Choline metabolism in cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05231",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05235",
+      "name": "PD-L1 expression and PD-1 checkpoint pathway in cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05235",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "KRAS",
+      "id": "hsa05417",
+      "name": "Lipid and atherosclerosis",
+      "url": "https://www.kegg.jp/pathway/hsa05417",
+      "evidence": "curated database evidence"
+    }
+  ],
+  "literature": [
+    {
+      "pmid": "38942026",
+      "title": "Anti-tumor efficacy of HRS-4642 and its potential combination with proteasome inhibition in KRAS G12D-mutant cancer.",
+      "journal": "Cancer Cell",
+      "year": "2024",
+      "first_author": "Zhou C",
+      "pubtypes": [
+        "Journal Article",
+        "Clinical Trial, Phase I",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38942026/",
+      "basis": "PubMed search: KRAS[tiab] AND (G12D OR Gly12Asp)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "36216931",
+      "title": "Anti-tumor efficacy of a potent and selective non-covalent KRAS(G12D) inhibitor.",
+      "journal": "Nat Med",
+      "year": "2022",
+      "first_author": "Hallin J",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, U.S. Gov't, Non-P.H.S."
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36216931/",
+      "basis": "PubMed search: KRAS[tiab] AND (G12D OR Gly12Asp)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "38686056",
+      "title": "Targeting KRAS in pancreatic cancer.",
+      "journal": "Oncol Res",
+      "year": "2024",
+      "first_author": "Stickler S",
+      "pubtypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38686056/",
+      "basis": "PubMed search: KRAS[tiab] AND (G12D OR Gly12Asp)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "37625401",
+      "title": "KRAS(G12D) inhibition reprograms the microenvironment of early and advanced pancreatic cancer to promote FAS-mediated killing by CD8(+) T\u00a0cells.",
+      "journal": "Cancer Cell",
+      "year": "2023",
+      "first_author": "Mahadevan KK",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37625401/",
+      "basis": "PubMed search: KRAS[tiab] AND (G12D OR Gly12Asp)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "34889605",
+      "title": "Identification of MRTX1133, a Noncovalent, Potent, and Selective KRAS(G12D) Inhibitor.",
+      "journal": "J Med Chem",
+      "year": "2022",
+      "first_author": "Wang X",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, U.S. Gov't, Non-P.H.S."
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34889605/",
+      "basis": "PubMed search: KRAS[tiab] AND (G12D OR Gly12Asp)",
+      "evidence": "literature-supported association"
+    }
+  ],
+  "warnings": [],
+  "source_status": {
+    "NCBI Gene": "ok",
+    "UniProt": "ok",
+    "ClinVar": "ok",
+    "KEGG": "ok",
+    "PubMed": "ok"
+  },
+  "notes": [
+    "KRAS is in 47 KEGG signalling/process maps; 6 drawn.",
+    "Pathway membership is that of the wild-type gene. Whether this variant gains, loses or alters a pathway function is only stated where a cited record says so."
+  ],
+  "requests": [
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmax=5&retmode=json&term=KRAS%5Bsym%5D%20AND%209606%5Btaxid%5D%20AND%20alive%5Bprop%5D&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:04Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=3845&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:04Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/search?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Ccc_function%2Cgo_p%2Cxref_reactome%2Cxref_kegg%2Cxref_string%2Cxref_geneid&format=json&query=gene_exact%3AKRAS%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=1",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:05Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/P01116.json?fields=ft_variant%2Cft_domain%2Cft_binding%2Cft_act_site%2Cft_region%2Cft_motif%2Cft_mutagen%2Cft_mod_res%2Cft_dna_bind%2Cft_zn_fing%2Csequence",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:05Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&retmax=10&retmode=json&term=KRAS%5Bgene%5D%20AND%20%28%22G12D%22%20OR%20%22Gly12Asp%22%29&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:06Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=clinvar&id=375965%2C12583%2C12582%2C12578&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:06Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/list/pathway/hsa",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:33Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:3845",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:07Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmax=5&retmode=json&sort=relevance&term=KRAS%5Btiab%5D%20AND%20%28G12D%20OR%20Gly12Asp%29&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:07Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=38942026%2C36216931%2C38686056%2C37625401%2C34889605&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:08Z"
+    }
+  ],
+  "diagram_note": "Variant -> gene, the UniProt regions it falls in, ClinVar conditions, and the gene's KEGG maps.",
+  "citations": [
+    {
+      "source": "NCBI Gene",
+      "id": "3845",
+      "url": "https://www.ncbi.nlm.nih.gov/gene/3845",
+      "title": "KRAS: KRas proto-oncogene, GTPase"
+    },
+    {
+      "source": "ClinVar",
+      "id": "VCV000012582",
+      "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12582/",
+      "title": "NM_004985.5(KRAS):c.35G>A (p.Gly12Asp)"
+    },
+    {
+      "source": "KEGG",
+      "id": "hsa04010",
+      "url": "https://www.kegg.jp/pathway/hsa04010",
+      "title": "MAPK signaling pathway"
+    },
+    {
+      "source": "KEGG",
+      "id": "hsa04012",
+      "url": "https://www.kegg.jp/pathway/hsa04012",
+      "title": "ErbB signaling pathway"
+    },
+    {
+      "source": "KEGG",
+      "id": "hsa04014",
+      "url": "https://www.kegg.jp/pathway/hsa04014",
+      "title": "Ras signaling pathway"
+    },
+    {
+      "source": "KEGG",
+      "id": "hsa04015",
+      "url": "https://www.kegg.jp/pathway/hsa04015",
+      "title": "Rap1 signaling pathway"
+    },
+    {
+      "source": "KEGG",
+      "id": "hsa04062",
+      "url": "https://www.kegg.jp/pathway/hsa04062",
+      "title": "Chemokine signaling pathway"
+    },
+    {
+      "source": "KEGG",
+      "id": "hsa04068",
+      "url": "https://www.kegg.jp/pathway/hsa04068",
+      "title": "FoxO signaling pathway"
+    },
+    {
+      "source": "UniProt",
+      "id": "P01116",
+      "url": "https://www.uniprot.org/uniprotkb/P01116/entry",
+      "title": "KRAS: GTPase KRas"
+    },
+    {
+      "source": "PubMed",
+      "id": "PMID:16959974",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16959974/",
+      "title": ""
+    },
+    {
+      "source": "PubMed",
+      "id": "PMID:34820593",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34820593/",
+      "title": ""
+    },
+    {
+      "source": "PubMed",
+      "id": "PMID:16533793",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16533793/",
+      "title": ""
+    },
+    {
+      "source": "PubMed",
+      "id": "PMID:6320174",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6320174/",
+      "title": ""
+    },
+    {
+      "source": "PubMed",
+      "id": "PMID:17332249",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17332249/",
+      "title": ""
+    },
+    {
+      "source": "PubMed",
+      "id": "PMID:6695174",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6695174/",
+      "title": ""
+    },
+    {
+      "source": "PubMed",
+      "id": "PMID:14534542",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14534542/",
+      "title": ""
+    }
+  ]
+}

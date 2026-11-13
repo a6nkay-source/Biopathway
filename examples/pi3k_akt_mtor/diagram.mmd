@@ -1,0 +1,25 @@
+flowchart LR
+    n0[["TSC2:TSC1"]]
+    n1["RHEB"]
+    n2[["RPTOR:MTOR:MLST8"]]
+    n3["PIK3CA/P3R3URF-PIK3R3/PIK3CB (+4)"]
+    n4(["Phosphatidylinositol-3,4,5-trisphosphate"])
+    n5["AKT1/AKT3/AKT2"]
+    n1 -->|"activation · CUR"| n2
+    n3 -->|"activation · CUR"| n4
+    n4 -->|"activation · CUR"| n5
+    n0 --x|"inhibition · CUR"| n1
+    n5 --x|"inhibition +p · CUR"| n0
+    linkStyle 0 stroke:#2166ac,stroke-width:2px
+    linkStyle 1 stroke:#2166ac,stroke-width:2px
+    linkStyle 2 stroke:#2166ac,stroke-width:2px
+    linkStyle 3 stroke:#2166ac,stroke-width:2px
+    linkStyle 4 stroke:#2166ac,stroke-width:2px
+    classDef focus fill:#fff3bf,stroke:#b8860b,stroke-width:3px
+    classDef compound fill:#e6f4ea,stroke:#3c8d5a
+    classDef pathway fill:#e8eaf6,stroke:#3f51b5
+    classDef variant fill:#fde2e1,stroke:#c0392b,stroke-width:2px
+    classDef condition fill:#f3e5f5,stroke:#8e24aa
+    classDef region fill:#f1f3f4,stroke:#5f6368
+    class n4 compound
+    class n2,n3,n5 focus

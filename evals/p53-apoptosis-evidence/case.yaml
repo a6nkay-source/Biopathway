@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: p53-apoptosis-evidence
+expected_outcome: |
+  A diagram of p53-driven apoptosis (e.g. p53 inducing PUMA/BBC3, NOXA/PMAIP1 and/or BAX, leading to mitochondrial apoptosis), an evidence class for every relationship, and citations to database records such as Reactome or KEGG identifiers.

@@ -1,0 +1,934 @@
+{
+  "kind": "pathway",
+  "query": "MAPK signaling | genes: EGFR, MAPK1",
+  "resolved": {
+    "EGFR": {
+      "input": "EGFR",
+      "symbol": "EGFR",
+      "ncbi_gene_id": "1956",
+      "name": "epidermal growth factor receptor",
+      "location": "7p11.2",
+      "aliases": [
+        "ERBB",
+        "ERBB1",
+        "ERRP",
+        "HER1",
+        "NISBD2",
+        "NNCIS",
+        "PIG61",
+        "mENA"
+      ],
+      "uniprot": "P00533",
+      "uniprot_reviewed": true
+    },
+    "MAPK1": {
+      "input": "MAPK1",
+      "symbol": "MAPK1",
+      "ncbi_gene_id": "5594",
+      "name": "mitogen-activated protein kinase 1",
+      "location": "22q11.22",
+      "aliases": [
+        "ERK",
+        "ERK-2",
+        "ERK2",
+        "ERT1",
+        "MAPK2",
+        "NS13",
+        "P42MAPK",
+        "PRKM1",
+        "PRKM2",
+        "p38",
+        "p40",
+        "p41",
+        "p41mapk",
+        "p42-MAPK"
+      ],
+      "uniprot": "P28482",
+      "uniprot_reviewed": true
+    }
+  },
+  "nodes": [
+    {
+      "id": "g:22800+22808+3265+3845+4893+6237",
+      "label": "RRAS2/MRAS/HRAS (+3)",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:22800",
+          "hsa:22808",
+          "hsa:3265",
+          "hsa:3845",
+          "hsa:4893",
+          "hsa:6237"
+        ],
+        "members": [
+          "RRAS2",
+          "MRAS",
+          "HRAS",
+          "KRAS",
+          "NRAS",
+          "RRAS"
+        ]
+      },
+      "focus": false
+    },
+    {
+      "id": "g:673",
+      "label": "BRAF",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:673"
+        ],
+        "members": [
+          "BRAF"
+        ]
+      },
+      "focus": false
+    },
+    {
+      "id": "g:2885",
+      "label": "GRB2",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:2885"
+        ],
+        "members": [
+          "GRB2"
+        ]
+      },
+      "focus": false
+    },
+    {
+      "id": "g:1436+1956+1969+2064+2065+2066+2260+2261+2263+2264+2321+2322+2324+3480+3643+3791+3815+4233+4804+4914+4915+5156+5159+5979+7010",
+      "label": "EGFR/CSF1R/EPHA2 (+22)",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:1436",
+          "hsa:1956",
+          "hsa:1969",
+          "hsa:2064",
+          "hsa:2065",
+          "hsa:2066",
+          "hsa:2260",
+          "hsa:2261",
+          "hsa:2263",
+          "hsa:2264",
+          "hsa:2321",
+          "hsa:2322",
+          "hsa:2324",
+          "hsa:3480",
+          "hsa:3643",
+          "hsa:3791",
+          "hsa:3815",
+          "hsa:4233",
+          "hsa:4804",
+          "hsa:4914",
+          "hsa:4915",
+          "hsa:5156",
+          "hsa:5159",
+          "hsa:5979",
+          "hsa:7010"
+        ],
+        "members": [
+          "CSF1R",
+          "EGFR",
+          "EPHA2",
+          "ERBB2",
+          "ERBB3",
+          "ERBB4",
+          "FGFR1",
+          "FGFR3",
+          "FGFR2",
+          "FGFR4",
+          "FLT1",
+          "FLT3",
+          "FLT4",
+          "IGF1R",
+          "INSR",
+          "KDR",
+          "KIT",
+          "MET",
+          "NGFR",
+          "NTRK1",
+          "NTRK2",
+          "PDGFRA",
+          "PDGFRB",
+          "RET",
+          "TEK"
+        ]
+      },
+      "focus": true
+    },
+    {
+      "id": "g:6654+6655",
+      "label": "SOS1/SOS2",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:6654",
+          "hsa:6655"
+        ],
+        "members": [
+          "SOS1",
+          "SOS2"
+        ]
+      },
+      "focus": false
+    },
+    {
+      "id": "g:5604",
+      "label": "MAP2K1",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:5604"
+        ],
+        "members": [
+          "MAP2K1"
+        ]
+      },
+      "focus": false
+    },
+    {
+      "id": "g:5605",
+      "label": "MAP2K2",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:5605"
+        ],
+        "members": [
+          "MAP2K2"
+        ]
+      },
+      "focus": false
+    },
+    {
+      "id": "g:5594+5595",
+      "label": "MAPK1/MAPK3",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:5594",
+          "hsa:5595"
+        ],
+        "members": [
+          "MAPK1",
+          "MAPK3"
+        ]
+      },
+      "focus": true
+    },
+    {
+      "id": "g:4214",
+      "label": "MAP3K1",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:4214"
+        ],
+        "members": [
+          "MAP3K1"
+        ]
+      },
+      "focus": false
+    },
+    {
+      "id": "g:5894",
+      "label": "RAF1",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:5894"
+        ],
+        "members": [
+          "RAF1"
+        ]
+      },
+      "focus": false
+    },
+    {
+      "id": "g:369",
+      "label": "ARAF",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:369"
+        ],
+        "members": [
+          "ARAF"
+        ]
+      },
+      "focus": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "g:2885",
+      "target": "g:1436+1956+1969+2064+2065+2066+2260+2261+2263+2264+2321+2322+2324+3480+3643+3791+3815+4233+4804+4914+4915+5156+5159+5979+7010",
+      "relation": "binding",
+      "evidence": "curated database evidence",
+      "directed": false,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [binding/association]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:6654+6655",
+      "target": "g:2885",
+      "relation": "binding",
+      "evidence": "curated database evidence",
+      "directed": false,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [binding/association]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:6654+6655",
+      "target": "g:22800+22808+3265+3845+4893+6237",
+      "relation": "activation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:22800+22808+3265+3845+4893+6237",
+      "target": "g:673",
+      "relation": "activation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:22800+22808+3265+3845+4893+6237",
+      "target": "g:5894",
+      "relation": "activation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:673",
+      "target": "g:5604",
+      "relation": "phosphorylation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [phosphorylation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:673",
+      "target": "g:5605",
+      "relation": "phosphorylation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [phosphorylation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:5894",
+      "target": "g:5604",
+      "relation": "phosphorylation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [phosphorylation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:5894",
+      "target": "g:5605",
+      "relation": "phosphorylation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [phosphorylation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:5604",
+      "target": "g:5594+5595",
+      "relation": "phosphorylation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [phosphorylation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:5605",
+      "target": "g:5594+5595",
+      "relation": "phosphorylation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [phosphorylation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:4214",
+      "target": "g:5604",
+      "relation": "phosphorylation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [phosphorylation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:4214",
+      "target": "g:5605",
+      "relation": "phosphorylation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [phosphorylation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:22800+22808+3265+3845+4893+6237",
+      "target": "g:369",
+      "relation": "activation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:369",
+      "target": "g:5604",
+      "relation": "activation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "+p"
+      ],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [activation, phosphorylation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:369",
+      "target": "g:5605",
+      "relation": "activation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "+p"
+      ],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [activation, phosphorylation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:22800+22808+3265+3845+4893+6237",
+      "target": "g:4214",
+      "relation": "relation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [no subtype]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    }
+  ],
+  "statements": [
+    {
+      "text": "EGFR to MAPK1, shortest directed route in KEGG hsa04010 (MAPK signaling pathway): EGFR/CSF1R/EPHA2 (+22) -[binding, undirected]-> GRB2 -[binding, undirected]-> SOS1/SOS2 -[activation]-> RRAS2/MRAS/HRAS (+3) -[activation]-> ARAF -[activation +p]-> MAP2K2 -[phosphorylation]-> MAPK1/MAPK3 (8 equally short routes; all are drawn). Each step is a KEGG-drawn relation; a route is a curated summary and may skip intermediates.",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "section": "Mechanism"
+    }
+  ],
+  "pathways": [
+    {
+      "source": "KEGG",
+      "id": "hsa04010",
+      "name": "MAPK signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04010",
+      "evidence": "curated database evidence",
+      "class": "Environmental Information Processing; Signal transduction"
+    },
+    {
+      "source": "Reactome",
+      "gene": "MAPK1",
+      "id": "R-HSA-9652817",
+      "name": "Signaling by MAPK mutants",
+      "url": "https://reactome.org/content/detail/R-HSA-9652817",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "Reactome",
+      "gene": "MAPK1",
+      "id": "R-HSA-198753",
+      "name": "ERK/MAPK targets",
+      "url": "https://reactome.org/content/detail/R-HSA-198753",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "Reactome",
+      "gene": "MAPK1",
+      "id": "R-HSA-5674135",
+      "name": "MAP2K and MAPK activation",
+      "url": "https://reactome.org/content/detail/R-HSA-5674135",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "Reactome",
+      "gene": "MAPK1",
+      "id": "R-HSA-881907",
+      "name": "Gastrin-CREB signalling pathway via PKC and MAPK",
+      "url": "https://reactome.org/content/detail/R-HSA-881907",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "Reactome",
+      "gene": "MAPK1",
+      "id": "R-HSA-2871796",
+      "name": "FCERI mediated MAPK activation",
+      "url": "https://reactome.org/content/detail/R-HSA-2871796",
+      "evidence": "curated database evidence"
+    }
+  ],
+  "literature": [
+    {
+      "pmid": "11749383",
+      "title": "MAP kinases.",
+      "journal": "Chem Rev",
+      "year": "2001",
+      "first_author": "Chen Z",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11749383/",
+      "basis": "reference of KEGG hsa04010",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "12191611",
+      "title": "Docking interactions in the mitogen-activated protein kinase cascades.",
+      "journal": "Pharmacol Ther",
+      "year": "2002",
+      "first_author": "Tanoue T",
+      "pubtypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12191611/",
+      "basis": "reference of KEGG hsa04010",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "12947395",
+      "title": "MAPK pathways in radiation responses.",
+      "journal": "Oncogene",
+      "year": "2003",
+      "first_author": "Dent P",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12947395/",
+      "basis": "reference of KEGG hsa04010",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "12676795",
+      "title": "Trk receptors: roles in neuronal signal transduction.",
+      "journal": "Annu Rev Biochem",
+      "year": "2003",
+      "first_author": "Huang EJ",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12676795/",
+      "basis": "reference of KEGG hsa04010",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "11369511",
+      "title": "Signalling for survival and death in neurones: the role of stress-activated kinases, JNK and p38.",
+      "journal": "Cell Signal",
+      "year": "2001",
+      "first_author": "Harper SJ",
+      "pubtypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11369511/",
+      "basis": "reference of KEGG hsa04010",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "36457705",
+      "title": "Exploring the mechanism of Alisma orientale for the treatment of pregnancy induced hypertension and potential hepato-nephrotoxicity by using network pharmacology, network toxicology, molecular docking and molecular dynamics simulation.",
+      "journal": "Front Pharmacol",
+      "year": "2022",
+      "first_author": "Liao Y",
+      "pubtypes": [
+        "Journal Article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36457705/",
+      "basis": "PubMed search: EGFR[tiab] AND MAPK1[tiab] AND (mapk)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "38564860",
+      "title": "Integrated network toxicology, molecular docking, and in vivo experiments to elucidate molecular mechanism of aflatoxin B1 hepatotoxicity.",
+      "journal": "Ecotoxicol Environ Saf",
+      "year": "2024",
+      "first_author": "Ge B",
+      "pubtypes": [
+        "Journal Article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38564860/",
+      "basis": "PubMed search: EGFR[tiab] AND MAPK1[tiab] AND (mapk)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "35814224",
+      "title": "The Potential Mechanisms of Cinobufotalin Treating Colon Adenocarcinoma by Network Pharmacology.",
+      "journal": "Front Pharmacol",
+      "year": "2022",
+      "first_author": "Wang J",
+      "pubtypes": [
+        "Journal Article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35814224/",
+      "basis": "PubMed search: EGFR[tiab] AND MAPK1[tiab] AND (mapk)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "36072391",
+      "title": "The miRNome of canine invasive urothelial carcinoma.",
+      "journal": "Front Vet Sci",
+      "year": "2022",
+      "first_author": "Varvil MS",
+      "pubtypes": [
+        "Journal Article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36072391/",
+      "basis": "PubMed search: EGFR[tiab] AND MAPK1[tiab] AND (mapk)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "41132131",
+      "title": "Non-canonical EGFR signaling promotes MAPK-dependent extrusion of epithelial cells.",
+      "journal": "J Cell Sci",
+      "year": "2025",
+      "first_author": "Molina P",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41132131/",
+      "basis": "PubMed search: EGFR[tiab] AND MAPK1[tiab] AND (mapk)",
+      "evidence": "literature-supported association"
+    }
+  ],
+  "warnings": [],
+  "source_status": {
+    "NCBI Gene": "ok",
+    "UniProt": "ok",
+    "KEGG": "ok",
+    "PubMed": "ok",
+    "Reactome": "ok"
+  },
+  "notes": [
+    "No directed KEGG route for: MAPK1 -> EGFR. This reflects the map's drawing, not proof that no regulation exists.",
+    "KEGG hsa04010 contains 170 reconstructable relations; 17 are kept for this question."
+  ],
+  "requests": [
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmax=5&retmode=json&term=EGFR%5Bsym%5D%20AND%209606%5Btaxid%5D%20AND%20alive%5Bprop%5D&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:45Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=1956&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:45Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/search?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Ccc_function%2Cgo_p%2Cxref_reactome%2Cxref_kegg%2Cxref_string%2Cxref_geneid&format=json&query=gene_exact%3AEGFR%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=1",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:47Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmax=5&retmode=json&term=MAPK1%5Bsym%5D%20AND%209606%5Btaxid%5D%20AND%20alive%5Bprop%5D&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:47Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=5594&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:48Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/search?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Ccc_function%2Cgo_p%2Cxref_reactome%2Cxref_kegg%2Cxref_string%2Cxref_geneid&format=json&query=gene_exact%3AMAPK1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=1",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:49Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/list/pathway/hsa",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:33Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:1956",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:49Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:5594",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:50Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/get/hsa04010",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:51Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/get/hsa04010/kgml",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:58Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/list/C00076+C00165+C00338+C00575+C01245",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:00Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=11749383%2C12191611%2C12947395%2C12676795%2C11369511&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:00Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P00533/pathways?species=9606",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:02Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P28482/pathways?species=9606",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:03Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmax=5&retmode=json&sort=relevance&term=EGFR%5Btiab%5D%20AND%20MAPK1%5Btiab%5D%20AND%20%28mapk%29&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:03Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=36457705%2C38564860%2C35814224%2C36072391%2C41132131&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:03Z"
+    }
+  ],
+  "diagram_note": "Directed relations redrawn from the KEGG map (KGML). Arrow = activation, x = inhibition, dashed = expression/indirect. Multi-gene boxes are paralog groups that KEGG draws as one node.",
+  "citations": [
+    {
+      "source": "KEGG",
+      "id": "hsa04010",
+      "url": "https://www.kegg.jp/pathway/hsa04010",
+      "title": "MAPK signaling pathway"
+    }
+  ]
+}

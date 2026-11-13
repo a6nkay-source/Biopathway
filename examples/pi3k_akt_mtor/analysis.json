@@ -1,0 +1,689 @@
+{
+  "kind": "pathway",
+  "query": "PI3K-AKT-mTOR | genes: PIK3CA, AKT1, MTOR",
+  "resolved": {
+    "PIK3CA": {
+      "input": "PIK3CA",
+      "symbol": "PIK3CA",
+      "ncbi_gene_id": "5290",
+      "name": "phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha",
+      "location": "3q26.32",
+      "aliases": [
+        "CCM4",
+        "CLAPO",
+        "CLOVE",
+        "CWS5",
+        "HMH",
+        "MCAP",
+        "MCM",
+        "MCMTC",
+        "PI3K",
+        "PI3K-alpha",
+        "p110-alpha"
+      ],
+      "uniprot": "P42336",
+      "uniprot_reviewed": true
+    },
+    "AKT1": {
+      "input": "AKT1",
+      "symbol": "AKT1",
+      "ncbi_gene_id": "207",
+      "name": "AKT serine/threonine kinase 1",
+      "location": "14q32.33",
+      "aliases": [
+        "AKT",
+        "PKB",
+        "PKB-ALPHA",
+        "PRKBA",
+        "RAC",
+        "RAC-ALPHA"
+      ],
+      "uniprot": "P31749",
+      "uniprot_reviewed": true
+    },
+    "MTOR": {
+      "input": "MTOR",
+      "symbol": "MTOR",
+      "ncbi_gene_id": "2475",
+      "name": "mechanistic target of rapamycin kinase",
+      "location": "1p36.22",
+      "aliases": [
+        "FRAP",
+        "FRAP1",
+        "FRAP2",
+        "RAFT1",
+        "RAPT1",
+        "SKS"
+      ],
+      "uniprot": "P42345",
+      "uniprot_reviewed": true
+    }
+  },
+  "nodes": [
+    {
+      "id": "cx:g:7248|g:7249",
+      "label": "TSC2:TSC1",
+      "kind": "complex",
+      "xrefs": {
+        "components": [
+          "g:7249",
+          "g:7248"
+        ],
+        "members": [
+          "TSC2",
+          "TSC1"
+        ],
+        "kegg_genes": [
+          "hsa:7249",
+          "hsa:7248"
+        ]
+      },
+      "focus": false
+    },
+    {
+      "id": "g:6009",
+      "label": "RHEB",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:6009"
+        ],
+        "members": [
+          "RHEB"
+        ]
+      },
+      "focus": false
+    },
+    {
+      "id": "cx:g:2475|g:57521|g:64223",
+      "label": "RPTOR:MTOR:MLST8",
+      "kind": "complex",
+      "xrefs": {
+        "components": [
+          "g:57521",
+          "g:2475",
+          "g:64223"
+        ],
+        "members": [
+          "RPTOR",
+          "MTOR",
+          "MLST8"
+        ],
+        "kegg_genes": [
+          "hsa:57521",
+          "hsa:2475",
+          "hsa:64223"
+        ]
+      },
+      "focus": true
+    },
+    {
+      "id": "g:110117499+5290+5291+5293+5295+5296+8503",
+      "label": "PIK3CA/P3R3URF-PIK3R3/PIK3CB (+4)",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:110117499",
+          "hsa:5290",
+          "hsa:5291",
+          "hsa:5293",
+          "hsa:5295",
+          "hsa:5296",
+          "hsa:8503"
+        ],
+        "members": [
+          "P3R3URF-PIK3R3",
+          "PIK3CA",
+          "PIK3CB",
+          "PIK3CD",
+          "PIK3R1",
+          "PIK3R2",
+          "PIK3R3"
+        ]
+      },
+      "focus": true
+    },
+    {
+      "id": "c:C05981",
+      "label": "Phosphatidylinositol-3,4,5-trisphosphate",
+      "kind": "compound",
+      "xrefs": {
+        "kegg": "C05981"
+      },
+      "focus": false
+    },
+    {
+      "id": "g:10000+207+208",
+      "label": "AKT1/AKT3/AKT2",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:10000",
+          "hsa:207",
+          "hsa:208"
+        ],
+        "members": [
+          "AKT3",
+          "AKT1",
+          "AKT2"
+        ]
+      },
+      "focus": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "g:6009",
+      "target": "cx:g:2475|g:57521|g:64223",
+      "relation": "activation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04151",
+          "url": "https://www.kegg.jp/pathway/hsa04151",
+          "title": "PI3K-Akt signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:110117499+5290+5291+5293+5295+5296+8503",
+      "target": "c:C05981",
+      "relation": "activation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PCrel [activation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04151",
+          "url": "https://www.kegg.jp/pathway/hsa04151",
+          "title": "PI3K-Akt signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "c:C05981",
+      "target": "g:10000+207+208",
+      "relation": "activation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PCrel [activation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04151",
+          "url": "https://www.kegg.jp/pathway/hsa04151",
+          "title": "PI3K-Akt signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "cx:g:7248|g:7249",
+      "target": "g:6009",
+      "relation": "inhibition",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [inhibition]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04151",
+          "url": "https://www.kegg.jp/pathway/hsa04151",
+          "title": "PI3K-Akt signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:10000+207+208",
+      "target": "cx:g:7248|g:7249",
+      "relation": "inhibition",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "+p"
+      ],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [inhibition, phosphorylation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04151",
+          "url": "https://www.kegg.jp/pathway/hsa04151",
+          "title": "PI3K-Akt signaling pathway"
+        }
+      ],
+      "scores": {}
+    }
+  ],
+  "statements": [
+    {
+      "text": "AKT1 to MTOR, shortest directed route in KEGG hsa04151 (PI3K-Akt signaling pathway): AKT1/AKT3/AKT2 -[inhibition +p]-> TSC2:TSC1 -[inhibition]-> RHEB -[activation]-> RPTOR:MTOR:MLST8. Each step is a KEGG-drawn relation; a route is a curated summary and may skip intermediates.",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04151",
+          "url": "https://www.kegg.jp/pathway/hsa04151",
+          "title": "PI3K-Akt signaling pathway"
+        }
+      ],
+      "section": "Mechanism"
+    },
+    {
+      "text": "PIK3CA to AKT1, shortest directed route in KEGG hsa04151 (PI3K-Akt signaling pathway): PIK3CA/P3R3URF-PIK3R3/PIK3CB (+4) -[activation]-> Phosphatidylinositol-3,4,5-trisphosphate -[activation]-> AKT1/AKT3/AKT2. Each step is a KEGG-drawn relation; a route is a curated summary and may skip intermediates.",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04151",
+          "url": "https://www.kegg.jp/pathway/hsa04151",
+          "title": "PI3K-Akt signaling pathway"
+        }
+      ],
+      "section": "Mechanism"
+    },
+    {
+      "text": "PIK3CA to MTOR, shortest directed route in KEGG hsa04151 (PI3K-Akt signaling pathway): PIK3CA/P3R3URF-PIK3R3/PIK3CB (+4) -[activation]-> Phosphatidylinositol-3,4,5-trisphosphate -[activation]-> AKT1/AKT3/AKT2 -[inhibition +p]-> TSC2:TSC1 -[inhibition]-> RHEB -[activation]-> RPTOR:MTOR:MLST8. Each step is a KEGG-drawn relation; a route is a curated summary and may skip intermediates.",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04151",
+          "url": "https://www.kegg.jp/pathway/hsa04151",
+          "title": "PI3K-Akt signaling pathway"
+        }
+      ],
+      "section": "Mechanism"
+    }
+  ],
+  "pathways": [
+    {
+      "source": "KEGG",
+      "id": "hsa04151",
+      "name": "PI3K-Akt signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04151",
+      "evidence": "curated database evidence",
+      "class": "Environmental Information Processing; Signal transduction"
+    },
+    {
+      "source": "Reactome",
+      "gene": "PIK3CA",
+      "id": "R-HSA-198203",
+      "name": "PI3K/AKT activation",
+      "url": "https://reactome.org/content/detail/R-HSA-198203",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "Reactome",
+      "gene": "PIK3CA",
+      "id": "R-HSA-389357",
+      "name": "CD28 dependent PI3K/Akt signaling",
+      "url": "https://reactome.org/content/detail/R-HSA-389357",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "Reactome",
+      "gene": "PIK3CA",
+      "id": "R-HSA-8851907",
+      "name": "MET activates PI3K/AKT signaling",
+      "url": "https://reactome.org/content/detail/R-HSA-8851907",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "Reactome",
+      "gene": "PIK3CA",
+      "id": "R-HSA-6811558",
+      "name": "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+      "url": "https://reactome.org/content/detail/R-HSA-6811558",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "Reactome",
+      "gene": "AKT1",
+      "id": "R-HSA-199418",
+      "name": "Negative regulation of the PI3K/AKT network",
+      "url": "https://reactome.org/content/detail/R-HSA-199418",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "Reactome",
+      "gene": "AKT1",
+      "id": "R-HSA-389357",
+      "name": "CD28 dependent PI3K/Akt signaling",
+      "url": "https://reactome.org/content/detail/R-HSA-389357",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "Reactome",
+      "gene": "AKT1",
+      "id": "R-HSA-6811558",
+      "name": "PI5P, PP2A and IER3 Regulate PI3K/AKT Signaling",
+      "url": "https://reactome.org/content/detail/R-HSA-6811558",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "Reactome",
+      "gene": "MTOR",
+      "id": "R-HSA-389357",
+      "name": "CD28 dependent PI3K/Akt signaling",
+      "url": "https://reactome.org/content/detail/R-HSA-389357",
+      "evidence": "curated database evidence"
+    }
+  ],
+  "literature": [
+    {
+      "pmid": "16847462",
+      "title": "The evolution of phosphatidylinositol 3-kinases as regulators of growth and metabolism.",
+      "journal": "Nat Rev Genet",
+      "year": "2006",
+      "first_author": "Engelman JA",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16847462/",
+      "basis": "reference of KEGG hsa04151",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "15784165",
+      "title": "The activation of Akt/PKB signaling pathway and cell survival.",
+      "journal": "J Cell Mol Med",
+      "year": "2005",
+      "first_author": "Song G",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15784165/",
+      "basis": "reference of KEGG hsa04151",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "21620960",
+      "title": "Akt signalling in health and disease.",
+      "journal": "Cell Signal",
+      "year": "2011",
+      "first_author": "Hers I",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21620960/",
+      "basis": "reference of KEGG hsa04151",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "18842113",
+      "title": "The life of a cell: apoptosis regulation by the PI3K/PKB pathway.",
+      "journal": "Biochem J",
+      "year": "2008",
+      "first_author": "Duronio V",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18842113/",
+      "basis": "reference of KEGG hsa04151",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "16248975",
+      "title": "Akt: versatile mediator of cell survival and beyond.",
+      "journal": "J Biochem Mol Biol",
+      "year": "2002",
+      "first_author": "Kim D",
+      "pubtypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16248975/",
+      "basis": "reference of KEGG hsa04151",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "38547898",
+      "title": "Optimal targeting of PI3K-AKT and mTOR in advanced oestrogen receptor-positive breast cancer.",
+      "journal": "Lancet Oncol",
+      "year": "2024",
+      "first_author": "Browne IM",
+      "pubtypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38547898/",
+      "basis": "PubMed search: PIK3CA[tiab] AND AKT1[tiab] AND MTOR[tiab] AND (pi3k OR akt OR mtor)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "31693582",
+      "title": "Vascular malformations syndromes: an update.",
+      "journal": "Curr Opin Pediatr",
+      "year": "2019",
+      "first_author": "Martinez-Lopez A",
+      "pubtypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31693582/",
+      "basis": "PubMed search: PIK3CA[tiab] AND AKT1[tiab] AND MTOR[tiab] AND (pi3k OR akt OR mtor)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "40737847",
+      "title": "Sophora Flos extract ameliorates inflammatory bowel disease via inhibiting the PI3K/AKT/mTOR signaling pathway activation and modulating M1/M2 polarization in macrophages.",
+      "journal": "Phytomedicine",
+      "year": "2025",
+      "first_author": "Li A",
+      "pubtypes": [
+        "Journal Article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40737847/",
+      "basis": "PubMed search: PIK3CA[tiab] AND AKT1[tiab] AND MTOR[tiab] AND (pi3k OR akt OR mtor)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "39577862",
+      "title": "European Association of Neuro-Oncology guideline on molecular testing of meningiomas for targeted therapy selection.",
+      "journal": "Neuro Oncol",
+      "year": "2025",
+      "first_author": "Sahm F",
+      "pubtypes": [
+        "Journal Article",
+        "Review",
+        "Practice Guideline"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39577862/",
+      "basis": "PubMed search: PIK3CA[tiab] AND AKT1[tiab] AND MTOR[tiab] AND (pi3k OR akt OR mtor)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "41406241",
+      "title": "Dual PI3K/mTOR inhibition is required to combat resistance to CDK4/6 inhibitor and endocrine therapy in PIK3CA-mutant breast cancer.",
+      "journal": "Sci Transl Med",
+      "year": "2025",
+      "first_author": "Alves CL",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41406241/",
+      "basis": "PubMed search: PIK3CA[tiab] AND AKT1[tiab] AND MTOR[tiab] AND (pi3k OR akt OR mtor)",
+      "evidence": "literature-supported association"
+    }
+  ],
+  "warnings": [],
+  "source_status": {
+    "NCBI Gene": "ok",
+    "UniProt": "ok",
+    "KEGG": "ok",
+    "PubMed": "ok",
+    "Reactome": "ok"
+  },
+  "notes": [
+    "No directed KEGG route for: AKT1 -> PIK3CA; MTOR -> AKT1; MTOR -> PIK3CA. This reflects the map's drawing, not proof that no regulation exists.",
+    "KEGG hsa04151 contains 85 reconstructable relations; 5 are kept for this question."
+  ],
+  "requests": [
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmax=5&retmode=json&term=PIK3CA%5Bsym%5D%20AND%209606%5Btaxid%5D%20AND%20alive%5Bprop%5D&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:08Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=5290&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:09Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/search?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Ccc_function%2Cgo_p%2Cxref_reactome%2Cxref_kegg%2Cxref_string%2Cxref_geneid&format=json&query=gene_exact%3APIK3CA%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=1",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:10Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmax=5&retmode=json&term=AKT1%5Bsym%5D%20AND%209606%5Btaxid%5D%20AND%20alive%5Bprop%5D&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:10Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=207&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:10Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/search?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Ccc_function%2Cgo_p%2Cxref_reactome%2Cxref_kegg%2Cxref_string%2Cxref_geneid&format=json&query=gene_exact%3AAKT1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=1",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:12Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmax=5&retmode=json&term=MTOR%5Bsym%5D%20AND%209606%5Btaxid%5D%20AND%20alive%5Bprop%5D&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:13Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=2475&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:13Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/search?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Ccc_function%2Cgo_p%2Cxref_reactome%2Cxref_kegg%2Cxref_string%2Cxref_geneid&format=json&query=gene_exact%3AMTOR%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=1",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:14Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/list/pathway/hsa",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:33Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:5290",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:15Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:207",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:16Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:2475",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:16Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/get/hsa04151",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:18Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/get/hsa04151/kgml",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:30Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/list/C00020+C00533+C04637+C05981",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:32Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=16847462%2C15784165%2C21620960%2C18842113%2C16248975&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:32Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P42336/pathways?species=9606",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:33Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P31749/pathways?species=9606",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:35Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P42345/pathways?species=9606",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:35Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmax=5&retmode=json&sort=relevance&term=PIK3CA%5Btiab%5D%20AND%20AKT1%5Btiab%5D%20AND%20MTOR%5Btiab%5D%20AND%20%28pi3k%20OR%20akt%20OR%20mtor%29&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:36Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=38547898%2C31693582%2C40737847%2C39577862%2C41406241&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:36Z"
+    }
+  ],
+  "diagram_note": "Directed relations redrawn from the KEGG map (KGML). Arrow = activation, x = inhibition, dashed = expression/indirect. Multi-gene boxes are paralog groups that KEGG draws as one node.",
+  "citations": [
+    {
+      "source": "KEGG",
+      "id": "hsa04151",
+      "url": "https://www.kegg.jp/pathway/hsa04151",
+      "title": "PI3K-Akt signaling pathway"
+    }
+  ]
+}

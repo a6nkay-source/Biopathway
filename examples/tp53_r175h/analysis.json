@@ -1,0 +1,1500 @@
+{
+  "kind": "mutation",
+  "query": "TP53 R175H",
+  "resolved": {
+    "TP53": {
+      "input": "TP53",
+      "symbol": "TP53",
+      "ncbi_gene_id": "7157",
+      "name": "tumor protein p53",
+      "location": "17p13.1",
+      "aliases": [
+        "BCC7",
+        "BMFS5",
+        "LFS1",
+        "P53",
+        "TRP53"
+      ],
+      "uniprot": "P04637",
+      "uniprot_reviewed": true
+    },
+    "variant": {
+      "ref": "R",
+      "start": 175,
+      "end": 175,
+      "alt": "H",
+      "kind": "missense",
+      "one_letter": "R175H",
+      "three_letter": "Arg175His",
+      "hgvs_p": "p.Arg175His"
+    }
+  },
+  "nodes": [
+    {
+      "id": "TP53",
+      "label": "TP53",
+      "kind": "gene",
+      "xrefs": {},
+      "focus": true
+    },
+    {
+      "id": "var:TP53:R175H",
+      "label": "TP53 p.R175H",
+      "kind": "variant",
+      "xrefs": {
+        "hgvs_p": "p.Arg175His"
+      },
+      "focus": true
+    },
+    {
+      "id": "reg:DNA binding:102-292",
+      "label": "DNA binding (102-292)",
+      "kind": "region",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "reg:Region:1-320",
+      "label": "Interaction with CCAR2 (1-320)",
+      "kind": "region",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "reg:Region:100-370",
+      "label": "Interaction with HIPK1 (100-370)",
+      "kind": "region",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "reg:Region:100-300",
+      "label": "Required for interaction with ZNF385A (100-300)",
+      "kind": "region",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "reg:Region:113-236",
+      "label": "Required for interaction with FBXO42 (113-236)",
+      "kind": "region",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "reg:Region:116-292",
+      "label": "Interaction with AXIN1 (116-292)",
+      "kind": "region",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "dz:Li-Fraumeni syndrome",
+      "label": "Li-Fraumeni syndrome",
+      "kind": "condition",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "dz:Neoplasm",
+      "label": "Neoplasm",
+      "kind": "condition",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "dz:Diffuse midline glioma, H3 K27M-mutant",
+      "label": "Diffuse midline glioma, H3 K27M-mutant",
+      "kind": "condition",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "dz:Undifferentiated embryonal sarcoma of the liver",
+      "label": "Undifferentiated embryonal sarcoma of the liver",
+      "kind": "condition",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "dz:IDH-wildtype glioblastoma",
+      "label": "IDH-wildtype glioblastoma",
+      "kind": "condition",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "map:hsa03440",
+      "label": "Homologous recombination",
+      "kind": "pathway",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "map:hsa04010",
+      "label": "MAPK signaling pathway",
+      "kind": "pathway",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "map:hsa04071",
+      "label": "Sphingolipid signaling pathway",
+      "kind": "pathway",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "map:hsa04110",
+      "label": "Cell cycle",
+      "kind": "pathway",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "map:hsa04115",
+      "label": "p53 signaling pathway",
+      "kind": "pathway",
+      "xrefs": {},
+      "focus": false
+    },
+    {
+      "id": "map:hsa04137",
+      "label": "Mitophagy - animal",
+      "kind": "pathway",
+      "xrefs": {},
+      "focus": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "var:TP53:R175H",
+      "target": "TP53",
+      "relation": "alters",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "variant is defined on this gene's product",
+      "citations": [
+        {
+          "source": "NCBI Gene",
+          "id": "7157",
+          "url": "https://www.ncbi.nlm.nih.gov/gene/7157",
+          "title": "TP53: tumor protein p53"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:TP53:R175H",
+      "target": "reg:DNA binding:102-292",
+      "relation": "located in",
+      "evidence": "experimentally validated",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "UniProt evidence code ECO:0000269",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:16793544",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16793544/",
+          "title": ""
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:18996393",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18996393/",
+          "title": ""
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:20364130",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20364130/",
+          "title": ""
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:TP53:R175H",
+      "target": "reg:Region:1-320",
+      "relation": "located in",
+      "evidence": "experimentally validated",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "UniProt evidence code ECO:0000269",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:25732823",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25732823/",
+          "title": ""
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:TP53:R175H",
+      "target": "reg:Region:100-370",
+      "relation": "located in",
+      "evidence": "computationally predicted",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "UniProt evidence code ECO:0000250",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:TP53:R175H",
+      "target": "reg:Region:100-300",
+      "relation": "located in",
+      "evidence": "experimentally validated",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "UniProt evidence code ECO:0000269",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:17719541",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17719541/",
+          "title": ""
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:TP53:R175H",
+      "target": "reg:Region:113-236",
+      "relation": "located in",
+      "evidence": "experimentally validated",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "UniProt evidence code ECO:0000269",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:19509332",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19509332/",
+          "title": ""
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:TP53:R175H",
+      "target": "reg:Region:116-292",
+      "relation": "located in",
+      "evidence": "computationally predicted",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "UniProt evidence code ECO:0000250",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:TP53:R175H",
+      "target": "dz:Li-Fraumeni syndrome",
+      "relation": "germline: Pathogenic",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "ClinVar review status: reviewed by expert panel",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012374",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12374/",
+          "title": "NM_000546.6(TP53):c.524G>A (p.Arg175His)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:TP53:R175H",
+      "target": "dz:Neoplasm",
+      "relation": "oncogenicity: Oncogenic",
+      "evidence": "literature-supported association",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "ClinVar review status: criteria provided, single submitter (not independently confirmed)",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012374",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12374/",
+          "title": "NM_000546.6(TP53):c.524G>A (p.Arg175His)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:TP53:R175H",
+      "target": "dz:Diffuse midline glioma, H3 K27M-mutant",
+      "relation": "clinical impact: Tier I - Strong",
+      "evidence": "literature-supported association",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "ClinVar review status: criteria provided, single submitter (not independently confirmed)",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012374",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12374/",
+          "title": "NM_000546.6(TP53):c.524G>A (p.Arg175His)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:TP53:R175H",
+      "target": "dz:Undifferentiated embryonal sarcoma of the liver",
+      "relation": "clinical impact: Tier I - Strong",
+      "evidence": "literature-supported association",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "ClinVar review status: criteria provided, single submitter (not independently confirmed)",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012374",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12374/",
+          "title": "NM_000546.6(TP53):c.524G>A (p.Arg175His)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "var:TP53:R175H",
+      "target": "dz:IDH-wildtype glioblastoma",
+      "relation": "clinical impact: Tier I - Strong",
+      "evidence": "literature-supported association",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "ClinVar review status: criteria provided, single submitter (not independently confirmed)",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012374",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12374/",
+          "title": "NM_000546.6(TP53):c.524G>A (p.Arg175His)"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "TP53",
+      "target": "map:hsa03440",
+      "relation": "member of",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG gene-pathway link",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa03440",
+          "url": "https://www.kegg.jp/pathway/hsa03440",
+          "title": "Homologous recombination"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "TP53",
+      "target": "map:hsa04010",
+      "relation": "member of",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG gene-pathway link",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04010",
+          "url": "https://www.kegg.jp/pathway/hsa04010",
+          "title": "MAPK signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "TP53",
+      "target": "map:hsa04071",
+      "relation": "member of",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG gene-pathway link",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04071",
+          "url": "https://www.kegg.jp/pathway/hsa04071",
+          "title": "Sphingolipid signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "TP53",
+      "target": "map:hsa04110",
+      "relation": "member of",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG gene-pathway link",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04110",
+          "url": "https://www.kegg.jp/pathway/hsa04110",
+          "title": "Cell cycle"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "TP53",
+      "target": "map:hsa04115",
+      "relation": "member of",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG gene-pathway link",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04115",
+          "url": "https://www.kegg.jp/pathway/hsa04115",
+          "title": "p53 signaling pathway"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "TP53",
+      "target": "map:hsa04137",
+      "relation": "member of",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG gene-pathway link",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa04137",
+          "url": "https://www.kegg.jp/pathway/hsa04137",
+          "title": "Mitophagy - animal"
+        }
+      ],
+      "scores": {}
+    }
+  ],
+  "statements": [
+    {
+      "text": "Reference residue check: P04637 position 175 is R, matching the input.",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        }
+      ],
+      "section": "Identifiers"
+    },
+    {
+      "text": "Position 175 lies in UniProt dna binding 'DNA binding' (102-292).",
+      "evidence": "experimentally validated",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:16793544",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16793544/",
+          "title": ""
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:18996393",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18996393/",
+          "title": ""
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:20364130",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20364130/",
+          "title": ""
+        }
+      ],
+      "section": "Structural context"
+    },
+    {
+      "text": "Position 175 lies in UniProt region 'Interaction with CCAR2' (1-320).",
+      "evidence": "experimentally validated",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:25732823",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25732823/",
+          "title": ""
+        }
+      ],
+      "section": "Structural context"
+    },
+    {
+      "text": "Position 175 lies in UniProt region 'Interaction with HIPK1' (100-370).",
+      "evidence": "computationally predicted",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        }
+      ],
+      "section": "Structural context"
+    },
+    {
+      "text": "Position 175 lies in UniProt region 'Required for interaction with ZNF385A' (100-300).",
+      "evidence": "experimentally validated",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:17719541",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17719541/",
+          "title": ""
+        }
+      ],
+      "section": "Structural context"
+    },
+    {
+      "text": "Position 175 lies in UniProt region 'Required for interaction with FBXO42' (113-236).",
+      "evidence": "experimentally validated",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:19509332",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19509332/",
+          "title": ""
+        }
+      ],
+      "section": "Structural context"
+    },
+    {
+      "text": "Position 175 lies in UniProt region 'Interaction with AXIN1' (116-292).",
+      "evidence": "computationally predicted",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        }
+      ],
+      "section": "Structural context"
+    },
+    {
+      "text": "UniProt natural variant VAR_005928 R175C (different substitution at this position): in sporadic cancers; somatic mutation; dbSNP:rs138729528",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        }
+      ],
+      "section": "Other variants at this position"
+    },
+    {
+      "text": "UniProt natural variant VAR_005929 R175G (different substitution at this position): in LFS; germline mutation and in sporadic cancers; somatic mutation; dbSNP:rs138729528",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        }
+      ],
+      "section": "Other variants at this position"
+    },
+    {
+      "text": "UniProt natural variant VAR_005932 R175H (same substitution): in LFS; germline mutation and in sporadic cancers; somatic mutation; does not induce SNAI1 degradation; reduces interaction with ZNF385A; dbSNP:rs28934578",
+      "evidence": "experimentally validated",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:16959974",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16959974/",
+          "title": ""
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:17719541",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17719541/",
+          "title": ""
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:1868473",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1868473/",
+          "title": ""
+        }
+      ],
+      "section": "Reported variant effects"
+    },
+    {
+      "text": "UniProt natural variant VAR_005930 R175L (different substitution at this position): in LFS; germline mutation and in sporadic cancers; somatic mutation; dbSNP:rs28934578",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        }
+      ],
+      "section": "Other variants at this position"
+    },
+    {
+      "text": "UniProt natural variant VAR_005931 R175P (different substitution at this position): in sporadic cancers; somatic mutation",
+      "evidence": "experimentally validated",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        },
+        {
+          "source": "PubMed",
+          "id": "PMID:17719541",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17719541/",
+          "title": ""
+        }
+      ],
+      "section": "Other variants at this position"
+    },
+    {
+      "text": "UniProt natural variant VAR_044916 R175Q (different substitution at this position): in a sporadic cancer; somatic mutation",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        }
+      ],
+      "section": "Other variants at this position"
+    },
+    {
+      "text": "UniProt natural variant VAR_044917 R175S (different substitution at this position): in sporadic cancers; somatic mutation",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "UniProt",
+          "id": "P04637",
+          "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+          "title": "TP53: Cellular tumor antigen p53"
+        }
+      ],
+      "section": "Other variants at this position"
+    },
+    {
+      "text": "ClinVar VCV000012374 (NM_000546.6(TP53):c.524G>A (p.Arg175His)) germline classification: Pathogenic for Li-Fraumeni syndrome [ClinVar review status: reviewed by expert panel; last evaluated 2024/09/06]. This is a clinical association, not a mechanism.",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012374",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12374/",
+          "title": "NM_000546.6(TP53):c.524G>A (p.Arg175His)"
+        }
+      ],
+      "section": "Clinical assertions"
+    },
+    {
+      "text": "ClinVar VCV000012374 (NM_000546.6(TP53):c.524G>A (p.Arg175His)) oncogenicity classification: Oncogenic for Neoplasm [ClinVar review status: criteria provided, single submitter (not independently confirmed); last evaluated 2025/03/04]. This is a clinical association, not a mechanism.",
+      "evidence": "literature-supported association",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012374",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12374/",
+          "title": "NM_000546.6(TP53):c.524G>A (p.Arg175His)"
+        }
+      ],
+      "section": "Clinical assertions"
+    },
+    {
+      "text": "ClinVar VCV000012374 (NM_000546.6(TP53):c.524G>A (p.Arg175His)) clinical impact classification: Tier I - Strong for Diffuse midline glioma, H3 K27M-mutant; Undifferentiated embryonal sarcoma of the liver; IDH-wildtype glioblastoma; Medulloblastoma SHH activated and TP53 mutant [ClinVar review status: criteria provided, single submitter (not independently confirmed); last evaluated 2025/08/20]. This is a clinical association, not a mechanism.",
+      "evidence": "literature-supported association",
+      "citations": [
+        {
+          "source": "ClinVar",
+          "id": "VCV000012374",
+          "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12374/",
+          "title": "NM_000546.6(TP53):c.524G>A (p.Arg175His)"
+        }
+      ],
+      "section": "Clinical assertions"
+    }
+  ],
+  "pathways": [
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa01522",
+      "name": "Endocrine resistance",
+      "url": "https://www.kegg.jp/pathway/hsa01522",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa01524",
+      "name": "Platinum drug resistance",
+      "url": "https://www.kegg.jp/pathway/hsa01524",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa03440",
+      "name": "Homologous recombination",
+      "url": "https://www.kegg.jp/pathway/hsa03440",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa04010",
+      "name": "MAPK signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04010",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa04071",
+      "name": "Sphingolipid signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04071",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa04110",
+      "name": "Cell cycle",
+      "url": "https://www.kegg.jp/pathway/hsa04110",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa04115",
+      "name": "p53 signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04115",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa04137",
+      "name": "Mitophagy - animal",
+      "url": "https://www.kegg.jp/pathway/hsa04137",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa04151",
+      "name": "PI3K-Akt signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04151",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa04210",
+      "name": "Apoptosis",
+      "url": "https://www.kegg.jp/pathway/hsa04210",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa04211",
+      "name": "Longevity regulating pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04211",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa04216",
+      "name": "Ferroptosis",
+      "url": "https://www.kegg.jp/pathway/hsa04216",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa04218",
+      "name": "Cellular senescence",
+      "url": "https://www.kegg.jp/pathway/hsa04218",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa04310",
+      "name": "Wnt signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04310",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa04722",
+      "name": "Neurotrophin signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04722",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa04919",
+      "name": "Thyroid hormone signaling pathway",
+      "url": "https://www.kegg.jp/pathway/hsa04919",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05012",
+      "name": "Parkinson disease",
+      "url": "https://www.kegg.jp/pathway/hsa05012",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05014",
+      "name": "Amyotrophic lateral sclerosis",
+      "url": "https://www.kegg.jp/pathway/hsa05014",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05016",
+      "name": "Huntington disease",
+      "url": "https://www.kegg.jp/pathway/hsa05016",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05131",
+      "name": "Shigellosis",
+      "url": "https://www.kegg.jp/pathway/hsa05131",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05160",
+      "name": "Hepatitis C",
+      "url": "https://www.kegg.jp/pathway/hsa05160",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05161",
+      "name": "Hepatitis B",
+      "url": "https://www.kegg.jp/pathway/hsa05161",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05162",
+      "name": "Measles",
+      "url": "https://www.kegg.jp/pathway/hsa05162",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05163",
+      "name": "Human cytomegalovirus infection",
+      "url": "https://www.kegg.jp/pathway/hsa05163",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05165",
+      "name": "Human papillomavirus infection",
+      "url": "https://www.kegg.jp/pathway/hsa05165",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05166",
+      "name": "Human T-cell leukemia virus 1 infection",
+      "url": "https://www.kegg.jp/pathway/hsa05166",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05167",
+      "name": "Kaposi sarcoma-associated herpesvirus infection",
+      "url": "https://www.kegg.jp/pathway/hsa05167",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05168",
+      "name": "Herpes simplex virus 1 infection",
+      "url": "https://www.kegg.jp/pathway/hsa05168",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05169",
+      "name": "Epstein-Barr virus infection",
+      "url": "https://www.kegg.jp/pathway/hsa05169",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05200",
+      "name": "Pathways in cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05200",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05202",
+      "name": "Transcriptional misregulation in cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05202",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05203",
+      "name": "Viral carcinogenesis",
+      "url": "https://www.kegg.jp/pathway/hsa05203",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05205",
+      "name": "Proteoglycans in cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05205",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05206",
+      "name": "MicroRNAs in cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05206",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05210",
+      "name": "Colorectal cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05210",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05212",
+      "name": "Pancreatic cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05212",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05213",
+      "name": "Endometrial cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05213",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05214",
+      "name": "Glioma",
+      "url": "https://www.kegg.jp/pathway/hsa05214",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05215",
+      "name": "Prostate cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05215",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05216",
+      "name": "Thyroid cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05216",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05217",
+      "name": "Basal cell carcinoma",
+      "url": "https://www.kegg.jp/pathway/hsa05217",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05218",
+      "name": "Melanoma",
+      "url": "https://www.kegg.jp/pathway/hsa05218",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05219",
+      "name": "Bladder cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05219",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05220",
+      "name": "Chronic myeloid leukemia",
+      "url": "https://www.kegg.jp/pathway/hsa05220",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05222",
+      "name": "Small cell lung cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05222",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05223",
+      "name": "Non-small cell lung cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05223",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05224",
+      "name": "Breast cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05224",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05225",
+      "name": "Hepatocellular carcinoma",
+      "url": "https://www.kegg.jp/pathway/hsa05225",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05226",
+      "name": "Gastric cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05226",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05230",
+      "name": "Central carbon metabolism in cancer",
+      "url": "https://www.kegg.jp/pathway/hsa05230",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05417",
+      "name": "Lipid and atherosclerosis",
+      "url": "https://www.kegg.jp/pathway/hsa05417",
+      "evidence": "curated database evidence"
+    },
+    {
+      "source": "KEGG",
+      "gene": "TP53",
+      "id": "hsa05418",
+      "name": "Fluid shear stress and atherosclerosis",
+      "url": "https://www.kegg.jp/pathway/hsa05418",
+      "evidence": "curated database evidence"
+    }
+  ],
+  "literature": [
+    {
+      "pmid": "33649166",
+      "title": "Targeting a neoantigen derived from a common TP53 mutation.",
+      "journal": "Science",
+      "year": "2021",
+      "first_author": "Hsiue EH",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33649166/",
+      "basis": "PubMed search: TP53[tiab] AND (R175H OR Arg175His)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "26501191",
+      "title": "Ductal pancreatic cancer modeling and drug screening using human pluripotent stem cell- and patient-derived tumor organoids.",
+      "journal": "Nat Med",
+      "year": "2015",
+      "first_author": "Huang L",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26501191/",
+      "basis": "PubMed search: TP53[tiab] AND (R175H OR Arg175His)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "42753739",
+      "title": "Cancers modulate processing and presentation of p53 neoantigens to evade T cell detection.",
+      "journal": "Immunity",
+      "year": "2026",
+      "first_author": "Haratani K",
+      "pubtypes": [
+        "Journal Article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42753739/",
+      "basis": "PubMed search: TP53[tiab] AND (R175H OR Arg175His)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "34439241",
+      "title": "The Function of the Mutant p53-R175H in Cancer.",
+      "journal": "Cancers (Basel)",
+      "year": "2021",
+      "first_author": "Chiang YT",
+      "pubtypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34439241/",
+      "basis": "PubMed search: TP53[tiab] AND (R175H OR Arg175His)",
+      "evidence": "literature-supported association"
+    },
+    {
+      "pmid": "42858298",
+      "title": "MVB Maturation Responsive to KRAS(G12D)/TP53(R175H) Co-mutations Fuels Extracellular Vesicle-hypersecretion Phenotype to Aggravate Lymphangiogenesis and Lymphatic Metastasis.",
+      "journal": "J Extracell Vesicles",
+      "year": "2026",
+      "first_author": "Yang J",
+      "pubtypes": [
+        "Journal Article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42858298/",
+      "basis": "PubMed search: TP53[tiab] AND (R175H OR Arg175His)",
+      "evidence": "literature-supported association"
+    }
+  ],
+  "warnings": [],
+  "source_status": {
+    "NCBI Gene": "ok",
+    "UniProt": "ok",
+    "ClinVar": "ok",
+    "KEGG": "ok",
+    "PubMed": "ok"
+  },
+  "notes": [
+    "TP53 is in 14 KEGG signalling/process maps; 6 drawn.",
+    "Pathway membership is that of the wild-type gene. Whether this variant gains, loses or alters a pathway function is only stated where a cited record says so."
+  ],
+  "requests": [
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmax=5&retmode=json&term=TP53%5Bsym%5D%20AND%209606%5Btaxid%5D%20AND%20alive%5Bprop%5D&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:03Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=7157&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:03Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/search?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Ccc_function%2Cgo_p%2Cxref_reactome%2Cxref_kegg%2Cxref_string%2Cxref_geneid&format=json&query=gene_exact%3ATP53%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=1",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:04Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/P04637.json?fields=ft_variant%2Cft_domain%2Cft_binding%2Cft_act_site%2Cft_region%2Cft_motif%2Cft_mutagen%2Cft_mod_res%2Cft_dna_bind%2Cft_zn_fing%2Csequence",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:59Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&retmax=10&retmode=json&term=TP53%5Bgene%5D%20AND%20%28%22R175H%22%20OR%20%22Arg175His%22%29&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:29:59Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=clinvar&id=12374&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:30:00Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/list/pathway/hsa",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:33Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/link/pathway/hsa:7157",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:28:34Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmax=5&retmode=json&sort=relevance&term=TP53%5Btiab%5D%20AND%20%28R175H%20OR%20Arg175His%29&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:30:01Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=33649166%2C26501191%2C42753739%2C34439241%2C42858298&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T19:30:01Z"
+    }
+  ],
+  "diagram_note": "Variant -> gene, the UniProt regions it falls in, ClinVar conditions, and the gene's KEGG maps.",
+  "citations": [
+    {
+      "source": "NCBI Gene",
+      "id": "7157",
+      "url": "https://www.ncbi.nlm.nih.gov/gene/7157",
+      "title": "TP53: tumor protein p53"
+    },
+    {
+      "source": "UniProt",
+      "id": "P04637",
+      "url": "https://www.uniprot.org/uniprotkb/P04637/entry",
+      "title": "TP53: Cellular tumor antigen p53"
+    },
+    {
+      "source": "PubMed",
+      "id": "PMID:16793544",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16793544/",
+      "title": ""
+    },
+    {
+      "source": "PubMed",
+      "id": "PMID:18996393",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18996393/",
+      "title": ""
+    },
+    {
+      "source": "PubMed",
+      "id": "PMID:20364130",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20364130/",
+      "title": ""
+    },
+    {
+      "source": "PubMed",
+      "id": "PMID:25732823",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25732823/",
+      "title": ""
+    },
+    {
+      "source": "PubMed",
+      "id": "PMID:17719541",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17719541/",
+      "title": ""
+    },
+    {
+      "source": "PubMed",
+      "id": "PMID:19509332",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19509332/",
+      "title": ""
+    },
+    {
+      "source": "ClinVar",
+      "id": "VCV000012374",
+      "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/12374/",
+      "title": "NM_000546.6(TP53):c.524G>A (p.Arg175His)"
+    },
+    {
+      "source": "KEGG",
+      "id": "hsa03440",
+      "url": "https://www.kegg.jp/pathway/hsa03440",
+      "title": "Homologous recombination"
+    },
+    {
+      "source": "KEGG",
+      "id": "hsa04010",
+      "url": "https://www.kegg.jp/pathway/hsa04010",
+      "title": "MAPK signaling pathway"
+    },
+    {
+      "source": "KEGG",
+      "id": "hsa04071",
+      "url": "https://www.kegg.jp/pathway/hsa04071",
+      "title": "Sphingolipid signaling pathway"
+    },
+    {
+      "source": "KEGG",
+      "id": "hsa04110",
+      "url": "https://www.kegg.jp/pathway/hsa04110",
+      "title": "Cell cycle"
+    },
+    {
+      "source": "KEGG",
+      "id": "hsa04115",
+      "url": "https://www.kegg.jp/pathway/hsa04115",
+      "title": "p53 signaling pathway"
+    },
+    {
+      "source": "KEGG",
+      "id": "hsa04137",
+      "url": "https://www.kegg.jp/pathway/hsa04137",
+      "title": "Mitophagy - animal"
+    },
+    {
+      "source": "PubMed",
+      "id": "PMID:16959974",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16959974/",
+      "title": ""
+    },
+    {
+      "source": "PubMed",
+      "id": "PMID:1868473",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1868473/",
+      "title": ""
+    }
+  ]
+}

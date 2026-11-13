@@ -1,0 +1,35 @@
+digraph BioPathway {
+  rankdir=LR; splines=true; nodesep=0.35;
+  node [fontname="Helvetica", fontsize=11, style="filled"];
+  edge [fontname="Helvetica", fontsize=9];
+  labelloc="t"; label="pathway: MAPK signaling | genes: EGFR, MAPK1";
+  n0 [label="RRAS2/MRAS/HRAS (+3)", shape=box, fillcolor="#ffffff"];
+  n1 [label="BRAF", shape=box, fillcolor="#ffffff"];
+  n2 [label="GRB2", shape=box, fillcolor="#ffffff"];
+  n3 [label="EGFR/CSF1R/EPHA2 (+22)", shape=box, penwidth=3, color="#b8860b", fillcolor="#fff3bf"];
+  n4 [label="SOS1/SOS2", shape=box, fillcolor="#ffffff"];
+  n5 [label="MAP2K1", shape=box, fillcolor="#ffffff"];
+  n6 [label="MAP2K2", shape=box, fillcolor="#ffffff"];
+  n7 [label="MAPK1/MAPK3", shape=box, penwidth=3, color="#b8860b", fillcolor="#fff3bf"];
+  n8 [label="MAP3K1", shape=box, fillcolor="#ffffff"];
+  n9 [label="RAF1", shape=box, fillcolor="#ffffff"];
+  n10 [label="ARAF", shape=box, fillcolor="#ffffff"];
+  n2 -> n3 [label="binding · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6, dir=none];
+  n4 -> n2 [label="binding · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6, dir=none];
+  n4 -> n0 [label="activation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n0 -> n1 [label="activation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n0 -> n9 [label="activation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n1 -> n5 [label="phosphorylation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n1 -> n6 [label="phosphorylation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n9 -> n5 [label="phosphorylation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n9 -> n6 [label="phosphorylation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n5 -> n7 [label="phosphorylation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n6 -> n7 [label="phosphorylation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n8 -> n5 [label="phosphorylation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n8 -> n6 [label="phosphorylation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n0 -> n10 [label="activation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n10 -> n5 [label="activation +p · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n10 -> n6 [label="activation +p · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n0 -> n8 [label="relation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  legend [shape=plaintext, style="", label=<<TABLE BORDER="0" CELLSPACING="2"><TR><TD COLSPAN="2"><B>Evidence</B></TD></TR><TR><TD BGCOLOR="#1b7837" WIDTH="18"></TD><TD ALIGN="LEFT">EXP = experimentally validated</TD></TR><TR><TD BGCOLOR="#2166ac" WIDTH="18"></TD><TD ALIGN="LEFT">CUR = curated database evidence</TD></TR><TR><TD BGCOLOR="#e08214" WIDTH="18"></TD><TD ALIGN="LEFT">PRED = computationally predicted</TD></TR><TR><TD BGCOLOR="#762a83" WIDTH="18"></TD><TD ALIGN="LEFT">LIT = literature-supported association</TD></TR><TR><TD BGCOLOR="#878787" WIDTH="18"></TD><TD ALIGN="LEFT">HYP = hypothetical/insufficiently established</TD></TR></TABLE>>];
+}

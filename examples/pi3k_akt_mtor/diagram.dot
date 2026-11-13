@@ -1,0 +1,18 @@
+digraph BioPathway {
+  rankdir=LR; splines=true; nodesep=0.35;
+  node [fontname="Helvetica", fontsize=11, style="filled"];
+  edge [fontname="Helvetica", fontsize=9];
+  labelloc="t"; label="pathway: PI3K-AKT-mTOR | genes: PIK3CA, AKT1, MTOR";
+  n0 [label="TSC2:TSC1", shape=box3d, fillcolor="#ffffff"];
+  n1 [label="RHEB", shape=box, fillcolor="#ffffff"];
+  n2 [label="RPTOR:MTOR:MLST8", shape=box3d, penwidth=3, color="#b8860b", fillcolor="#fff3bf"];
+  n3 [label="PIK3CA/P3R3URF-PIK3R3/PIK3CB (+4)", shape=box, penwidth=3, color="#b8860b", fillcolor="#fff3bf"];
+  n4 [label="Phosphatidylinositol-3,4,5-trisphosphate", shape=ellipse, fillcolor="#e6f4ea"];
+  n5 [label="AKT1/AKT3/AKT2", shape=box, penwidth=3, color="#b8860b", fillcolor="#fff3bf"];
+  n1 -> n2 [label="activation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n3 -> n4 [label="activation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n4 -> n5 [label="activation · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n0 -> n1 [label="inhibition · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6, arrowhead=tee];
+  n5 -> n0 [label="inhibition +p · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6, arrowhead=tee];
+  legend [shape=plaintext, style="", label=<<TABLE BORDER="0" CELLSPACING="2"><TR><TD COLSPAN="2"><B>Evidence</B></TD></TR><TR><TD BGCOLOR="#1b7837" WIDTH="18"></TD><TD ALIGN="LEFT">EXP = experimentally validated</TD></TR><TR><TD BGCOLOR="#2166ac" WIDTH="18"></TD><TD ALIGN="LEFT">CUR = curated database evidence</TD></TR><TR><TD BGCOLOR="#e08214" WIDTH="18"></TD><TD ALIGN="LEFT">PRED = computationally predicted</TD></TR><TR><TD BGCOLOR="#762a83" WIDTH="18"></TD><TD ALIGN="LEFT">LIT = literature-supported association</TD></TR><TR><TD BGCOLOR="#878787" WIDTH="18"></TD><TD ALIGN="LEFT">HYP = hypothetical/insufficiently established</TD></TR></TABLE>>];
+}

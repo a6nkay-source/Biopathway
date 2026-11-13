@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: kras-g12d-drives-mapk
+expected_outcome: |
+  A step-by-step mechanism from KRAS G12D through RAF, MEK and ERK, with a pathway diagram, an explicit strength-of-evidence label on each step, the variant's database records (UniProt or ClinVar), and citable database or literature identifiers. It does not claim pancreas-specific facts without a source.

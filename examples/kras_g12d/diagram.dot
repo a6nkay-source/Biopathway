@@ -1,0 +1,36 @@
+digraph BioPathway {
+  rankdir=LR; splines=true; nodesep=0.35;
+  node [fontname="Helvetica", fontsize=11, style="filled"];
+  edge [fontname="Helvetica", fontsize=9];
+  labelloc="t"; label="mutation: KRAS G12D";
+  n0 [label="KRAS", shape=box, penwidth=3, color="#b8860b", fillcolor="#fff3bf"];
+  n1 [label="KRAS p.G12D", shape=cds, penwidth=3, color="#b8860b", fillcolor="#fff3bf"];
+  n2 [label="KRAS-related disorder", shape=parallelogram, fillcolor="#f3e5f5"];
+  n3 [label="Gastric cancer", shape=parallelogram, fillcolor="#f3e5f5"];
+  n4 [label="Acute myeloid leukemia", shape=parallelogram, fillcolor="#f3e5f5"];
+  n5 [label="Neoplasm", shape=parallelogram, fillcolor="#f3e5f5"];
+  n6 [label="Ovarian mucinous adenocarcinoma", shape=parallelogram, fillcolor="#f3e5f5"];
+  n7 [label="Adenocarcinoma of the large intestine", shape=parallelogram, fillcolor="#f3e5f5"];
+  n8 [label="Diffuse pediatric-type high-grade glioma, H3-wildtype and IDH-wildtype", shape=parallelogram, fillcolor="#f3e5f5"];
+  n9 [label="MAPK signaling pathway", shape=hexagon, fillcolor="#e8eaf6"];
+  n10 [label="ErbB signaling pathway", shape=hexagon, fillcolor="#e8eaf6"];
+  n11 [label="Ras signaling pathway", shape=hexagon, fillcolor="#e8eaf6"];
+  n12 [label="Rap1 signaling pathway", shape=hexagon, fillcolor="#e8eaf6"];
+  n13 [label="Chemokine signaling pathway", shape=hexagon, fillcolor="#e8eaf6"];
+  n14 [label="FoxO signaling pathway", shape=hexagon, fillcolor="#e8eaf6"];
+  n1 -> n0 [label="alters · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n1 -> n2 [label="germline: Pathogenic/Likely pathogenic · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n1 -> n3 [label="germline: Pathogenic/Likely pathogenic · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n1 -> n4 [label="germline: Pathogenic/Likely pathogenic · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n1 -> n5 [label="oncogenicity: Oncogenic · LIT", color="#762a83", fontcolor="#762a83", penwidth=1.6, style=dashed];
+  n1 -> n6 [label="clinical impact: Tier I - Strong · LIT", color="#762a83", fontcolor="#762a83", penwidth=1.6, style=dashed];
+  n1 -> n7 [label="clinical impact: Tier I - Strong · LIT", color="#762a83", fontcolor="#762a83", penwidth=1.6, style=dashed];
+  n1 -> n8 [label="clinical impact: Tier I - Strong · LIT", color="#762a83", fontcolor="#762a83", penwidth=1.6, style=dashed];
+  n0 -> n9 [label="member of · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n0 -> n10 [label="member of · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n0 -> n11 [label="member of · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n0 -> n12 [label="member of · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n0 -> n13 [label="member of · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  n0 -> n14 [label="member of · CUR", color="#2166ac", fontcolor="#2166ac", penwidth=1.6];
+  legend [shape=plaintext, style="", label=<<TABLE BORDER="0" CELLSPACING="2"><TR><TD COLSPAN="2"><B>Evidence</B></TD></TR><TR><TD BGCOLOR="#1b7837" WIDTH="18"></TD><TD ALIGN="LEFT">EXP = experimentally validated</TD></TR><TR><TD BGCOLOR="#2166ac" WIDTH="18"></TD><TD ALIGN="LEFT">CUR = curated database evidence</TD></TR><TR><TD BGCOLOR="#e08214" WIDTH="18"></TD><TD ALIGN="LEFT">PRED = computationally predicted</TD></TR><TR><TD BGCOLOR="#762a83" WIDTH="18"></TD><TD ALIGN="LEFT">LIT = literature-supported association</TD></TR><TR><TD BGCOLOR="#878787" WIDTH="18"></TD><TD ALIGN="LEFT">HYP = hypothetical/insufficiently established</TD></TR></TABLE>>];
+}

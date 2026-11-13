@@ -1,0 +1,66 @@
+flowchart LR
+    n0["TP53"]
+    n1>"TP53 p.R175H"]
+    n2("DNA binding (102-292)")
+    n3("Interaction with CCAR2 (1-320)")
+    n4("Interaction with HIPK1 (100-370)")
+    n5("Required for interaction with ZNF385A (100-300)")
+    n6("Required for interaction with FBXO42 (113-236)")
+    n7("Interaction with AXIN1 (116-292)")
+    n8[/"Li-Fraumeni syndrome"/]
+    n9[/"Neoplasm"/]
+    n10[/"Diffuse midline glioma, H3 K27M-mutant"/]
+    n11[/"Undifferentiated embryonal sarcoma of the liver"/]
+    n12[/"IDH-wildtype glioblastoma"/]
+    n13{{"Homologous recombination"}}
+    n14{{"MAPK signaling pathway"}}
+    n15{{"Sphingolipid signaling pathway"}}
+    n16{{"Cell cycle"}}
+    n17{{"p53 signaling pathway"}}
+    n18{{"Mitophagy - animal"}}
+    n1 -->|"alters · CUR"| n0
+    n1 -->|"located in · EXP"| n2
+    n1 -->|"located in · EXP"| n3
+    n1 -.->|"located in · PRED"| n4
+    n1 -->|"located in · EXP"| n5
+    n1 -->|"located in · EXP"| n6
+    n1 -.->|"located in · PRED"| n7
+    n1 -->|"germline: Pathogenic · CUR"| n8
+    n1 -.->|"oncogenicity: Oncogenic · LIT"| n9
+    n1 -.->|"clinical impact: Tier I - Strong · LIT"| n10
+    n1 -.->|"clinical impact: Tier I - Strong · LIT"| n11
+    n1 -.->|"clinical impact: Tier I - Strong · LIT"| n12
+    n0 -->|"member of · CUR"| n13
+    n0 -->|"member of · CUR"| n14
+    n0 -->|"member of · CUR"| n15
+    n0 -->|"member of · CUR"| n16
+    n0 -->|"member of · CUR"| n17
+    n0 -->|"member of · CUR"| n18
+    linkStyle 0 stroke:#2166ac,stroke-width:2px
+    linkStyle 1 stroke:#1b7837,stroke-width:2px
+    linkStyle 2 stroke:#1b7837,stroke-width:2px
+    linkStyle 3 stroke:#e08214,stroke-width:2px
+    linkStyle 4 stroke:#1b7837,stroke-width:2px
+    linkStyle 5 stroke:#1b7837,stroke-width:2px
+    linkStyle 6 stroke:#e08214,stroke-width:2px
+    linkStyle 7 stroke:#2166ac,stroke-width:2px
+    linkStyle 8 stroke:#762a83,stroke-width:2px
+    linkStyle 9 stroke:#762a83,stroke-width:2px
+    linkStyle 10 stroke:#762a83,stroke-width:2px
+    linkStyle 11 stroke:#762a83,stroke-width:2px
+    linkStyle 12 stroke:#2166ac,stroke-width:2px
+    linkStyle 13 stroke:#2166ac,stroke-width:2px
+    linkStyle 14 stroke:#2166ac,stroke-width:2px
+    linkStyle 15 stroke:#2166ac,stroke-width:2px
+    linkStyle 16 stroke:#2166ac,stroke-width:2px
+    linkStyle 17 stroke:#2166ac,stroke-width:2px
+    classDef focus fill:#fff3bf,stroke:#b8860b,stroke-width:3px
+    classDef compound fill:#e6f4ea,stroke:#3c8d5a
+    classDef pathway fill:#e8eaf6,stroke:#3f51b5
+    classDef variant fill:#fde2e1,stroke:#c0392b,stroke-width:2px
+    classDef condition fill:#f3e5f5,stroke:#8e24aa
+    classDef region fill:#f1f3f4,stroke:#5f6368
+    class n13,n14,n15,n16,n17,n18 pathway
+    class n8,n9,n10,n11,n12 condition
+    class n2,n3,n4,n5,n6,n7 region
+    class n0,n1 focus
