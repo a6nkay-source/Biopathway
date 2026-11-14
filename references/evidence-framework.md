@@ -42,13 +42,26 @@ Caveat for STRING: the experiments channel includes evidence transferred from or
 | GO | all other codes (IEA, ISS, ISO, IBA, RCA...) |
 | STRING | co-expression, neighbourhood, fusion or co-occurrence channel >= 0.4 with no experimental, database or text-mining support at that level |
 
+### EXP-lit: experimentally shown in a primary study you read
+
+Not assigned by the tool; you assign it after reading an abstract (or full text) from `literature`.
+
+| Condition | Label |
+|---|---|
+| The abstract states a specific experiment and its result (ChIP, reporter assay, knockdown or knockout with rescue, binding assay, mouse genetics...) | EXP-lit, plus model system, method, and "single study" if it is one |
+| Correlation only (expression vs outcome, co-occurrence in tumours, metabolomics association) | LIT |
+| Review, editorial, commentary | LIT (it summarises others; cite the primary papers it points to if you read them) |
+| Title or search hit you did not read | further reading, no label |
+
+Why a separate code: curated databases lag the literature and miss most single-lab findings. Leaving primary evidence out makes an answer look more certain than it is. But one paper in one cell line is not a curated consensus, so EXP-lit always carries its system and replication status and is never merged into CUR.
+
 ### LIT: literature-supported association
 
 | Source | Rule |
 |---|---|
 | STRING | text-mining channel (`tscore`) >= 0.4 is the only channel at threshold: the genes are co-mentioned, not shown to interact |
 | ClinVar | "criteria provided, single submitter" or conflicting: an assertion by one lab, not independently confirmed |
-| PubMed search results | listed as reading material only; never used to draw an edge |
+| PubMed search results | unread hits are further reading only; the tool never uses them to draw an edge. Correlational primary studies and reviews you read are LIT |
 
 ### HYP: hypothetical / insufficiently established
 

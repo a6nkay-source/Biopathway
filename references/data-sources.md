@@ -2,7 +2,7 @@
 
 | Source | Base URL | Used for | Rate limit applied | Terms |
 |---|---|---|---|---|
-| NCBI Gene / PubMed / ClinVar (E-utilities) | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/ | gene resolution, literature, clinical variant assertions | 3 req/s; 10 req/s if `NCBI_API_KEY` is set | public; NCBI asks heavy users to register a key and identify themselves |
+| NCBI Gene / PubMed / ClinVar (E-utilities) | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/ | gene resolution, literature search, abstracts (efetch XML), clinical variant assertions | 3 req/s; 10 req/s if `NCBI_API_KEY` is set | public; NCBI asks heavy users to register a key and identify themselves |
 | UniProtKB REST | https://rest.uniprot.org/uniprotkb/ | protein entry, function, GO, features, sequence | 5 req/s | CC BY 4.0 |
 | Reactome Content Service | https://reactome.org/ContentService/ | pathway search, hierarchy, events, gene-to-pathway mapping | 5 req/s | CC0 (data), CC BY 4.0 (some content) |
 | STRING API | https://string-db.org/api/ | functional association networks with channel scores | 1 req/s, `caller_identity=biopathway-mapper` | CC BY 4.0; STRING asks for one call per second |

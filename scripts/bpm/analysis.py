@@ -453,6 +453,7 @@ def kegg_signalling_graph(ctx: Context, a: Analysis, pid: str, focus: dict, hops
     for eid, e in entries.items():
         if e["type"] == "gene" and focus_ids & set(gene_ids(e)):
             entry_node(eid)
+    flag_suspect_inversions(a, all_edges, pid)
 
     sym_nodes: dict[str, set] = {}
     for sym in sorted(focus_syms):
@@ -951,3 +952,109 @@ def analyze_mutation(ctx: Context, gene: str, change: str) -> Analysis:
                    "loses or alters a pathway function is only stated where a cited record says so.")
     a.diagram_note = "Variant -> gene, the UniProt regions it falls in, ClinVar conditions, and the gene's KEGG maps."
     return _finish(ctx, a, start)
+
+
+# ======================================================== 6. LITERATURE
+def analyze_literature(ctx: Context, query: str, genes: list[str] = (), pmids: list[str] = (),
+                       max_results: int = 8) -> Analysis:
+    """Primary studies and reviews with abstracts, for Claude to read and judge.
+
+    The tool does not decide what a paper shows. Every record starts as LIT;
+    references/evidence-framework.md says when a finding Claude has read in an
+    abstract may be reported as a single-study experimental result.
+    """
+    a, start = _start(ctx, "literature", query + (f" | genes: {', '.join(genes)}" if genes else "")
+                      + (f" | PMIDs: {', '.join(pmids)}" if pmids else ""))
+    for g in genes:
+        resolve_gene(ctx, a, g)
+    symbols = [v["symbol"] for v in a.resolved.values()] or list(genes)
+    gene_part = " AND ".join(f"{s}[tiab]" for s in symbols)
+    topic = f"({query})" if query else ""
+    term = " AND ".join(p for p in (gene_part, topic) if p)
+    wanted: list[tuple[str, str]] = [(str(p), "requested PMID") for p in pmids]
+    if term:
+        primary = _ranked_pubmed(ctx, a, f"{term} NOT review[pt]", symbols, query, max_results)
+        reviews = _ranked_pubmed(ctx, a, f"{term} AND review[pt]", symbols, query, 3)
+        wanted += [(p, f"PubMed search, primary research: {term}") for p in primary]
+        wanted += [(p, f"PubMed search, review: {term}") for p in reviews]
+    seen, order = set(), []
+    for pmid, basis in wanted:
+        if pmid not in seen:
+            seen.add(pmid)
+            order.append((pmid, basis))
+    recs = attempt(a, "PubMed", lambda: ctx.ncbi.pubmed_abstracts([p for p, _ in order]), []) or []
+    by_id = {r["pmid"]: r for r in recs}
+    for pmid, basis in order:
+        r = by_id.get(pmid)
+        if r is None:
+            a.warnings.append(f"PMID {pmid} was not returned by PubMed; it may not exist.")
+            continue
+        a.literature.append(dict(r, basis=basis, evidence=ev.LITERATURE))
+    if not a.literature:
+        a.warnings.append("No PubMed records found. Absence of hits is not evidence against the claim; "
+                          "try synonyms or broader terms.")
+    a.notes.append("Abstracts are provided for you to read and judge. Search ranking is not evidence. "
+                   "Report a specific finding only after reading it, with its PMID, model system "
+                   "(cell line, mouse, patient samples) and method (e.g. ChIP, knockdown, correlation). "
+                   "A single primary study is still a single study.")
+    a.diagram_note = "No diagram: literature retrieval draws no relationships by itself."
+    return _finish(ctx, a, start)
+
+
+def _title_score(title: str, symbols: list[str], query: str) -> int:
+    """Gene symbol in the title counts double; each topic word (prefix-matched) counts once."""
+    t = title.lower()
+    score = sum(2 for sym in symbols if re.search(rf"(?<![a-z0-9]){re.escape(sym.lower())}(?![a-z0-9])", t))
+    for word in {w for w in re.findall(r"[a-z0-9]+", query.lower()) if len(w) >= 4}:
+        if word[:6] in t:
+            score += 1
+    return score
+
+
+def _ranked_pubmed(ctx: Context, a: Analysis, term: str, symbols: list[str], query: str, n: int) -> list[str]:
+    """PubMed 'relevance' often buries on-topic papers. Pull up to 100 hits and
+    re-rank by title match, keeping PubMed's order as the tie-breaker."""
+    ids = attempt(a, "PubMed", lambda: ctx.ncbi._search("pubmed", term, retmax=100, sort="relevance"), []) or []
+    if len(ids) <= n:
+        return ids
+    summaries = attempt(a, "PubMed", lambda: ctx.ncbi.pubmed_summaries(ids), []) or []
+    titles = {r["pmid"]: r["title"] for r in summaries}
+    ranked = sorted(range(len(ids)), key=lambda i: (-_title_score(titles.get(ids[i], ""), symbols, query), i))
+    return [ids[i] for i in ranked[:n]]
+
+
+SUSPECT_HUB_MIN = 5      # a "hub" drives expression of at least this many genes on the map
+SUSPECT_SOURCE_MAX = 2   # the edge's source drives expression of at most this many
+
+
+def flag_suspect_inversions(a: Analysis, edges: list[Edge], pid: str) -> list[Edge]:
+    """Flag KGML expression edges whose direction looks inverted. They are not corrected.
+
+    Pattern: X -expression-> HUB, where HUB drives expression of many genes on
+    the same map, X drives almost none, and HUB -> X is not drawn. Example:
+    KEGG hsa04115 encodes BBC3 -> TP53, while 39 other p53 targets are encoded
+    TP53 -> target. The edge is kept as drawn (KEGG's record), with a warning,
+    so the inversion is visible rather than silently "fixed".
+    """
+    out_expr: dict[str, int] = {}
+    pairs = {(e.source, e.target) for e in edges}
+    for e in edges:
+        if e.relation == "expression":
+            out_expr[e.source] = out_expr.get(e.source, 0) + 1
+    flagged = []
+    for e in edges:
+        if (e.relation == "expression" and out_expr.get(e.target, 0) >= SUSPECT_HUB_MIN
+                and out_expr.get(e.source, 0) <= SUSPECT_SOURCE_MAX and (e.target, e.source) not in pairs):
+            e.modifiers.append("direction suspect")
+            e.detail += (f"; SUSPECT DIRECTION: target drives expression of {out_expr[e.target]} genes on this "
+                         "map and the source of almost none, so KEGG may have encoded this relation backwards")
+            flagged.append(e)
+            src = a.nodes[e.source].label if e.source in a.nodes else e.source
+            dst = a.nodes[e.target].label if e.target in a.nodes else e.target
+            a.warnings.append(
+                f"KEGG {pid} encodes '{src} -expression-> {dst}', but {dst} drives expression of "
+                f"{out_expr[e.target]} other genes on this map. This is probably an inversion in KEGG's "
+                f"own KGML file (the parser reproduces it faithfully). Drawn as KEGG encodes it and "
+                f"marked 'direction suspect'. Check the direction against Reactome or the literature "
+                f"before using it.")
+    return flagged

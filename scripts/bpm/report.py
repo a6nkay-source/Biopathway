@@ -123,8 +123,12 @@ def render_markdown(a: Analysis, max_edges: int = 50, max_rows: int = 60) -> str
             if r["pmid"] in seen:
                 continue
             seen.add(r["pmid"])
+            kind = " (review)" if r.get("is_review") else ""
             out.append(f"- **[{ev.SHORT[r['evidence']]}]** {r.get('first_author', '')} ({r.get('year', '')}). "
-                       f"{r['title']} *{r.get('journal', '')}*. [PMID:{r['pmid']}]({r['url']}) — {r['basis']}")
+                       f"{r['title']} *{r.get('journal', '')}*{kind}. [PMID:{r['pmid']}]({r['url']}) — {r['basis']}")
+            if r.get("abstract"):
+                text = r["abstract"] if len(r["abstract"]) <= 2000 else r["abstract"][:2000].rsplit(" ", 1)[0] + " ..."
+                out += ["", "  > " + text.replace("\n", "\n  > "), ""]
         out.append("")
 
     out += ["## Sources", ""]

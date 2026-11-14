@@ -44,7 +44,19 @@ Curated pathways are composites across cell types, species and conditions. When 
 | conversion (metabolic) | "is converted to ... by ..." |
 | indirect effect (dashed) | "acts on ... through intermediates not drawn" |
 
-## 7. Writing the answer
+## 7. Primary literature
+
+- Curated absence plus published primary evidence is a common, important pattern. Report both: "KEGG and Reactome do not place X in Y [CUR]; however, study Z showed ... in <system> [EXP-lit; PMID]".
+- Name what the experiment was. Promoter occupancy (ChIP), reporter assays, knockdown with rescue and genetic models are mechanistic. Expression-survival correlations are not.
+- Give the system and replication: "one study, mouse fibroblasts" weighs differently from "several labs, patient tumours".
+- Reviews summarise. Cite the primary studies they point to when you have read those.
+
+## 8. Honesty about your own checks
+
+- State only checks you ran, with what you saw. "The KEGG report shows BBC3 -> TP53, flagged 'direction suspect'; Reactome R-HSA-139913 states TP53 stimulates BBC3 expression" is good. "I checked the KGML and it says the opposite" is not acceptable unless you opened the KGML.
+- When a database record seems wrong, say so as a suspicion, give the conflicting source, and don't blame the tool or the database without evidence.
+
+## 9. Writing the answer
 
 - Lead with the mechanism the curated records support, then layer in associations with their weaker labels.
 - Put the label next to each claim, not only in a table at the end.

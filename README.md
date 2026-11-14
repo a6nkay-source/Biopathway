@@ -51,6 +51,7 @@ python3 scripts/bpm_cli.py pathway "MAPK signaling" --genes EGFR,MAPK1
 python3 scripts/bpm_cli.py pathway hsa04151 --genes PIK3CA,AKT1,MTOR
 python3 scripts/bpm_cli.py metabolic glycolysis --module M00001
 python3 scripts/bpm_cli.py mutation KRAS G12D
+python3 scripts/bpm_cli.py literature glycolysis --genes BRCA1
 ```
 
 `--out DIR` writes `report.md`, `analysis.json`, `diagram.mmd`, `diagram.dot` (and `diagram.svg` if Graphviz is installed). Exit codes: 0 ok, 2 nothing resolved, 3 every source failed.
@@ -103,7 +104,8 @@ A failing scenario after a refresh means an upstream record changed or the recon
 - STRING, ClinVar and PubMed give association-level evidence only, by design.
 - Diagrams are rendered to SVG only if Graphviz `dot` is installed; Mermaid text is always produced (verified to parse with Mermaid 10.9.1).
 - KEGG API use is restricted to academic users; use `--no-kegg` otherwise.
-- PubMed hits are relevance-ranked search results, not a systematic review.
+- `literature` returns relevance-ranked abstracts (re-ranked by title match), not a systematic review. Grading what a paper shows is left to Claude, under the EXP-lit/LIT rules.
+- KEGG KGML files contain occasional direction errors. Expression edges that contradict a map's transcriptional hub are flagged "direction suspect" (e.g. BBC3 -> TP53 in hsa04115) but not altered.
 
 ## Licence notes for data
 

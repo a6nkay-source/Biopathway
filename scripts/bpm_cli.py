@@ -9,6 +9,7 @@ Examples
   python3 scripts/bpm_cli.py process apoptosis --genes TP53
   python3 scripts/bpm_cli.py metabolic glycolysis --module M00001
   python3 scripts/bpm_cli.py mutation KRAS G12D --out ./kras_g12d
+  python3 scripts/bpm_cli.py literature glycolysis --genes BRCA1
 
 Standard library only (Python >= 3.9). Exit codes: 0 ok, 2 nothing resolved,
 3 every queried source failed.
@@ -67,6 +68,13 @@ def build_parser() -> argparse.ArgumentParser:
     me.add_argument("--module", help="restrict to a KEGG module, e.g. M00001")
     me.add_argument("--genes", default="")
 
+    li = sub.add_parser("literature", parents=[common],
+                        help="primary studies and reviews with abstracts, to read and judge")
+    li.add_argument("query", nargs="?", default="", help="topic, e.g. 'glycolysis'")
+    li.add_argument("--genes", default="")
+    li.add_argument("--pmids", default="", help="comma-separated PMIDs to fetch directly")
+    li.add_argument("--max", type=int, default=8, help="primary studies to retrieve (default 8)")
+
     mu = sub.add_parser("mutation", parents=[common], help="protein variant in structural/clinical/pathway context")
     mu.add_argument("gene")
     mu.add_argument("change", help="e.g. R175H, p.Arg175His, G12D, E746_A750del")
@@ -88,6 +96,8 @@ def run(args) -> "an.Analysis":
         return an.analyze_process(ctx, args.query, _genes(args.genes))
     if args.command == "metabolic":
         return an.analyze_metabolic(ctx, args.query, args.module, _genes(args.genes))
+    if args.command == "literature":
+        return an.analyze_literature(ctx, args.query, _genes(args.genes), _genes(args.pmids), args.max)
     return an.analyze_mutation(ctx, args.gene, args.change)
 
 
@@ -113,7 +123,7 @@ def main(argv=None) -> int:
     statuses = [s for s in a.source_status.values() if not s.startswith("not queried")]
     if statuses and all(s.startswith("failed") for s in statuses):
         return 3
-    if not a.resolved and not a.edges and not a.pathways:
+    if not a.resolved and not a.edges and not a.pathways and not a.literature:
         return 2
     return 0
 

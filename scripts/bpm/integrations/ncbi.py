@@ -71,6 +71,18 @@ class NcbiClient:
     def pubmed_summaries(self, pmids: list[str]) -> list[dict]:
         return [self._pubmed_record(r) for r in self._summaries("pubmed", [str(p) for p in pmids])]
 
+    def pubmed_abstracts(self, pmids: list[str]) -> list[dict]:
+        """Title, abstract, publication types and year for PMIDs (efetch XML)."""
+        pmids = [str(p) for p in pmids if str(p).strip()]
+        if not pmids:
+            return []
+        params = {"db": "pubmed", "id": ",".join(pmids), "retmode": "xml", "tool": "biopathway-mapper"}
+        if os.environ.get("NCBI_EMAIL"):
+            params["email"] = os.environ["NCBI_EMAIL"]
+        secret = {"api_key": os.environ["NCBI_API_KEY"]} if os.environ.get("NCBI_API_KEY") else None
+        text = self.http.get(self.source, f"{BASE}/efetch.fcgi", params, secret_params=secret)
+        return parse_pubmed_xml(text)
+
     @staticmethod
     def _pubmed_record(r: dict) -> dict:
         authors = [a.get("name", "") for a in r.get("authors", [])]
@@ -113,3 +125,46 @@ class NcbiClient:
                 "url": f"https://www.ncbi.nlm.nih.gov/clinvar/variation/{r['uid']}/",
             })
         return out
+
+
+REVIEW_TYPES = {"Review", "Systematic Review", "Meta-Analysis", "Editorial", "Comment"}
+
+
+def parse_pubmed_xml(text: str) -> list[dict]:
+    """PubmedArticleSet XML -> records with abstract text (section labels kept)."""
+    import xml.etree.ElementTree as ET
+
+    def flat(el):
+        return " ".join("".join(el.itertext()).split()) if el is not None else ""
+
+    try:
+        root = ET.fromstring(text)
+    except ET.ParseError:
+        return []
+    out = []
+    for art in root.findall(".//PubmedArticle"):
+        pmid = art.findtext(".//MedlineCitation/PMID", "")
+        parts = []
+        for sec in art.findall(".//Abstract/AbstractText"):
+            body = flat(sec)
+            label = sec.get("Label")
+            parts.append(f"{label}: {body}" if label else body)
+        types = [p.text for p in art.findall(".//PublicationType") if p.text]
+        year = (art.findtext(".//Journal/JournalIssue/PubDate/Year")
+                or (art.findtext(".//Journal/JournalIssue/PubDate/MedlineDate") or "")[:4])
+        authors = art.findall(".//AuthorList/Author")
+        first = ""
+        if authors:
+            first = f"{authors[0].findtext('LastName', '')} {authors[0].findtext('Initials', '')}".strip()
+        out.append({
+            "pmid": pmid,
+            "title": flat(art.find(".//ArticleTitle")),
+            "journal": art.findtext(".//Journal/ISOAbbreviation", "") or art.findtext(".//Journal/Title", ""),
+            "year": year,
+            "first_author": first,
+            "pubtypes": types,
+            "is_review": bool(set(types) & REVIEW_TYPES),
+            "abstract": "\n".join(parts),
+            "url": f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/",
+        })
+    return out

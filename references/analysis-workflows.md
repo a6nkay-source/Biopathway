@@ -13,7 +13,8 @@ Supported organisms (taxid -> KEGG code): 9606 hsa, 10090 mmu, 10116 rno, 7955 d
 3. process
 4. metabolic
 5. mutation
-6. Recipes for combined questions
+6. literature
+7. Recipes for combined questions
 
 ---
 
@@ -72,7 +73,13 @@ Retrieves:
 
 The variant is never linked directly to a pathway: the diagram goes variant -> gene -> pathway, because membership belongs to the gene.
 
-## 6. Recipes
+## 6. `literature [TOPIC] [--genes A,B] [--pmids N,M] [--max 8]`
+
+Retrieves primary research and up to 3 reviews from PubMed, each with its full abstract (efetch). PubMed's relevance order often buries the most on-topic papers, so up to 100 hits are pulled and re-ranked: gene symbol in the title scores 2, each topic word scores 1, and PubMed's order breaks ties. `--pmids` fetches specific papers, e.g. to check what a reference actually says. Unknown PMIDs are warned about.
+
+Nothing here becomes an edge. You read the abstracts and grade findings EXP-lit or LIT (see evidence-framework.md). Use it to test a user's claim, to fill gaps the curated databases leave, and to verify any paper you intend to cite.
+
+## 7. Recipes
 
 | Question | Runs |
 |---|---|
@@ -82,5 +89,6 @@ The variant is never linked directly to a pathway: the diagram goes variant -> g
 | What does KRAS G12D do? | `mutation KRAS G12D`; `pathway "Ras signaling" --genes KRAS,MAPK1` for downstream context |
 | PI3K-AKT-mTOR axis | `pathway hsa04151 --genes PIK3CA,AKT1,MTOR`; `pathway hsa04150 --genes AKT1,MTOR` for the mTOR map |
 | Walk me through glycolysis | `metabolic glycolysis --module M00001` |
-| Is gene X linked to process Y? | `process "Y" --genes X`; if no placement, `gene X` and check STRING/GO, labelling the result accordingly |
+| Is gene X linked to process Y? | `process "Y" --genes X`; then `literature "Y" --genes X` and read the primary studies; `gene X` for STRING/GO |
+| "I read that X controls Y. True?" | curated check (`process`/`pathway`/`metabolic` with `--genes X`) **and** `literature "Y" --genes X`; report both what the databases contain and what the strongest primary studies show |
 | Compare several genes | `gene A B C` (STRING network + shared KEGG maps), then `pathway <shared map> --genes A,B,C` |
