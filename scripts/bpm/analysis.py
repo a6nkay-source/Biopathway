@@ -453,6 +453,15 @@ def kegg_signalling_graph(ctx: Context, a: Analysis, pid: str, focus: dict, hops
     for eid, e in entries.items():
         if e["type"] == "gene" and focus_ids & set(gene_ids(e)):
             entry_node(eid)
+    # KGML occasionally repeats a relation; merge duplicates so every edge has a unique identity.
+    merged: dict = {}
+    for e in all_edges:
+        k = e.key()
+        if k in merged:
+            merged[k].modifiers += [m for m in e.modifiers if m not in merged[k].modifiers]
+        else:
+            merged[k] = e
+    all_edges = list(merged.values())
     flag_suspect_inversions(a, all_edges, pid)
 
     sym_nodes: dict[str, set] = {}
@@ -537,6 +546,11 @@ def kegg_signalling_graph(ctx: Context, a: Analysis, pid: str, focus: dict, hops
         selected = all_edges
     for e in selected:
         a.add_edge(e)
+    # Keep the whole reconstructed map for the Explorer's "expand neighbours".
+    full_ids = {e.source for e in all_edges} | {e.target for e in all_edges}
+    a.extras["kegg_full"] = {"pathway": pid, "title": title,
+                             "nodes": [a.nodes[n] for n in full_ids if n in a.nodes],
+                             "edges": list(all_edges)}
     used = {e.source for e in a.edges} | {e.target for e in a.edges}
     covered = {m for nid in used for m in a.nodes[nid].xrefs.get("members", [])}
     for nid in list(a.nodes):
@@ -758,6 +772,12 @@ def analyze_metabolic(ctx: Context, query: str, module: str | None = None,
     for s in steps:
         enzymes = sorted(set().union(*[rxn_enzymes.get(r, set()) for r in s["ids"]]))
         rev = any(reversible.get(r, False) for r in s["ids"])
+        if not enzymes:
+            # e.g. R07159 (archaeal GAPOR): a reference-map step with no enzyme in this organism.
+            a.notes.append(f"Not drawn: reaction(s) {', '.join(s['ids'])} "
+                           f"({' + '.join(names.get(c, c) for c in s['substrates'])} -> "
+                           f"{' + '.join(names.get(c, c) for c in s['products'])}) has no {ctx.org} enzyme on this map.")
+            continue
         for c in s["substrates"] + s["products"]:
             a.add_node(Node(f"c:{c}", names.get(c, c), "compound", xrefs={"kegg": c}))
         for sub in s["substrates"]:
@@ -771,8 +791,6 @@ def analyze_metabolic(ctx: Context, query: str, module: str | None = None,
             catalysed_by_focus.setdefault(f, []).append(
                 f"{' + '.join(names.get(c, c) for c in s['substrates'])} -> "
                 f"{' + '.join(names.get(c, c) for c in s['products'])} ({', '.join(s['ids'])})")
-        if not enzymes:
-            a.notes.append(f"No {ctx.org} enzyme is linked to reaction(s) {', '.join(s['ids'])} on this map.")
     for f in focus_syms:
         if f in catalysed_by_focus:
             a.statements.append(Statement(f"{f} is mapped by KEGG as an enzyme for: " +
@@ -1057,4 +1075,24 @@ def flag_suspect_inversions(a: Analysis, edges: list[Edge], pid: str) -> list[Ed
                 f"own KGML file (the parser reproduces it faithfully). Drawn as KEGG encodes it and "
                 f"marked 'direction suspect'. Check the direction against Reactome or the literature "
                 f"before using it.")
+    # The same mis-encoded source often appears on other expression edges whose target has no
+    # other expression input (e.g. BBC3 -> TP53AIP1 alongside BBC3 -> TP53 in hsa04115).
+    incoming: dict = {}
+    for e in edges:
+        if e.relation == "expression":
+            incoming[e.target] = incoming.get(e.target, 0) + 1
+    for bad in list(flagged):
+        hub = bad.target
+        for e in edges:
+            if (e.relation == "expression" and e.source == bad.source and e.target != hub and e not in flagged
+                    and incoming.get(e.target, 0) == 1 and (hub, e.target) not in pairs):
+                e.modifiers.append("direction suspect")
+                e.detail += (f"; SUSPECT SOURCE: shares the mis-encoded source of '{bad.source} -> {hub}'; "
+                             f"probably {hub} -> target in KEGG's intended map")
+                flagged.append(e)
+                src = a.nodes[e.source].label if e.source in a.nodes else e.source
+                dst = a.nodes[e.target].label if e.target in a.nodes else e.target
+                hl = a.nodes[hub].label if hub in a.nodes else hub
+                a.warnings.append(f"KEGG {pid} also encodes '{src} -expression-> {dst}' from the same suspect "
+                                  f"source; it is probably '{hl} -> {dst}'. Marked 'direction suspect'.")
     return flagged

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: glycolysis-steps
+expected_outcome: |
+  Lists the ten steps from glucose to pyruvate with correct human enzymes (HK, GPI, PFK, ALDO, TPI, GAPDH, PGK, PGAM, ENO, PK), a diagram and KEGG citations, and does not invent a human enzyme for the archaeal R07159 step.

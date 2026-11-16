@@ -3,4 +3,4 @@
 Standard library only. See ../../SKILL.md for how Claude is expected to use it.
 """
 
-__version__ = "1.0.0"
+__version__ = "2.0.0"

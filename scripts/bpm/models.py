@@ -69,6 +69,7 @@ class Analysis:
     notes: list = field(default_factory=list)
     requests: list = field(default_factory=list)
     diagram_note: str = ""
+    extras: dict = field(default_factory=dict)        # structured payloads for the Explorer/MCP
 
     def add_node(self, node: Node) -> Node:
         existing = self.nodes.get(node.id)

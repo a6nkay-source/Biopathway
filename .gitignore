@@ -3,3 +3,6 @@ __pycache__/
 .DS_Store
 *.skill
 evals/results/
+explorer/node_modules/
+explorer/dist/
+explorer/*.tsbuildinfo

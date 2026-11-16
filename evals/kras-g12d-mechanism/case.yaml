@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: kras-g12d-mechanism
+expected_outcome: |
+  Explains that G12D impairs GTP hydrolysis / GAP stimulation using documented records (Reactome disease events, UniProt, ClinVar), compares normal vs mutant signalling, labels evidence, and does not transfer effects from other variants.

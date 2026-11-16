@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: egfr-mapk
+expected_outcome: |
+  A directed route EGFR to GRB2 to SOS to RAS to RAF to MEK to ERK from KEGG, with GRB2 binding described as association/binding rather than activation, phosphorylation of MEK/ERK, evidence labels, a diagram and KEGG citations.

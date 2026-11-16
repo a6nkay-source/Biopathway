@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: pi3k-tsc2-loss
+expected_outcome: |
+  Explains AKT inhibits TSC1/2, TSC1/2 inhibits RHEB, RHEB activates mTORC1 (curated), and concludes TSC2 loss is expected to increase mTORC1 activity (disinhibition), labelled as inference/hypothesis from the curated structure, not as graph 'loss of reachability' meaning mTORC1 is off.

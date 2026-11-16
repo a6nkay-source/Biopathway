@@ -55,7 +55,7 @@ class NcbiClient:
                     "gene_id": record["uid"],
                     "symbol": record.get("name", ""),
                     "description": record.get("description", ""),
-                    "aliases": [a.strip() for a in record.get("otheraliases", "").split(",") if a.strip()],
+                    "aliases": [a.strip().strip("'\"") for a in record.get("otheraliases", "").split(",") if a.strip().strip("'\"")],
                     "map_location": record.get("maplocation", ""),
                     "summary": record.get("summary", ""),
                     "matched_by": "official symbol" if exact else "alias",
@@ -156,8 +156,11 @@ def parse_pubmed_xml(text: str) -> list[dict]:
         first = ""
         if authors:
             first = f"{authors[0].findtext('LastName', '')} {authors[0].findtext('Initials', '')}".strip()
+        doi = next((x.text for x in art.findall(".//PubmedData/ArticleIdList/ArticleId")
+                    if x.get("IdType") == "doi" and x.text), "")
         out.append({
             "pmid": pmid,
+            "doi": doi,
             "title": flat(art.find(".//ArticleTitle")),
             "journal": art.findtext(".//Journal/ISOAbbreviation", "") or art.findtext(".//Journal/Title", ""),
             "year": year,

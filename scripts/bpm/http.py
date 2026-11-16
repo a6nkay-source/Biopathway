@@ -28,6 +28,10 @@ MIN_INTERVAL = {
     "string": 1.0,     # STRING asks for one request per second
     "uniprot": 0.2,
     "reactome": 0.2,
+    "alphafold": 0.2,
+    "rcsb": 0.2,
+    "gtex": 0.5,
+    "hpa": 0.5,
 }
 RETRY_STATUS = {429, 500, 502, 503, 504}
 DEFAULT_TTL = 7 * 24 * 3600
@@ -48,9 +52,9 @@ def utcnow() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-def _urllib_transport(url: str, headers: dict, timeout: float):
+def _urllib_transport(url: str, headers: dict, timeout: float, data: Optional[bytes] = None):
     """Return (status, response_headers, text). Raises OSError on network failure."""
-    req = urllib.request.Request(url, headers=headers)
+    req = urllib.request.Request(url, headers=headers, data=data, method="POST" if data is not None else "GET")
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.status, dict(resp.headers), resp.read().decode("utf-8", "replace")
@@ -148,10 +152,24 @@ class HttpClient:
         """
         return self._get(source, url, params, accept, secret_params)
 
-    def _get(self, source, url, params, accept, secret_params):
+    def post(self, source: str, url: str, body: str, content_type: str = "text/plain",
+             accept: Optional[str] = "application/json") -> str:
+        """POST with the same cache/retry/provenance rules. The cache key includes a body hash."""
+        return self._get(source, url, None, accept, None, data=body.encode(), content_type=content_type)
+
+    def post_json(self, source: str, url: str, body: str, content_type: str = "text/plain"):
+        text = self.post(source, url, body, content_type)
+        try:
+            return json.loads(text)
+        except ValueError as exc:
+            raise SourceError(source, url, f"response was not valid JSON: {exc}") from exc
+
+    def _get(self, source, url, params, accept, secret_params, data=None, content_type=None):
         if params:
             query = urllib.parse.urlencode(sorted(params.items()), quote_via=urllib.parse.quote)
             url = f"{url}{'&' if '?' in url else '?'}{query}"
+        if data is not None:  # cache/log key for POST: URL plus a digest of the body
+            url = f"{url}#POST:{hashlib.sha256(data).hexdigest()[:16]}"
         cached = self._cache_read(url)
         if cached is not None:
             self.log.append({"source": source, "url": url, "cached": True,
@@ -166,19 +184,24 @@ class HttpClient:
             raise SourceError(source, url, "offline mode and no cached response")
 
         # Secrets are added to the wire URL only: never to the cache key or log.
-        wire_url = url
+        wire_url = url.split("#POST:")[0]
         if secret_params:
             wire_url += ("&" if "?" in url else "?") + urllib.parse.urlencode(secret_params)
         headers = {"User-Agent": USER_AGENT}
         if accept:
             headers["Accept"] = accept
+        if content_type:
+            headers["Content-Type"] = content_type
 
         last_error = "no attempt made"
         status = None
         for attempt in range(self.max_retries + 1):
             self._throttle(source)
             try:
-                status, resp_headers, body = self.transport(wire_url, headers, self.timeout)
+                if data is None:
+                    status, resp_headers, body = self.transport(wire_url, headers, self.timeout)
+                else:
+                    status, resp_headers, body = self.transport(wire_url, headers, self.timeout, data)
             except (OSError, ValueError) as exc:  # URLError, timeouts, DNS failures
                 status, resp_headers, body = None, {}, ""
                 last_error = f"network error: {exc}"

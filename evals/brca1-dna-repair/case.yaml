@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: brca1-dna-repair
+expected_outcome: |
+  Names the Reactome DSB repair sub-pathways BRCA1 is placed in (homologous recombination at least), describes mechanistic steps such as BRCA1-BARD1 and resection partners with evidence labels, includes a diagram and cites Reactome ids.

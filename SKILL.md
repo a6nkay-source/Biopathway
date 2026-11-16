@@ -1,7 +1,7 @@
 ---
 name: biopathway-mapper
 description: Evidence-traceable analysis of genes, proteins, mutations, signalling pathways, metabolic pathways and biological processes, built from live NCBI Gene, UniProt, Reactome, STRING, KEGG, ClinVar and PubMed records, with Mermaid/Graphviz pathway diagrams and source citations. Every relationship is labelled experimentally validated, curated, predicted, literature-supported or hypothetical. Use this skill whenever the user asks how a gene or protein works, what pathway it is in, what it interacts with, what a mutation (e.g. KRAS G12D, TP53 R175H, BRCA1 variants) does, how a signalling cascade runs (MAPK, PI3K-AKT-mTOR, p53, Wnt...), how a metabolic route proceeds (glycolysis, TCA...), how a process like apoptosis or DNA repair is organised, whether a published claim about a gene is actually true, or wants a pathway diagram, even if they do not name any database.
-compatibility: Python 3.9+ standard library only; outbound HTTPS to eutils.ncbi.nlm.nih.gov, rest.uniprot.org, reactome.org, string-db.org and rest.kegg.jp. Graphviz is optional (only for SVG rendering).
+compatibility: Python 3.9+ standard library only; outbound HTTPS to NCBI E-utilities, UniProt, Reactome, STRING, KEGG, AlphaFold DB, RCSB PDB, GTEx and the Human Protein Atlas. Graphviz optional. Node 18+ only for building the optional Explorer app.
 ---
 
 # BioPathway Mapper
@@ -37,6 +37,19 @@ Pathway questions invite confident storytelling: "X activates Y which drives Z".
 
    Mixed questions need more than one run, e.g. "how does KRAS G12D drive MAPK signalling" = `mutation KRAS G12D` + `pathway "MAPK signaling" --genes KRAS,MAPK1`. Read `references/analysis-workflows.md` for what each analysis retrieves, its options, and worked recipes.
 
+   **Version 2.0 operations** (`bpm_cli.py tool <op> key=value ...`, JSON output; the same operations back the MCP server and the Explorer):
+
+   | Need | Operation |
+   |---|---|
+   | normal vs a specific variant, mapped onto the pathway | `tool compare_mutation gene=KRAS change=G12D pathway="MAPK signaling" genes=MAPK1` |
+   | "what if X is lost / inhibited?" | `tool perturb_pathway query=hsa04151 genes=PIK3CA,MTOR source=PIK3CA remove=TSC2` (or `inhibit="AKT1->TSC2"`) |
+   | 3D structures, domains, binding sites | `tool structures query=TP53` |
+   | tissue or cell-type context | `tool expression symbol=KRAS context=pancreas` |
+   | shared pathways of a gene set | `tool enrichment genes=TP53,BAX,BBC3` |
+   | papers with methods, systems, candidate conflicts and gaps | `tool literature query=glycolysis genes=BRCA1` |
+
+   Read `references/explorer-and-mcp.md` before interpreting these outputs. It covers how mutant changes are mapped, why perturbation results are signed hypotheses, structure provenance and expression caveats. If the user wants to *see* or interact with a pathway, point them to the BioPathway Explorer (README, "Explorer").
+
 2. **Run it** from the skill directory (absolute path shown as `<skill>`):
 
    ```bash
@@ -59,6 +72,13 @@ Pathway questions invite confident storytelling: "X activates Y which drives Z".
 6. **Cite sources.** Use the numbered Sources list from the report (database + stable id + URL) and the PMIDs of the papers you read. Name the strongest primary studies explicitly, and say what each showed and in which system (e.g. "Gene X knockdown lowered Y phosphorylation: immunoblot in two breast cancer cell lines, single study [EXP-lit; PMID n]"). Papers you did not read are "further reading", not evidence.
 
 7. **State limits** at the end: unavailable sources, cell-type/context dependence, map-drawing limits, and anything you added from background knowledge (labelled hypothetical).
+
+### Reading 2.0 outputs correctly
+
+- **Perturbation is signed.** "Unreachable" means the source's influence no longer propagates along drawn relations, *not* that the node switches off. Use `net_sign`. Losing a net-activating route (`+`) suggests reduced input from that source. Removing an *inhibitor* usually relieves inhibition: TSC2 loss is expected to raise mTORC1 activity even though the graph shows mTORC1 "losing" PI3K's route through TSC. Always call the result a computational hypothesis.
+- **Mutant changes come only from records for that exact variant.** `compare_mutation` maps Reactome disease events for the named variant entity (e.g. "RAS GAP mutants aren't stimulated by GAPs") onto drawn edges. No Reactome entity means no change is drawn; never transfer effects from another variant at the same residue.
+- **Structures:** say whether a structure is an AlphaFold prediction (with pLDDT) or an experimental PDB entry (with method and resolution). Domain overlays on PDB entries use SIFTS-mapped residues only.
+- **Expression** (GTEx, HPA) shows transcription in a tissue, not pathway activity. GEO entries are datasets to analyse, not findings.
 
 ## Evidence labels
 
@@ -114,4 +134,5 @@ The exact rules and their rationale are in `references/evidence-framework.md`. D
 - `references/evidence-framework.md`: labelling rules and the reasoning behind each threshold. Read when a label surprises you or the user challenges it.
 - `references/evidence-framework.md` also covers how to grade primary papers you read (EXP-lit vs LIT).
 - `references/data-sources.md`: endpoints, rate limits, licences, caching and identifier systems. Read for API failures, licensing or organism questions.
+- `references/explorer-and-mcp.md`: 2.0 operations (comparison, perturbation, structures, expression, enrichment, literature mining), the MCP server and the Explorer. Read before interpreting `tool` outputs.
 - `references/interpretation-guide.md`: pitfalls (paralog boxes, correlation vs causation, context dependence, ClinVar semantics) with wording examples. Read before writing a mechanism explanation for the first time in a session.

@@ -75,6 +75,14 @@ def build_parser() -> argparse.ArgumentParser:
     li.add_argument("--pmids", default="", help="comma-separated PMIDs to fetch directly")
     li.add_argument("--max", type=int, default=8, help="primary studies to retrieve (default 8)")
 
+    tl = sub.add_parser("tool", help="any BioPathway 2.0 operation as JSON (same as the MCP server / Explorer API)")
+    tl.add_argument("op", help="compare_mutation | perturb_pathway | structures | expression | enrichment | "
+                               "pathway_graph | interaction_graph | node_info | literature | ...")
+    tl.add_argument("params", nargs="*", help="key=value pairs, e.g. gene=KRAS change=G12D pathway='MAPK signaling'")
+    tl.add_argument("--offline", action="store_true")
+    tl.add_argument("--no-kegg", action="store_true")
+    tl.add_argument("--taxid", type=int, default=9606)
+
     mu = sub.add_parser("mutation", parents=[common], help="protein variant in structural/clinical/pathway context")
     mu.add_argument("gene")
     mu.add_argument("change", help="e.g. R175H, p.Arg175His, G12D, E746_A750del")
@@ -101,8 +109,30 @@ def run(args) -> "an.Analysis":
     return an.analyze_mutation(ctx, args.gene, args.change)
 
 
+def run_tool(args) -> int:
+    from bpm.service import Service
+    params = {}
+    for kv in args.params:
+        if "=" not in kv:
+            print(f"bad parameter '{kv}' (expected key=value)", file=sys.stderr)
+            return 2
+        k, v = kv.split("=", 1)
+        params[k] = v
+    svc = Service(HttpClient(offline=args.offline), taxid=args.taxid,
+                  use_kegg=not (args.no_kegg or os.environ.get("BPM_DISABLE_KEGG") == "1"))
+    try:
+        data = svc.call(args.op, params)
+    except (KeyError, ValueError) as exc:
+        print(f"error: {exc}. Operations: {', '.join(sorted(svc.ops()))}", file=sys.stderr)
+        return 2
+    print(data["markdown"] if args.op == "report" else json.dumps(data, indent=1, default=str))
+    return 0
+
+
 def main(argv=None) -> int:
     args = build_parser().parse_args(argv)
+    if args.command == "tool":
+        return run_tool(args)
     a = run(args)
     md = render_markdown(a, args.max_edges)
     mmd = mermaid(a, args.max_edges)

@@ -1,0 +1,499 @@
+{
+ "scenarios": [
+  {
+   "id": "tp53-apoptosis",
+   "title": "TP53 and apoptosis",
+   "view": "pathway",
+   "summary": "KEGG p53 signalling: how p53 drives PUMA, NOXA, BAX and the caspase cascade.",
+   "op": "pathway_graph",
+   "params": {
+    "query": "hsa04115",
+    "genes": "TP53,BBC3,PMAIP1,BAX,CASP3"
+   },
+   "file": "pathway_graph-71f6b4049c"
+  },
+  {
+   "id": "brca1-dna-repair",
+   "title": "BRCA1 and DNA repair",
+   "view": "process",
+   "summary": "Reactome DNA repair hierarchy and the curated sub-pathways BRCA1 takes part in.",
+   "op": "process_graph",
+   "params": {
+    "query": "DNA repair",
+    "genes": "BRCA1"
+   },
+   "file": "process_graph-973a649980"
+  },
+  {
+   "id": "egfr-mapk",
+   "title": "EGFR to ERK (MAPK)",
+   "view": "pathway",
+   "summary": "Every shortest directed KEGG route from EGFR to ERK1/2, through GRB2, SOS, RAS, RAF and MEK.",
+   "op": "pathway_graph",
+   "params": {
+    "query": "MAPK signaling",
+    "genes": "EGFR,MAPK1"
+   },
+   "file": "pathway_graph-be76af5b1f"
+  },
+  {
+   "id": "kras-g12d",
+   "title": "KRAS G12D vs normal",
+   "view": "mutation",
+   "summary": "Normal RAS-MAPK signalling next to the changes Reactome documents for KRAS G12D.",
+   "op": "compare_mutation",
+   "params": {
+    "gene": "KRAS",
+    "change": "G12D",
+    "pathway": "MAPK signaling",
+    "genes": "MAPK1"
+   },
+   "file": "compare_mutation-441a993866"
+  },
+  {
+   "id": "pi3k-akt-mtor",
+   "title": "PI3K-AKT-mTOR",
+   "view": "pathway",
+   "summary": "PI3K, PIP3, AKT, then TSC1/2 inhibiting RHEB inhibiting mTORC1: a double negative.",
+   "op": "pathway_graph",
+   "params": {
+    "query": "hsa04151",
+    "genes": "PIK3CA,AKT1,MTOR"
+   },
+   "file": "pathway_graph-ec194c21fc"
+  },
+  {
+   "id": "glycolysis",
+   "title": "Glycolysis",
+   "view": "metabolic",
+   "summary": "Glucose to pyruvate in KEGG module M00001, with the human enzymes for each step.",
+   "op": "metabolic_graph",
+   "params": {
+    "query": "glycolysis",
+    "module": "M00001"
+   },
+   "file": "metabolic_graph-0c0ff50e23"
+  }
+ ],
+ "files": {
+  "pathway_graph-71f6b4049c": {
+   "op": "pathway_graph",
+   "params": {
+    "query": "hsa04115",
+    "genes": "TP53,BBC3,PMAIP1,BAX,CASP3"
+   }
+  },
+  "process_graph-973a649980": {
+   "op": "process_graph",
+   "params": {
+    "query": "DNA repair",
+    "genes": "BRCA1"
+   }
+  },
+  "pathway_graph-be76af5b1f": {
+   "op": "pathway_graph",
+   "params": {
+    "query": "MAPK signaling",
+    "genes": "EGFR,MAPK1"
+   }
+  },
+  "compare_mutation-441a993866": {
+   "op": "compare_mutation",
+   "params": {
+    "gene": "KRAS",
+    "change": "G12D",
+    "pathway": "MAPK signaling",
+    "genes": "MAPK1"
+   }
+  },
+  "pathway_graph-ec194c21fc": {
+   "op": "pathway_graph",
+   "params": {
+    "query": "hsa04151",
+    "genes": "PIK3CA,AKT1,MTOR"
+   }
+  },
+  "metabolic_graph-0c0ff50e23": {
+   "op": "metabolic_graph",
+   "params": {
+    "query": "glycolysis",
+    "module": "M00001"
+   }
+  },
+  "interaction_graph-68d70d64e7": {
+   "op": "interaction_graph",
+   "params": {
+    "genes": "TP53"
+   }
+  },
+  "interaction_graph-72c05846ab": {
+   "op": "interaction_graph",
+   "params": {
+    "genes": "BRCA1"
+   }
+  },
+  "interaction_graph-fe0806cdbb": {
+   "op": "interaction_graph",
+   "params": {
+    "genes": "KRAS"
+   }
+  },
+  "structures-36973fdfdb": {
+   "op": "structures",
+   "params": {
+    "query": "KRAS"
+   }
+  },
+  "structures-194523f41f": {
+   "op": "structures",
+   "params": {
+    "query": "TP53"
+   }
+  },
+  "expression-91378cfd2b": {
+   "op": "expression",
+   "params": {
+    "symbol": "KRAS"
+   }
+  },
+  "expression-b773aa09d1": {
+   "op": "expression",
+   "params": {
+    "symbol": "TP53"
+   }
+  },
+  "expression-8fe30b6796": {
+   "op": "expression",
+   "params": {
+    "symbol": "BRCA1"
+   }
+  },
+  "expression-0bc69241be": {
+   "op": "expression",
+   "params": {
+    "symbol": "EGFR"
+   }
+  },
+  "literature-6106af45ab": {
+   "op": "literature",
+   "params": {
+    "query": "glycolysis",
+    "genes": "BRCA1"
+   }
+  },
+  "literature-ddac37ebdc": {
+   "op": "literature",
+   "params": {
+    "query": "apoptosis",
+    "genes": "TP53"
+   }
+  },
+  "enrichment-9f03684c0b": {
+   "op": "enrichment",
+   "params": {
+    "genes": "TP53,BBC3,PMAIP1,BAX,CASP9,CASP3"
+   }
+  },
+  "process_graph-ddac37ebdc": {
+   "op": "process_graph",
+   "params": {
+    "query": "apoptosis",
+    "genes": "TP53"
+   }
+  },
+  "structure_coords-31badbb872": {
+   "op": "structure_coords",
+   "params": {
+    "kind": "alphafold",
+    "id": "",
+    "accession": "P01116"
+   }
+  },
+  "structure_coords-7e67e4f188": {
+   "op": "structure_coords",
+   "params": {
+    "kind": "pdb",
+    "id": "9IAY",
+    "accession": "P01116"
+   }
+  },
+  "structure_coords-ea5eeaf5a7": {
+   "op": "structure_coords",
+   "params": {
+    "kind": "pdb",
+    "id": "9IAW",
+    "accession": "P01116"
+   }
+  },
+  "structure_coords-98ebf69518": {
+   "op": "structure_coords",
+   "params": {
+    "kind": "alphafold",
+    "id": "",
+    "accession": "P04637"
+   }
+  },
+  "structure_coords-ad99a5c2cc": {
+   "op": "structure_coords",
+   "params": {
+    "kind": "pdb",
+    "id": "3D06",
+    "accession": "P04637"
+   }
+  },
+  "structure_coords-31e518a782": {
+   "op": "structure_coords",
+   "params": {
+    "kind": "pdb",
+    "id": "5MHC",
+    "accession": "P04637"
+   }
+  },
+  "node_info-742d6a6a0d": {
+   "op": "node_info",
+   "params": {
+    "symbol": "AKT1"
+   }
+  },
+  "node_info-f42f7935be": {
+   "op": "node_info",
+   "params": {
+    "symbol": "AKT2"
+   }
+  },
+  "node_info-0f9ee7ef3e": {
+   "op": "node_info",
+   "params": {
+    "symbol": "AKT3"
+   }
+  },
+  "node_info-72e0012108": {
+   "op": "node_info",
+   "params": {
+    "symbol": "ARAF"
+   }
+  },
+  "node_info-f79ec980fb": {
+   "op": "node_info",
+   "params": {
+    "symbol": "BAX"
+   }
+  },
+  "node_info-b8d4c06aad": {
+   "op": "node_info",
+   "params": {
+    "symbol": "BBC3"
+   }
+  },
+  "node_info-a66746f071": {
+   "op": "node_info",
+   "params": {
+    "symbol": "BRAF"
+   }
+  },
+  "node_info-8fe30b6796": {
+   "op": "node_info",
+   "params": {
+    "symbol": "BRCA1"
+   }
+  },
+  "node_info-3c4a9d1ed4": {
+   "op": "node_info",
+   "params": {
+    "symbol": "CASP3"
+   }
+  },
+  "node_info-094d27e9d5": {
+   "op": "node_info",
+   "params": {
+    "symbol": "CASP8"
+   }
+  },
+  "node_info-73876f3769": {
+   "op": "node_info",
+   "params": {
+    "symbol": "CASP9"
+   }
+  },
+  "node_info-cdda8081fd": {
+   "op": "node_info",
+   "params": {
+    "symbol": "CSF1R"
+   }
+  },
+  "node_info-3f2b9112f4": {
+   "op": "node_info",
+   "params": {
+    "symbol": "CYCS"
+   }
+  },
+  "node_info-0bc69241be": {
+   "op": "node_info",
+   "params": {
+    "symbol": "EGFR"
+   }
+  },
+  "node_info-1ede347740": {
+   "op": "node_info",
+   "params": {
+    "symbol": "EPHA2"
+   }
+  },
+  "node_info-454703fe04": {
+   "op": "node_info",
+   "params": {
+    "symbol": "GRB2"
+   }
+  },
+  "node_info-dba69813bd": {
+   "op": "node_info",
+   "params": {
+    "symbol": "HRAS"
+   }
+  },
+  "node_info-3e486ec953": {
+   "op": "node_info",
+   "params": {
+    "symbol": "MAP2K1"
+   }
+  },
+  "node_info-b3478708a9": {
+   "op": "node_info",
+   "params": {
+    "symbol": "MAP2K2"
+   }
+  },
+  "node_info-121b2a640a": {
+   "op": "node_info",
+   "params": {
+    "symbol": "MAP3K1"
+   }
+  },
+  "node_info-6499885276": {
+   "op": "node_info",
+   "params": {
+    "symbol": "MAPK1"
+   }
+  },
+  "node_info-b53df411cc": {
+   "op": "node_info",
+   "params": {
+    "symbol": "MAPK3"
+   }
+  },
+  "node_info-1a9654d1ac": {
+   "op": "node_info",
+   "params": {
+    "symbol": "MLST8"
+   }
+  },
+  "node_info-6a0bd1110a": {
+   "op": "node_info",
+   "params": {
+    "symbol": "MRAS"
+   }
+  },
+  "node_info-6ffd1f9040": {
+   "op": "node_info",
+   "params": {
+    "symbol": "MTOR"
+   }
+  },
+  "node_info-9981615446": {
+   "op": "node_info",
+   "params": {
+    "symbol": "P3R3URF-PIK3R3"
+   }
+  },
+  "node_info-96401397c8": {
+   "op": "node_info",
+   "params": {
+    "symbol": "PIK3CA"
+   }
+  },
+  "node_info-f68409936a": {
+   "op": "node_info",
+   "params": {
+    "symbol": "PIK3CB"
+   }
+  },
+  "node_info-1e65181a70": {
+   "op": "node_info",
+   "params": {
+    "symbol": "PMAIP1"
+   }
+  },
+  "node_info-7b0848ca28": {
+   "op": "node_info",
+   "params": {
+    "symbol": "RAF1"
+   }
+  },
+  "node_info-f674fa6eb5": {
+   "op": "node_info",
+   "params": {
+    "symbol": "RHEB"
+   }
+  },
+  "node_info-9fe460e7b3": {
+   "op": "node_info",
+   "params": {
+    "symbol": "RPTOR"
+   }
+  },
+  "node_info-5395337565": {
+   "op": "node_info",
+   "params": {
+    "symbol": "RRAS2"
+   }
+  },
+  "node_info-594b0f8869": {
+   "op": "node_info",
+   "params": {
+    "symbol": "SOS1"
+   }
+  },
+  "node_info-73848f91db": {
+   "op": "node_info",
+   "params": {
+    "symbol": "SOS2"
+   }
+  },
+  "node_info-afd5d9b8bc": {
+   "op": "node_info",
+   "params": {
+    "symbol": "TNFRSF10A"
+   }
+  },
+  "node_info-f82d381cc6": {
+   "op": "node_info",
+   "params": {
+    "symbol": "TNFRSF10B"
+   }
+  },
+  "node_info-b773aa09d1": {
+   "op": "node_info",
+   "params": {
+    "symbol": "TP53"
+   }
+  },
+  "node_info-d96dcc934a": {
+   "op": "node_info",
+   "params": {
+    "symbol": "TP53AIP1"
+   }
+  },
+  "node_info-7156492990": {
+   "op": "node_info",
+   "params": {
+    "symbol": "TSC1"
+   }
+  },
+  "node_info-a7a4b5009f": {
+   "op": "node_info",
+   "params": {
+    "symbol": "TSC2"
+   }
+  }
+ }
+}
