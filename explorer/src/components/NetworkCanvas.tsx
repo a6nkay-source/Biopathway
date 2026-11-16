@@ -283,6 +283,7 @@ const NetworkCanvas = forwardRef<CanvasHandle, Props>(function NetworkCanvas(pro
           if (step.firstArrival) tgt.addClass(step.netSign === "+" ? "pb-pos" : step.netSign === "-" ? "pb-neg" : "pb-unk");
           if (!reduced) tgt.flashClass(step.kind === "inhibit" ? "pb-flash-inh" : "pb-flash-act", Math.min(700, ms));
           if (step.phospho && !reduced) {
+            cy.remove(cy.nodes(".phos-badge"));   // only the latest phosphorylation badge is shown
             const p = tgt.position();
             const badge = cy.add({ group: "nodes", data: { id: `phos-${step.index}-${Date.now()}` }, classes: "phos-badge",
               position: { x: p.x + tgt.outerWidth() / 2 + 2, y: p.y - tgt.outerHeight() / 2 - 2 } });

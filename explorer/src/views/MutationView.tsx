@@ -91,7 +91,7 @@ function Compare({ data, dark, onNavigate }: { data: MutationPayload; dark: bool
         <div className="grid-2" style={{ gap: 0, minHeight: 0, gridTemplateRows: "1fr" }}>
           {[["Normal", left, undefined, normalClasses, {}], [`${data.gene} p.${v?.one_letter ?? data.change}`, right, positions, mutClasses.nc, mutClasses.ec]].map(([title, ref, pos, nc, ec], i) => (
             <div key={i} className="canvas-wrap" style={{ borderRight: i === 0 ? "1px solid var(--border)" : undefined, minHeight: 360 }}>
-              <NetworkCanvas ref={ref as any} elements={elements} layout={i === 0 ? "dagre-lr" : positions ? "preset" : "dagre-lr"}
+              <NetworkCanvas ref={ref as any} elements={elements} layout={i === 0 ? "dagre-tb" : positions ? "preset" : "dagre-tb"}
                 positions={pos as any} dark={dark} selectedId={sel?.data.id ?? null} onSelect={setSel}
                 nodeClasses={nc as any} edgeClasses={ec as any} traceMode="none"
                 onReady={i === 0 ? (cy) => cy.one("layoutstop", () => setTimeout(() => setPositions(left.current?.positions()), 30)) : undefined} />

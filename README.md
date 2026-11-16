@@ -4,9 +4,19 @@
 
 Every arrow comes from a database record that states it, carries an evidence class, and links back to its source. Nothing is drawn because it "sounds right".
 
-![Signal playback: a pulse travels along each documented relation from EGFR to ERK](docs/images/signal-playback.gif)
+<p align="center">
+  <img src="docs/images/tour.gif" alt="BioPathway Explorer tour: signal playback from EGFR to ERK, the protein panel, normal vs KRAS G12D, perturbing TSC1/2 in PI3K-AKT-mTOR, and 3D structures" width="960">
+</p>
 
-<sub>Signal playback on the real KEGG MAPK map (hsa04010). Each step is one documented relation, ordered by graph distance. Green = activation, red = inhibition, amber **P** = KEGG-recorded phosphorylation. Step order is not timing or kinetics.</sub>
+<p align="center"><sub>
+<b>30-second tour</b>, recorded from the running app on live database records:
+① signal playback along documented KEGG relations (EGFR → ERK) ·
+② the protein panel ·
+③ normal vs KRAS G12D, where Reactome-documented impaired GAP regulation stops the inhibitory signal ·
+④ removing TSC1/2 and seeing which nodes lose PI3K's influence ·
+⑤ AlphaFold vs experimental structures.
+Step order shows graph distance, not timing or kinetics.
+</sub></p>
 
 ---
 
