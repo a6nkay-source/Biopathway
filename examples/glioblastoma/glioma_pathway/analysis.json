@@ -1,0 +1,2158 @@
+{
+  "kind": "pathway",
+  "query": "hsa05214 | genes: EGFR, PTEN, PIK3CA, TP53, CDK4, RB1",
+  "resolved": {
+    "EGFR": {
+      "input": "EGFR",
+      "symbol": "EGFR",
+      "ncbi_gene_id": "1956",
+      "name": "epidermal growth factor receptor",
+      "location": "7p11.2",
+      "aliases": [
+        "ERBB",
+        "ERBB1",
+        "ERRP",
+        "HER1",
+        "NISBD2",
+        "NNCIS",
+        "PIG61",
+        "mENA"
+      ],
+      "uniprot": "P00533",
+      "uniprot_reviewed": true
+    },
+    "PTEN": {
+      "input": "PTEN",
+      "symbol": "PTEN",
+      "ncbi_gene_id": "5728",
+      "name": "phosphatase and tensin homolog",
+      "location": "10q23.31",
+      "aliases": [
+        "10q23del",
+        "BZS",
+        "CWS1",
+        "DEC",
+        "GLM2",
+        "MHAM",
+        "MMAC1",
+        "PTEN1",
+        "PTENbeta",
+        "PTENgama",
+        "TEP1"
+      ],
+      "uniprot": "P60484",
+      "uniprot_reviewed": true
+    },
+    "PIK3CA": {
+      "input": "PIK3CA",
+      "symbol": "PIK3CA",
+      "ncbi_gene_id": "5290",
+      "name": "phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha",
+      "location": "3q26.32",
+      "aliases": [
+        "CCM4",
+        "CLAPO",
+        "CLOVE",
+        "CWS5",
+        "HMH",
+        "MCAP",
+        "MCM",
+        "MCMTC",
+        "PI3K",
+        "PI3K-alpha",
+        "p110-alpha"
+      ],
+      "uniprot": "P42336",
+      "uniprot_reviewed": true
+    },
+    "TP53": {
+      "input": "TP53",
+      "symbol": "TP53",
+      "ncbi_gene_id": "7157",
+      "name": "tumor protein p53",
+      "location": "17p13.1",
+      "aliases": [
+        "BCC7",
+        "BMFS5",
+        "LFS1",
+        "P53",
+        "TRP53"
+      ],
+      "uniprot": "P04637",
+      "uniprot_reviewed": true
+    },
+    "CDK4": {
+      "input": "CDK4",
+      "symbol": "CDK4",
+      "ncbi_gene_id": "1019",
+      "name": "cyclin dependent kinase 4",
+      "location": "12q14.1",
+      "aliases": [
+        "CMM3",
+        "MCPH31",
+        "PSK-J3"
+      ],
+      "uniprot": "P11802",
+      "uniprot_reviewed": true
+    },
+    "RB1": {
+      "input": "RB1",
+      "symbol": "RB1",
+      "ncbi_gene_id": "5925",
+      "name": "RB transcriptional corepressor 1",
+      "location": "13q14.2",
+      "aliases": [
+        "OSRC",
+        "PPP1R130",
+        "RB",
+        "p105-Rb",
+        "p110-RB1",
+        "pRb",
+        "pp110"
+      ],
+      "uniprot": "P06400",
+      "uniprot_reviewed": true
+    }
+  },
+  "nodes": [
+    {
+      "id": "g:1956",
+      "label": "EGFR",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:1956"
+        ],
+        "members": [
+          "EGFR"
+        ]
+      },
+      "focus": true
+    },
+    {
+      "id": "g:110117499+5290+5291+5293+5295+5296+8503",
+      "label": "PIK3CA/P3R3URF-PIK3R3/PIK3CB (+4)",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:110117499",
+          "hsa:5290",
+          "hsa:5291",
+          "hsa:5293",
+          "hsa:5295",
+          "hsa:5296",
+          "hsa:8503"
+        ],
+        "members": [
+          "P3R3URF-PIK3R3",
+          "PIK3CA",
+          "PIK3CB",
+          "PIK3CD",
+          "PIK3R1",
+          "PIK3R2",
+          "PIK3R3"
+        ]
+      },
+      "focus": true
+    },
+    {
+      "id": "cx:g:1019+1021|g:595",
+      "label": "CCND1:CDK4/CDK6",
+      "kind": "complex",
+      "xrefs": {
+        "components": [
+          "g:595",
+          "g:1019+1021"
+        ],
+        "members": [
+          "CCND1",
+          "CDK4",
+          "CDK6"
+        ],
+        "kegg_genes": [
+          "hsa:595",
+          "hsa:1019",
+          "hsa:1021"
+        ]
+      },
+      "focus": true
+    },
+    {
+      "id": "g:5925",
+      "label": "RB1",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:5925"
+        ],
+        "members": [
+          "RB1"
+        ]
+      },
+      "focus": true
+    },
+    {
+      "id": "g:7157",
+      "label": "TP53",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:7157"
+        ],
+        "members": [
+          "TP53"
+        ]
+      },
+      "focus": true
+    },
+    {
+      "id": "g:5728",
+      "label": "PTEN",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:5728"
+        ],
+        "members": [
+          "PTEN"
+        ]
+      },
+      "focus": true
+    },
+    {
+      "id": "g:1026",
+      "label": "CDKN1A",
+      "kind": "gene",
+      "xrefs": {
+        "kegg_genes": [
+          "hsa:1026"
+        ],
+        "members": [
+          "CDKN1A"
+        ]
+      },
+      "focus": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "cx:g:1019+1021|g:595",
+      "target": "g:5925",
+      "relation": "activation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [
+        "+p"
+      ],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [activation, phosphorylation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa05214",
+          "url": "https://www.kegg.jp/pathway/hsa05214",
+          "title": "Glioma"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:1956",
+      "target": "g:110117499+5290+5291+5293+5295+5296+8503",
+      "relation": "activation",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa05214",
+          "url": "https://www.kegg.jp/pathway/hsa05214",
+          "title": "Glioma"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:1026",
+      "target": "cx:g:1019+1021|g:595",
+      "relation": "inhibition",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML PPrel [inhibition]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa05214",
+          "url": "https://www.kegg.jp/pathway/hsa05214",
+          "title": "Glioma"
+        }
+      ],
+      "scores": {}
+    },
+    {
+      "source": "g:7157",
+      "target": "g:1026",
+      "relation": "expression",
+      "evidence": "curated database evidence",
+      "directed": true,
+      "modifiers": [],
+      "indirect": false,
+      "detail": "KEGG manually curated pathway map; KGML GErel [expression]",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa05214",
+          "url": "https://www.kegg.jp/pathway/hsa05214",
+          "title": "Glioma"
+        }
+      ],
+      "scores": {}
+    }
+  ],
+  "statements": [
+    {
+      "text": "CDK4 to RB1, shortest directed route in KEGG hsa05214 (Glioma): CCND1:CDK4/CDK6 -[activation +p]-> RB1. Each step is a KEGG-drawn relation; a route is a curated summary and may skip intermediates.",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa05214",
+          "url": "https://www.kegg.jp/pathway/hsa05214",
+          "title": "Glioma"
+        }
+      ],
+      "section": "Mechanism"
+    },
+    {
+      "text": "EGFR to PIK3CA, shortest directed route in KEGG hsa05214 (Glioma): EGFR -[activation]-> PIK3CA/P3R3URF-PIK3R3/PIK3CB (+4). Each step is a KEGG-drawn relation; a route is a curated summary and may skip intermediates.",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa05214",
+          "url": "https://www.kegg.jp/pathway/hsa05214",
+          "title": "Glioma"
+        }
+      ],
+      "section": "Mechanism"
+    },
+    {
+      "text": "TP53 to CDK4, shortest directed route in KEGG hsa05214 (Glioma): TP53 -[expression]-> CDKN1A -[inhibition]-> CCND1:CDK4/CDK6. Each step is a KEGG-drawn relation; a route is a curated summary and may skip intermediates.",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa05214",
+          "url": "https://www.kegg.jp/pathway/hsa05214",
+          "title": "Glioma"
+        }
+      ],
+      "section": "Mechanism"
+    },
+    {
+      "text": "TP53 to RB1, shortest directed route in KEGG hsa05214 (Glioma): TP53 -[expression]-> CDKN1A -[inhibition]-> CCND1:CDK4/CDK6 -[activation +p]-> RB1. Each step is a KEGG-drawn relation; a route is a curated summary and may skip intermediates.",
+      "evidence": "curated database evidence",
+      "citations": [
+        {
+          "source": "KEGG",
+          "id": "hsa05214",
+          "url": "https://www.kegg.jp/pathway/hsa05214",
+          "title": "Glioma"
+        }
+      ],
+      "section": "Mechanism"
+    }
+  ],
+  "pathways": [
+    {
+      "source": "KEGG",
+      "id": "hsa05214",
+      "name": "Glioma",
+      "url": "https://www.kegg.jp/pathway/hsa05214",
+      "evidence": "curated database evidence",
+      "class": "Human Diseases; Cancer: specific types"
+    }
+  ],
+  "literature": [
+    {
+      "pmid": "15639402",
+      "title": "Genetics of glioblastoma multiforme: mitogenic signaling and cell cycle pathways converge.",
+      "journal": "J Clin Neurosci",
+      "year": "2005",
+      "first_author": "Soni D",
+      "pubtypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15639402/",
+      "basis": "reference of KEGG hsa05214",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "12154354",
+      "title": "The molecular and genetic basis of neurological tumours.",
+      "journal": "Nat Rev Cancer",
+      "year": "2002",
+      "first_author": "Zhu Y",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12154354/",
+      "basis": "reference of KEGG hsa05214",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "11253051",
+      "title": "Gliomagenesis: genetic alterations and mouse models.",
+      "journal": "Nat Rev Genet",
+      "year": "2001",
+      "first_author": "Holland EC",
+      "pubtypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11253051/",
+      "basis": "reference of KEGG hsa05214",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "16700615",
+      "title": "Molecular biology of human gliomas.",
+      "journal": "Technol Cancer Res Treat",
+      "year": "2006",
+      "first_author": "Bansal K",
+      "pubtypes": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16700615/",
+      "basis": "reference of KEGG hsa05214",
+      "evidence": "curated database evidence"
+    },
+    {
+      "pmid": "12762887",
+      "title": "Mitogenic signaling cascades in glial tumors.",
+      "journal": "Neurosurgery",
+      "year": "2003",
+      "first_author": "Kapoor GS",
+      "pubtypes": [
+        "Journal Article",
+        "Review"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12762887/",
+      "basis": "reference of KEGG hsa05214",
+      "evidence": "curated database evidence"
+    }
+  ],
+  "warnings": [],
+  "source_status": {
+    "NCBI Gene": "ok",
+    "UniProt": "ok",
+    "KEGG": "ok",
+    "PubMed": "ok",
+    "Reactome": "ok"
+  },
+  "notes": [
+    "No directed KEGG route for: CDK4 -> EGFR; CDK4 -> PIK3CA; CDK4 -> PTEN; CDK4 -> TP53; EGFR -> CDK4; EGFR -> PTEN; EGFR -> RB1; EGFR -> TP53; PIK3CA -> CDK4; PIK3CA -> EGFR. This reflects the map's drawing, not proof that no regulation exists.",
+    "KEGG hsa05214 contains 46 reconstructable relations; 4 are kept for this question."
+  ],
+  "requests": [
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmax=5&retmode=json&term=EGFR%5Bsym%5D%20AND%209606%5Btaxid%5D%20AND%20alive%5Bprop%5D&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-15T20:35:35Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=1956&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-15T20:35:36Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/search?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Ccc_function%2Cgo_p%2Cxref_reactome%2Cxref_kegg%2Cxref_string%2Cxref_geneid&format=json&query=gene_exact%3AEGFR%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=1",
+      "cached": true,
+      "retrieved_at": "2026-11-15T20:35:37Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmax=5&retmode=json&term=PTEN%5Bsym%5D%20AND%209606%5Btaxid%5D%20AND%20alive%5Bprop%5D&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-19T17:54:18Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=5728&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-19T17:54:19Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/search?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Ccc_function%2Cgo_p%2Cxref_reactome%2Cxref_kegg%2Cxref_string%2Cxref_geneid&format=json&query=gene_exact%3APTEN%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=1",
+      "cached": true,
+      "retrieved_at": "2026-11-19T17:54:21Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmax=5&retmode=json&term=PIK3CA%5Bsym%5D%20AND%209606%5Btaxid%5D%20AND%20alive%5Bprop%5D&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-15T20:33:00Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=5290&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-15T20:33:00Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/search?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Ccc_function%2Cgo_p%2Cxref_reactome%2Cxref_kegg%2Cxref_string%2Cxref_geneid&format=json&query=gene_exact%3APIK3CA%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=1",
+      "cached": true,
+      "retrieved_at": "2026-11-15T20:33:01Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmax=5&retmode=json&term=TP53%5Bsym%5D%20AND%209606%5Btaxid%5D%20AND%20alive%5Bprop%5D&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T20:20:37Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=7157&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-13T20:20:38Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/search?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Ccc_function%2Cgo_p%2Cxref_reactome%2Cxref_kegg%2Cxref_string%2Cxref_geneid&format=json&query=gene_exact%3ATP53%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=1",
+      "cached": true,
+      "retrieved_at": "2026-11-13T20:20:40Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmax=5&retmode=json&term=CDK4%5Bsym%5D%20AND%209606%5Btaxid%5D%20AND%20alive%5Bprop%5D&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-19T17:54:24Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=1019&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-19T17:54:24Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/search?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Ccc_function%2Cgo_p%2Cxref_reactome%2Cxref_kegg%2Cxref_string%2Cxref_geneid&format=json&query=gene_exact%3ACDK4%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=1",
+      "cached": true,
+      "retrieved_at": "2026-11-19T17:54:26Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gene&retmax=5&retmode=json&term=RB1%5Bsym%5D%20AND%209606%5Btaxid%5D%20AND%20alive%5Bprop%5D&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-19T17:54:26Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=5925%2C129831&retmode=json&tool=biopathway-mapper",
+      "cached": true,
+      "retrieved_at": "2026-11-19T17:54:27Z"
+    },
+    {
+      "source": "uniprot",
+      "url": "https://rest.uniprot.org/uniprotkb/search?fields=accession%2Cid%2Cgene_names%2Cprotein_name%2Ccc_function%2Cgo_p%2Cxref_reactome%2Cxref_kegg%2Cxref_string%2Cxref_geneid&format=json&query=gene_exact%3ARB1%20AND%20organism_id%3A9606%20AND%20reviewed%3Atrue&size=1",
+      "cached": true,
+      "retrieved_at": "2026-11-19T17:54:27Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/get/hsa05214",
+      "cached": false,
+      "retrieved_at": "2026-11-19T17:55:07Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/get/hsa05214/kgml",
+      "cached": false,
+      "retrieved_at": "2026-11-19T17:55:08Z"
+    },
+    {
+      "source": "kegg",
+      "url": "https://rest.kegg.jp/list/C00076+C00165+C01245+C05981",
+      "cached": true,
+      "retrieved_at": "2026-11-15T21:05:36Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=15639402%2C12154354%2C11253051%2C16700615%2C12762887&retmode=json&tool=biopathway-mapper",
+      "cached": false,
+      "retrieved_at": "2026-11-19T17:55:08Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P00533/pathways?species=9606",
+      "cached": true,
+      "retrieved_at": "2026-11-15T20:35:41Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P60484/pathways?species=9606",
+      "cached": true,
+      "retrieved_at": "2026-11-19T17:54:47Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P42336/pathways?species=9606",
+      "cached": true,
+      "retrieved_at": "2026-11-15T20:33:09Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P04637/pathways?species=9606",
+      "cached": true,
+      "retrieved_at": "2026-11-13T20:20:43Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P11802/pathways?species=9606",
+      "cached": true,
+      "retrieved_at": "2026-11-19T17:54:55Z"
+    },
+    {
+      "source": "reactome",
+      "url": "https://reactome.org/ContentService/data/mapping/UniProt/P06400/pathways?species=9606",
+      "cached": true,
+      "retrieved_at": "2026-11-19T17:54:57Z"
+    },
+    {
+      "source": "ncbi",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmax=5&retmode=json&sort=relevance&term=EGFR%5Btiab%5D%20AND%20PTEN%5Btiab%5D%20AND%20PIK3CA%5Btiab%5D%20AND%20%28hsa05214%29&tool=biopathway-mapper",
+      "cached": false,
+      "retrieved_at": "2026-11-19T17:55:08Z"
+    }
+  ],
+  "diagram_note": "Directed relations redrawn from the KEGG map (KGML). Arrow = activation, x = inhibition, dashed = expression/indirect. Multi-gene boxes are paralog groups that KEGG draws as one node.",
+  "extras": {
+    "kegg_full": {
+      "pathway": "hsa05214",
+      "title": "Glioma",
+      "nodes": [
+        {
+          "id": "g:5594+5595",
+          "label": "MAPK1/MAPK3",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:5594",
+              "hsa:5595"
+            ],
+            "members": [
+              "MAPK1",
+              "MAPK3"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:7157",
+          "label": "TP53",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:7157"
+            ],
+            "members": [
+              "TP53"
+            ]
+          },
+          "focus": true
+        },
+        {
+          "id": "g:2475",
+          "label": "MTOR",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:2475"
+            ],
+            "members": [
+              "MTOR"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:6654+6655",
+          "label": "SOS1/SOS2",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:6654",
+              "hsa:6655"
+            ],
+            "members": [
+              "SOS1",
+              "SOS2"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:3479",
+          "label": "IGF1",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:3479"
+            ],
+            "members": [
+              "IGF1"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:4193",
+          "label": "MDM2",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:4193"
+            ],
+            "members": [
+              "MDM2"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:5154+5155",
+          "label": "PDGFA/PDGFB",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:5154",
+              "hsa:5155"
+            ],
+            "members": [
+              "PDGFA",
+              "PDGFB"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "cx:g:1019+1021|g:595",
+          "label": "CCND1:CDK4/CDK6",
+          "kind": "complex",
+          "xrefs": {
+            "components": [
+              "g:595",
+              "g:1019+1021"
+            ],
+            "members": [
+              "CCND1",
+              "CDK4",
+              "CDK6"
+            ],
+            "kegg_genes": [
+              "hsa:595",
+              "hsa:1019",
+              "hsa:1021"
+            ]
+          },
+          "focus": true
+        },
+        {
+          "id": "g:10000+207+208",
+          "label": "AKT3/AKT1/AKT2",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:10000",
+              "hsa:207",
+              "hsa:208"
+            ],
+            "members": [
+              "AKT3",
+              "AKT1",
+              "AKT2"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "c:C01245",
+          "label": "D-myo-Inositol 1,4,5-trisphosphate",
+          "kind": "compound",
+          "xrefs": {
+            "kegg": "C01245"
+          },
+          "focus": false
+        },
+        {
+          "id": "g:369+5894+673",
+          "label": "ARAF/RAF1/BRAF",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:369",
+              "hsa:5894",
+              "hsa:673"
+            ],
+            "members": [
+              "ARAF",
+              "RAF1",
+              "BRAF"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:1643",
+          "label": "DDB2",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:1643"
+            ],
+            "members": [
+              "DDB2"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:3480",
+          "label": "IGF1R",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:3480"
+            ],
+            "members": [
+              "IGF1R"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "c:C05981",
+          "label": "Phosphatidylinositol-3,4,5-trisphosphate",
+          "kind": "compound",
+          "xrefs": {
+            "kegg": "C05981"
+          },
+          "focus": false
+        },
+        {
+          "id": "g:1026",
+          "label": "CDKN1A",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:1026"
+            ],
+            "members": [
+              "CDKN1A"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:3265+3845+4893",
+          "label": "HRAS/KRAS/NRAS",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:3265",
+              "hsa:3845",
+              "hsa:4893"
+            ],
+            "members": [
+              "HRAS",
+              "KRAS",
+              "NRAS"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:5728",
+          "label": "PTEN",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:5728"
+            ],
+            "members": [
+              "PTEN"
+            ]
+          },
+          "focus": true
+        },
+        {
+          "id": "g:25759+399694+53358+6464",
+          "label": "SHC2/SHC4/SHC3 (+1)",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:25759",
+              "hsa:399694",
+              "hsa:53358",
+              "hsa:6464"
+            ],
+            "members": [
+              "SHC2",
+              "SHC4",
+              "SHC3",
+              "SHC1"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "c:C00076",
+          "label": "Calcium cation",
+          "kind": "compound",
+          "xrefs": {
+            "kegg": "C00076"
+          },
+          "focus": false
+        },
+        {
+          "id": "g:10912+1647+4616",
+          "label": "GADD45G/GADD45A/GADD45B",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:10912",
+              "hsa:1647",
+              "hsa:4616"
+            ],
+            "members": [
+              "GADD45G",
+              "GADD45A",
+              "GADD45B"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:581",
+          "label": "BAX",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:581"
+            ],
+            "members": [
+              "BAX"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:57118+57172+814+815+816+817+818+8536",
+          "label": "CAMK1D/CAMK1G/CAMK4 (+5)",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:57118",
+              "hsa:57172",
+              "hsa:814",
+              "hsa:815",
+              "hsa:816",
+              "hsa:817",
+              "hsa:818",
+              "hsa:8536"
+            ],
+            "members": [
+              "CAMK1D",
+              "CAMK1G",
+              "CAMK4",
+              "CAMK2A",
+              "CAMK2B",
+              "CAMK2D",
+              "CAMK2G",
+              "CAMK1"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:578",
+          "label": "BAK1",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:578"
+            ],
+            "members": [
+              "BAK1"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:163688+51806+801+805+808+810+91860",
+          "label": "CALML6/CALML5/CALM1 (+4)",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:163688",
+              "hsa:51806",
+              "hsa:801",
+              "hsa:805",
+              "hsa:808",
+              "hsa:810",
+              "hsa:91860"
+            ],
+            "members": [
+              "CALML6",
+              "CALML5",
+              "CALM1",
+              "CALM2",
+              "CALM3",
+              "CALML3",
+              "CALML4"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:5335+5336",
+          "label": "PLCG1/PLCG2",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:5335",
+              "hsa:5336"
+            ],
+            "members": [
+              "PLCG1",
+              "PLCG2"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:51426",
+          "label": "POLK",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:51426"
+            ],
+            "members": [
+              "POLK"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:5604+5605",
+          "label": "MAP2K1/MAP2K2",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:5604",
+              "hsa:5605"
+            ],
+            "members": [
+              "MAP2K1",
+              "MAP2K2"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:7039",
+          "label": "TGFA",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:7039"
+            ],
+            "members": [
+              "TGFA"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:5578+5579+5582",
+          "label": "PRKCA/PRKCB/PRKCG",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:5578",
+              "hsa:5579",
+              "hsa:5582"
+            ],
+            "members": [
+              "PRKCA",
+              "PRKCB",
+              "PRKCG"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:110117499+5290+5291+5293+5295+5296+8503",
+          "label": "PIK3CA/P3R3URF-PIK3R3/PIK3CB (+4)",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:110117499",
+              "hsa:5290",
+              "hsa:5291",
+              "hsa:5293",
+              "hsa:5295",
+              "hsa:5296",
+              "hsa:8503"
+            ],
+            "members": [
+              "P3R3URF-PIK3R3",
+              "PIK3CA",
+              "PIK3CB",
+              "PIK3CD",
+              "PIK3R1",
+              "PIK3R2",
+              "PIK3R3"
+            ]
+          },
+          "focus": true
+        },
+        {
+          "id": "g:1956",
+          "label": "EGFR",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:1956"
+            ],
+            "members": [
+              "EGFR"
+            ]
+          },
+          "focus": true
+        },
+        {
+          "id": "g:1029",
+          "label": "CDKN2A",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:1029"
+            ],
+            "members": [
+              "CDKN2A"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:2885",
+          "label": "GRB2",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:2885"
+            ],
+            "members": [
+              "GRB2"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:5156+5159",
+          "label": "PDGFRA/PDGFRB",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:5156",
+              "hsa:5159"
+            ],
+            "members": [
+              "PDGFRA",
+              "PDGFRB"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "g:1869+1870+1871",
+          "label": "E2F1/E2F2/E2F3",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:1869",
+              "hsa:1870",
+              "hsa:1871"
+            ],
+            "members": [
+              "E2F1",
+              "E2F2",
+              "E2F3"
+            ]
+          },
+          "focus": false
+        },
+        {
+          "id": "c:C00165",
+          "label": "Diacylglycerol",
+          "kind": "compound",
+          "xrefs": {
+            "kegg": "C00165"
+          },
+          "focus": false
+        },
+        {
+          "id": "g:5925",
+          "label": "RB1",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:5925"
+            ],
+            "members": [
+              "RB1"
+            ]
+          },
+          "focus": true
+        },
+        {
+          "id": "g:1950",
+          "label": "EGF",
+          "kind": "gene",
+          "xrefs": {
+            "kegg_genes": [
+              "hsa:1950"
+            ],
+            "members": [
+              "EGF"
+            ]
+          },
+          "focus": false
+        }
+      ],
+      "edges": [
+        {
+          "source": "g:1950",
+          "target": "g:1956",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:7039",
+          "target": "g:1956",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:5154+5155",
+          "target": "g:5156+5159",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:3479",
+          "target": "g:3480",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:5335+5336",
+          "target": "c:C01245",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PCrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "c:C00076",
+          "target": "g:163688+51806+801+805+808+810+91860",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PCrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:163688+51806+801+805+808+810+91860",
+          "target": "g:57118+57172+814+815+816+817+818+8536",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "c:C00076",
+          "target": "g:5578+5579+5582",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PCrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:5335+5336",
+          "target": "c:C00165",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PCrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "c:C00165",
+          "target": "g:5578+5579+5582",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PCrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:25759+399694+53358+6464",
+          "target": "g:2885",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:2885",
+          "target": "g:6654+6655",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:6654+6655",
+          "target": "g:3265+3845+4893",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:5578+5579+5582",
+          "target": "g:3265+3845+4893",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": true,
+          "detail": "KEGG manually curated pathway map; flagged by KEGG as an indirect effect or missing interaction, so intermediate steps are not specified; KGML PPrel [activation, indirect effect]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:3265+3845+4893",
+          "target": "g:369+5894+673",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:3265+3845+4893",
+          "target": "g:110117499+5290+5291+5293+5295+5296+8503",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:110117499+5290+5291+5293+5295+5296+8503",
+          "target": "c:C05981",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PCrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "c:C05981",
+          "target": "g:10000+207+208",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PCrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "c:C01245",
+          "target": "g:5335+5336",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PCrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:369+5894+673",
+          "target": "g:5604+5605",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [
+            "+p"
+          ],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation, phosphorylation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:5604+5605",
+          "target": "g:5594+5595",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [
+            "+p"
+          ],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation, phosphorylation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:10000+207+208",
+          "target": "g:2475",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [
+            "+p"
+          ],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation, phosphorylation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "cx:g:1019+1021|g:595",
+          "target": "g:5925",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [
+            "+p"
+          ],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation, phosphorylation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:4193",
+          "target": "g:7157",
+          "relation": "inhibition",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [inhibition]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:5728",
+          "target": "c:C05981",
+          "relation": "missing interaction",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; flagged by KEGG as an indirect effect or missing interaction, so intermediate steps are not specified; KGML PCrel [missing interaction]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:1029",
+          "target": "g:4193",
+          "relation": "missing interaction",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; flagged by KEGG as an indirect effect or missing interaction, so intermediate steps are not specified; KGML PPrel [missing interaction]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:1029",
+          "target": "cx:g:1019+1021|g:595",
+          "relation": "missing interaction",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; flagged by KEGG as an indirect effect or missing interaction, so intermediate steps are not specified; KGML PPrel [missing interaction]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:57118+57172+814+815+816+817+818+8536",
+          "target": "g:3265+3845+4893",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": true,
+          "detail": "KEGG manually curated pathway map; flagged by KEGG as an indirect effect or missing interaction, so intermediate steps are not specified; KGML PPrel [activation, indirect effect]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:5925",
+          "target": "g:1869+1870+1871",
+          "relation": "dissociation",
+          "evidence": "curated database evidence",
+          "directed": false,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [dissociation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:1956",
+          "target": "g:5335+5336",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [
+            "+p"
+          ],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation, phosphorylation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:5156+5159",
+          "target": "g:5335+5336",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [
+            "+p"
+          ],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation, phosphorylation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:3480",
+          "target": "g:5335+5336",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [
+            "+p"
+          ],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation, phosphorylation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:1956",
+          "target": "g:25759+399694+53358+6464",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [
+            "+p"
+          ],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation, phosphorylation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:5156+5159",
+          "target": "g:25759+399694+53358+6464",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [
+            "+p"
+          ],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation, phosphorylation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:3480",
+          "target": "g:25759+399694+53358+6464",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [
+            "+p"
+          ],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation, phosphorylation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:1956",
+          "target": "g:110117499+5290+5291+5293+5295+5296+8503",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:5156+5159",
+          "target": "g:110117499+5290+5291+5293+5295+5296+8503",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:3480",
+          "target": "g:110117499+5290+5291+5293+5295+5296+8503",
+          "relation": "activation",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [activation]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:1026",
+          "target": "cx:g:1019+1021|g:595",
+          "relation": "inhibition",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML PPrel [inhibition]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:7157",
+          "target": "g:1026",
+          "relation": "expression",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; KGML GErel [expression]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:7157",
+          "target": "g:1026",
+          "relation": "missing interaction",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; flagged by KEGG as an indirect effect or missing interaction, so intermediate steps are not specified; KGML PPrel [missing interaction]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:7157",
+          "target": "g:10912+1647+4616",
+          "relation": "missing interaction",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; flagged by KEGG as an indirect effect or missing interaction, so intermediate steps are not specified; KGML PPrel [missing interaction]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:7157",
+          "target": "g:581",
+          "relation": "missing interaction",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; flagged by KEGG as an indirect effect or missing interaction, so intermediate steps are not specified; KGML PPrel [missing interaction]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:7157",
+          "target": "g:578",
+          "relation": "missing interaction",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; flagged by KEGG as an indirect effect or missing interaction, so intermediate steps are not specified; KGML PPrel [missing interaction]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:7157",
+          "target": "g:1643",
+          "relation": "missing interaction",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; flagged by KEGG as an indirect effect or missing interaction, so intermediate steps are not specified; KGML PPrel [missing interaction]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        },
+        {
+          "source": "g:7157",
+          "target": "g:51426",
+          "relation": "missing interaction",
+          "evidence": "curated database evidence",
+          "directed": true,
+          "modifiers": [],
+          "indirect": false,
+          "detail": "KEGG manually curated pathway map; flagged by KEGG as an indirect effect or missing interaction, so intermediate steps are not specified; KGML PPrel [missing interaction]",
+          "citations": [
+            {
+              "source": "KEGG",
+              "id": "hsa05214",
+              "url": "https://www.kegg.jp/pathway/hsa05214",
+              "title": "Glioma"
+            }
+          ],
+          "scores": {}
+        }
+      ]
+    }
+  },
+  "citations": [
+    {
+      "source": "KEGG",
+      "id": "hsa05214",
+      "url": "https://www.kegg.jp/pathway/hsa05214",
+      "title": "Glioma"
+    }
+  ]
+}

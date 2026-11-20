@@ -1,0 +1,23 @@
+flowchart LR
+    n0["EGFR"]
+    n1["PIK3CA/P3R3URF-PIK3R3/PIK3CB (+4)"]
+    n2[["CCND1:CDK4/CDK6"]]
+    n3["RB1"]
+    n4["TP53"]
+    n5["PTEN"]
+    n6["CDKN1A"]
+    n2 -->|"activation +p · CUR"| n3
+    n0 -->|"activation · CUR"| n1
+    n6 --x|"inhibition · CUR"| n2
+    n4 -.->|"expression · CUR"| n6
+    linkStyle 0 stroke:#2166ac,stroke-width:2px
+    linkStyle 1 stroke:#2166ac,stroke-width:2px
+    linkStyle 2 stroke:#2166ac,stroke-width:2px
+    linkStyle 3 stroke:#2166ac,stroke-width:2px
+    classDef focus fill:#fff3bf,stroke:#b8860b,stroke-width:3px
+    classDef compound fill:#e6f4ea,stroke:#3c8d5a
+    classDef pathway fill:#e8eaf6,stroke:#3f51b5
+    classDef variant fill:#fde2e1,stroke:#c0392b,stroke-width:2px
+    classDef condition fill:#f3e5f5,stroke:#8e24aa
+    classDef region fill:#f1f3f4,stroke:#5f6368
+    class n0,n1,n2,n3,n4,n5 focus

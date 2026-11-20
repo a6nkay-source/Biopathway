@@ -1,0 +1,683 @@
+{
+ "genes": [
+  "EGFR",
+  "PDGFRA",
+  "PTEN",
+  "PIK3CA",
+  "NF1",
+  "TP53",
+  "MDM2",
+  "CDKN2A",
+  "CDK4",
+  "RB1",
+  "IDH1",
+  "TERT",
+  "MGMT"
+ ],
+ "reactome": {
+  "pathways_found": 425,
+  "not_found": 0,
+  "token": "MjAyNjExMTkxNzU1MDlfMzExNA%3D%3D",
+  "pathways": [
+   {
+    "id": "R-HSA-2559585",
+    "name": "Oncogene Induced Senescence",
+    "found": 9,
+    "total": 42,
+    "p_value": 1.1102230246251565e-16,
+    "fdr": 5.051514762044462e-14,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-2559585"
+   },
+   {
+    "id": "R-HSA-2559580",
+    "name": "Oxidative Stress Induced Senescence",
+    "found": 8,
+    "total": 113,
+    "p_value": 7.54840634442644e-12,
+    "fdr": 1.7134882401848017e-09,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-2559580"
+   },
+   {
+    "id": "R-HSA-2559583",
+    "name": "Cellular Senescence",
+    "found": 9,
+    "total": 200,
+    "p_value": 1.6532331059693206e-11,
+    "fdr": 2.496381990013674e-09,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-2559583"
+   },
+   {
+    "id": "R-HSA-212436",
+    "name": "Generic Transcription Pathway",
+    "found": 16,
+    "total": 1575,
+    "p_value": 1.2115408676294237e-10,
+    "fdr": 1.3108418128737753e-08,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-212436"
+   },
+   {
+    "id": "R-HSA-8853884",
+    "name": "Transcriptional Regulation by VENTX",
+    "found": 6,
+    "total": 48,
+    "p_value": 1.4404855086525004e-10,
+    "fdr": 1.3108418128737753e-08,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-8853884"
+   },
+   {
+    "id": "R-HSA-73857",
+    "name": "RNA Polymerase II Transcription",
+    "found": 16,
+    "total": 1679,
+    "p_value": 3.154533301241713e-10,
+    "fdr": 2.365899975931285e-08,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-73857"
+   },
+   {
+    "id": "R-HSA-74160",
+    "name": "Gene expression (Transcription)",
+    "found": 16,
+    "total": 1924,
+    "p_value": 2.3823620853846705e-09,
+    "fdr": 1.5485353555000358e-07,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-74160"
+   },
+   {
+    "id": "R-HSA-6806003",
+    "name": "Regulation of TP53 Expression and Degradation",
+    "found": 5,
+    "total": 46,
+    "p_value": 1.1292394463957578e-08,
+    "fdr": 6.323740899816244e-07,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-6806003"
+   },
+   {
+    "id": "R-HSA-1257604",
+    "name": "PIP3 activates AKT signaling",
+    "found": 8,
+    "total": 315,
+    "p_value": 2.2525307064036326e-08,
+    "fdr": 1.1262653532018163e-06,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-1257604"
+   },
+   {
+    "id": "R-HSA-9630747",
+    "name": "Diseases of Cellular Senescence",
+    "found": 3,
+    "total": 4,
+    "p_value": 3.843697149452652e-08,
+    "fdr": 1.5759158312755872e-06,
+    "disease": true,
+    "url": "https://reactome.org/content/detail/R-HSA-9630747"
+   },
+   {
+    "id": "R-HSA-9675132",
+    "name": "Diseases of cellular response to stress",
+    "found": 3,
+    "total": 4,
+    "p_value": 3.843697149452652e-08,
+    "fdr": 1.5759158312755872e-06,
+    "disease": true,
+    "url": "https://reactome.org/content/detail/R-HSA-9675132"
+   },
+   {
+    "id": "R-HSA-9006925",
+    "name": "Intracellular signaling by second messengers",
+    "found": 8,
+    "total": 363,
+    "p_value": 6.677995789683422e-08,
+    "fdr": 2.3784108310609398e-06,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-9006925"
+   },
+   {
+    "id": "R-HSA-8953897",
+    "name": "Cellular responses to stimuli",
+    "found": 12,
+    "total": 1166,
+    "p_value": 6.795459517316971e-08,
+    "fdr": 2.3784108310609398e-06,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-8953897"
+   },
+   {
+    "id": "R-HSA-2262752",
+    "name": "Cellular responses to stress",
+    "found": 11,
+    "total": 1039,
+    "p_value": 2.2513584008176935e-07,
+    "fdr": 7.204346882616619e-06,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-2262752"
+   },
+   {
+    "id": "R-HSA-3700989",
+    "name": "Transcriptional Regulation by TP53",
+    "found": 8,
+    "total": 488,
+    "p_value": 6.286427528534588e-07,
+    "fdr": 1.8859282585603765e-05,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-3700989"
+   },
+   {
+    "id": "R-HSA-6804757",
+    "name": "Regulation of TP53 Degradation",
+    "found": 4,
+    "total": 43,
+    "p_value": 6.953979995172332e-07,
+    "fdr": 1.947114398648253e-05,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-6804757"
+   },
+   {
+    "id": "R-HSA-8878159",
+    "name": "Transcriptional regulation by RUNX3",
+    "found": 5,
+    "total": 108,
+    "p_value": 7.535544510606229e-07,
+    "fdr": 1.9592415727576196e-05,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-8878159"
+   },
+   {
+    "id": "R-HSA-5663202",
+    "name": "Diseases of signal transduction by growth factor receptors and second messengers",
+    "found": 8,
+    "total": 536,
+    "p_value": 1.2688717080377998e-06,
+    "fdr": 3.1721792700944995e-05,
+    "disease": true,
+    "url": "https://reactome.org/content/detail/R-HSA-5663202"
+   },
+   {
+    "id": "R-HSA-2219528",
+    "name": "PI3K/AKT Signaling in Cancer",
+    "found": 5,
+    "total": 132,
+    "p_value": 2.002761291031163e-06,
+    "fdr": 4.606350969371675e-05,
+    "disease": true,
+    "url": "https://reactome.org/content/detail/R-HSA-2219528"
+   },
+   {
+    "id": "R-HSA-3232118",
+    "name": "SUMOylation of transcription factors",
+    "found": 3,
+    "total": 20,
+    "p_value": 4.723849997168017e-06,
+    "fdr": 9.79664806566305e-05,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-3232118"
+   },
+   {
+    "id": "R-HSA-9632697",
+    "name": "Evasion of Oxidative Stress Induced Senescence Due to Defective p16INK4A binding to CDK4",
+    "found": 2,
+    "total": 2,
+    "p_value": 4.898324032831525e-06,
+    "fdr": 9.79664806566305e-05,
+    "disease": true,
+    "url": "https://reactome.org/content/detail/R-HSA-9632697"
+   },
+   {
+    "id": "R-HSA-9630791",
+    "name": "Evasion of Oncogene Induced Senescence Due to Defective p16INK4A binding to CDK4",
+    "found": 2,
+    "total": 2,
+    "p_value": 4.898324032831525e-06,
+    "fdr": 9.79664806566305e-05,
+    "disease": true,
+    "url": "https://reactome.org/content/detail/R-HSA-9630791"
+   },
+   {
+    "id": "R-HSA-5633007",
+    "name": "Regulation of TP53 Activity",
+    "found": 5,
+    "total": 179,
+    "p_value": 8.729797796203087e-06,
+    "fdr": 0.00016586615812785865,
+    "disease": false,
+    "url": "https://reactome.org/content/detail/R-HSA-5633007"
+   },
+   {
+    "id": "R-HSA-9630750",
+    "name": "Evasion of Oncogene Induced Senescence Due to p16INK4A Defects",
+    "found": 2,
+    "total": 3,
+    "p_value": 1.1010401475664011e-05,
+    "fdr": 0.00017616642361062418,
+    "disease": true,
+    "url": "https://reactome.org/content/detail/R-HSA-9630750"
+   },
+   {
+    "id": "R-HSA-9632693",
+    "name": "Evasion of Oxidative Stress Induced Senescence Due to p16INK4A Defects",
+    "found": 2,
+    "total": 3,
+    "p_value": 1.1010401475664011e-05,
+    "fdr": 0.00017616642361062418,
+    "disease": true,
+    "url": "https://reactome.org/content/detail/R-HSA-9632693"
+   }
+  ]
+ },
+ "kegg_shared": [
+  {
+   "id": "hsa05200",
+   "name": "Pathways in cancer",
+   "genes": [
+    "EGFR",
+    "PDGFRA",
+    "PTEN",
+    "PIK3CA",
+    "TP53",
+    "MDM2",
+    "CDKN2A",
+    "CDK4",
+    "RB1",
+    "TERT"
+   ],
+   "count": 10
+  },
+  {
+   "id": "hsa05214",
+   "name": "Glioma",
+   "genes": [
+    "EGFR",
+    "PDGFRA",
+    "PTEN",
+    "PIK3CA",
+    "TP53",
+    "MDM2",
+    "CDKN2A",
+    "CDK4",
+    "RB1"
+   ],
+   "count": 9
+  },
+  {
+   "id": "hsa05218",
+   "name": "Melanoma",
+   "genes": [
+    "EGFR",
+    "PDGFRA",
+    "PTEN",
+    "PIK3CA",
+    "TP53",
+    "MDM2",
+    "CDKN2A",
+    "CDK4",
+    "RB1"
+   ],
+   "count": 9
+  },
+  {
+   "id": "hsa05163",
+   "name": "Human cytomegalovirus infection",
+   "genes": [
+    "EGFR",
+    "PDGFRA",
+    "PIK3CA",
+    "TP53",
+    "MDM2",
+    "CDKN2A",
+    "CDK4",
+    "RB1"
+   ],
+   "count": 8
+  },
+  {
+   "id": "hsa05165",
+   "name": "Human papillomavirus infection",
+   "genes": [
+    "EGFR",
+    "PTEN",
+    "PIK3CA",
+    "TP53",
+    "MDM2",
+    "CDK4",
+    "RB1",
+    "TERT"
+   ],
+   "count": 8
+  },
+  {
+   "id": "hsa05225",
+   "name": "Hepatocellular carcinoma",
+   "genes": [
+    "EGFR",
+    "PTEN",
+    "PIK3CA",
+    "TP53",
+    "CDKN2A",
+    "CDK4",
+    "RB1",
+    "TERT"
+   ],
+   "count": 8
+  },
+  {
+   "id": "hsa01522",
+   "name": "Endocrine resistance",
+   "genes": [
+    "EGFR",
+    "PIK3CA",
+    "TP53",
+    "MDM2",
+    "CDKN2A",
+    "CDK4",
+    "RB1"
+   ],
+   "count": 7
+  },
+  {
+   "id": "hsa04151",
+   "name": "PI3K-Akt signaling pathway",
+   "genes": [
+    "EGFR",
+    "PDGFRA",
+    "PTEN",
+    "PIK3CA",
+    "TP53",
+    "MDM2",
+    "CDK4"
+   ],
+   "count": 7
+  },
+  {
+   "id": "hsa04218",
+   "name": "Cellular senescence",
+   "genes": [
+    "PTEN",
+    "PIK3CA",
+    "TP53",
+    "MDM2",
+    "CDKN2A",
+    "CDK4",
+    "RB1"
+   ],
+   "count": 7
+  },
+  {
+   "id": "hsa05166",
+   "name": "Human T-cell leukemia virus 1 infection",
+   "genes": [
+    "PTEN",
+    "PIK3CA",
+    "TP53",
+    "CDKN2A",
+    "CDK4",
+    "RB1",
+    "TERT"
+   ],
+   "count": 7
+  },
+  {
+   "id": "hsa05206",
+   "name": "MicroRNAs in cancer",
+   "genes": [
+    "EGFR",
+    "PDGFRA",
+    "PTEN",
+    "PIK3CA",
+    "TP53",
+    "MDM2",
+    "CDKN2A"
+   ],
+   "count": 7
+  },
+  {
+   "id": "hsa05215",
+   "name": "Prostate cancer",
+   "genes": [
+    "EGFR",
+    "PDGFRA",
+    "PTEN",
+    "PIK3CA",
+    "TP53",
+    "MDM2",
+    "RB1"
+   ],
+   "count": 7
+  },
+  {
+   "id": "hsa05203",
+   "name": "Viral carcinogenesis",
+   "genes": [
+    "PIK3CA",
+    "TP53",
+    "MDM2",
+    "CDKN2A",
+    "CDK4",
+    "RB1"
+   ],
+   "count": 6
+  },
+  {
+   "id": "hsa05212",
+   "name": "Pancreatic cancer",
+   "genes": [
+    "EGFR",
+    "PIK3CA",
+    "TP53",
+    "CDKN2A",
+    "CDK4",
+    "RB1"
+   ],
+   "count": 6
+  },
+  {
+   "id": "hsa05219",
+   "name": "Bladder cancer",
+   "genes": [
+    "EGFR",
+    "TP53",
+    "MDM2",
+    "CDKN2A",
+    "CDK4",
+    "RB1"
+   ],
+   "count": 6
+  },
+  {
+   "id": "hsa05220",
+   "name": "Chronic myeloid leukemia",
+   "genes": [
+    "PIK3CA",
+    "TP53",
+    "MDM2",
+    "CDKN2A",
+    "CDK4",
+    "RB1"
+   ],
+   "count": 6
+  },
+  {
+   "id": "hsa05223",
+   "name": "Non-small cell lung cancer",
+   "genes": [
+    "EGFR",
+    "PIK3CA",
+    "TP53",
+    "CDKN2A",
+    "CDK4",
+    "RB1"
+   ],
+   "count": 6
+  },
+  {
+   "id": "hsa05224",
+   "name": "Breast cancer",
+   "genes": [
+    "EGFR",
+    "PTEN",
+    "PIK3CA",
+    "TP53",
+    "CDK4",
+    "RB1"
+   ],
+   "count": 6
+  },
+  {
+   "id": "hsa05230",
+   "name": "Central carbon metabolism in cancer",
+   "genes": [
+    "EGFR",
+    "PDGFRA",
+    "PTEN",
+    "PIK3CA",
+    "TP53",
+    "IDH1"
+   ],
+   "count": 6
+  },
+  {
+   "id": "hsa01521",
+   "name": "EGFR tyrosine kinase inhibitor resistance",
+   "genes": [
+    "EGFR",
+    "PDGFRA",
+    "PTEN",
+    "PIK3CA",
+    "NF1"
+   ],
+   "count": 5
+  },
+  {
+   "id": "hsa04110",
+   "name": "Cell cycle",
+   "genes": [
+    "TP53",
+    "MDM2",
+    "CDKN2A",
+    "CDK4",
+    "RB1"
+   ],
+   "count": 5
+  },
+  {
+   "id": "hsa04115",
+   "name": "p53 signaling pathway",
+   "genes": [
+    "PTEN",
+    "TP53",
+    "MDM2",
+    "CDKN2A",
+    "CDK4"
+   ],
+   "count": 5
+  },
+  {
+   "id": "hsa05160",
+   "name": "Hepatitis C",
+   "genes": [
+    "EGFR",
+    "PIK3CA",
+    "TP53",
+    "CDK4",
+    "RB1"
+   ],
+   "count": 5
+  },
+  {
+   "id": "hsa05169",
+   "name": "Epstein-Barr virus infection",
+   "genes": [
+    "PIK3CA",
+    "TP53",
+    "MDM2",
+    "CDK4",
+    "RB1"
+   ],
+   "count": 5
+  },
+  {
+   "id": "hsa05222",
+   "name": "Small cell lung cancer",
+   "genes": [
+    "PTEN",
+    "PIK3CA",
+    "TP53",
+    "CDK4",
+    "RB1"
+   ],
+   "count": 5
+  },
+  {
+   "id": "hsa05226",
+   "name": "Gastric cancer",
+   "genes": [
+    "EGFR",
+    "PIK3CA",
+    "TP53",
+    "RB1",
+    "TERT"
+   ],
+   "count": 5
+  },
+  {
+   "id": "hsa01524",
+   "name": "Platinum drug resistance",
+   "genes": [
+    "PIK3CA",
+    "TP53",
+    "MDM2",
+    "CDKN2A"
+   ],
+   "count": 4
+  },
+  {
+   "id": "hsa04010",
+   "name": "MAPK signaling pathway",
+   "genes": [
+    "EGFR",
+    "PDGFRA",
+    "NF1",
+    "TP53"
+   ],
+   "count": 4
+  },
+  {
+   "id": "hsa04014",
+   "name": "Ras signaling pathway",
+   "genes": [
+    "EGFR",
+    "PDGFRA",
+    "PIK3CA",
+    "NF1"
+   ],
+   "count": 4
+  },
+  {
+   "id": "hsa04068",
+   "name": "FoxO signaling pathway",
+   "genes": [
+    "EGFR",
+    "PTEN",
+    "PIK3CA",
+    "MDM2"
+   ],
+   "count": 4
+  }
+ ],
+ "source_status": {
+  "Reactome AnalysisService": "ok",
+  "KEGG": "ok",
+  "NCBI Gene": "ok",
+  "UniProt": "ok"
+ },
+ "notes": [
+  "Reactome p-values come from its over-representation test against all human genes; they indicate shared annotation, not co-regulation.",
+  "KEGG 'shared maps' counts genes drawn on the same map, not interactions between them."
+ ]
+}
